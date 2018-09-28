@@ -2213,6 +2213,9 @@
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_wdt.h</name>
                 </file>
+                <file>
+                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\startup_ewarm.c</name>
+                </file>
             </group>
         </group>
     </group>
@@ -2286,9 +2289,6 @@
         </file>
         <file>
             <name>$PROJ_DIR$\1-lowLayer\RegisterTypes.h</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\SystemInit.c</name>
         </file>
     </group>
     <group>

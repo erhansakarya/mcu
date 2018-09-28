@@ -20,7 +20,7 @@
 #include "rom.h"                        
 #include "rom_map.h"                    
 
-#include "LL_systemInit.h"
+//#include "LL_systemInit.h"
 
 //*****************************************************************************
 //                      LOCAL FUNCTION PROTOTYPES                           
@@ -34,27 +34,27 @@
 * @param None.
 * @return None.
 */
-void
-SystemInit(void)
-{
-/* In case of TI-RTOS vector table is initialize by OS itself */
-#ifndef USE_TIRTOS
-    //
-    // Set vector table base
-    //
-#if defined(ccs)
-    MAP_IntVTableBaseSet((unsigned long)&g_pfnVectors[0]);
-#endif
-#if defined(ewarm)
-    MAP_IntVTableBaseSet((unsigned long)&__vector_table);
-#endif
-#endif
-    
-    //
-    // Enable Processor
-    //
-    MAP_IntMasterEnable();              // Allows the processor to respond to interrupts.
-    MAP_IntEnable(FAULT_SYSTICK);       // Enables the SysTick interrupts.
-
-    PRCMCC3200MCUInit();                // MCU Initialization Routine.
-}
+//void
+//SystemInit(void)
+//{
+///* In case of TI-RTOS vector table is initialize by OS itself */
+//#ifndef USE_TIRTOS
+//    //
+//    // Set vector table base
+//    //
+//#if defined(ccs)
+//    MAP_IntVTableBaseSet((unsigned long)&g_pfnVectors[0]);
+//#endif
+//#if defined(ewarm)
+//    MAP_IntVTableBaseSet((unsigned long)&__vector_table);
+//#endif
+//#endif
+//    
+//    //
+//    // Enable Processor
+//    //
+//    MAP_IntMasterEnable();              // Allows the processor to respond to interrupts.
+//    MAP_IntEnable(FAULT_SYSTICK);       // Enables the SysTick interrupts.
+//
+//    PRCMCC3200MCUInit();                // MCU Initialization Routine.
+//}
