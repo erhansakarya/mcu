@@ -5,52 +5,43 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\0-sdkLayer\inc\hw_gpio.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\inc\hw_prcm.h</file>
             <file>$PROJ_DIR$\0-sdkLayer\inc\hw_types.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\inc\hw_memmap.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\cc3200.icf</file>
-            <file>$PROJ_DIR$\Debug\Obj\PRCM.pbd</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\Debug\Exe\PRCM.out</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
             <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\inc\hw_gpio.h</file>
             <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\PRCM.pbd</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
             <file>$PROJ_DIR$\Debug\Exe\PRCM.bin</file>
             <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\List\PRCM.map</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
             <file>$PROJ_DIR$\0-sdkLayer\inc\driverlib.a</file>
+            <file>$PROJ_DIR$\Debug\Exe\PRCM.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\cc3200.icf</file>
+            <file>$PROJ_DIR$\Debug\List\PRCM.map</file>
+            <file>$PROJ_DIR$\0-sdkLayer\inc\hw_memmap.h</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\Debug\Exe\PRCM.out</name>
+            <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
-                    <name>OBJCOPY</name>
-                    <file> 11</file>
-                </tool>
-                <tool>
                     <name>ILINK</name>
-                    <file> 13</file>
+                    <file> 12 15</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 4 6 15 14 12 10</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 3</file>
+                    <file> 13</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 6</file>
+                    <file> 7</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
@@ -60,23 +51,37 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 1 2 0</file>
+                    <file> 1 16 0 3</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 0 2 1</file>
+                    <file> 0 16 3 1</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>[ROOT_NODE]</name>
+            <name>$PROJ_DIR$\Debug\Exe\PRCM.out</name>
             <outputs>
                 <tool>
+                    <name>OBJCOPY</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
                     <name>ILINK</name>
-                    <file> 7 13</file>
+                    <file> 15</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 14 7 11 6 10 4</file>
+                </tool>
+            </inputs>
         </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
     </configuration>
     <configuration>
         <name>Release</name>
