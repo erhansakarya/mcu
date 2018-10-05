@@ -1,534 +1,366 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>2</fileVersion>
-    <fileChecksum>19112548</fileChecksum>
+    <fileChecksum>3552498806</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\systick.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\prcm.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\spi.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\des.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\rom.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\sdhost.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\aes.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\debug.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\adc.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\flash.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\interrupt.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\rom_map.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\rom_patch.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\crc.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\pin.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\shamd5.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\cpu.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\gpio.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\hwspinlock.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2c.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\camera.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2s.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\shamd5.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\timer.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\sdhost.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\des.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\prcm.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\LL_prcm.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\prcm.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\wdt_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\aes.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\gpio.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\wdt_if.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\spi.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2s.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\adc.__cstat.et</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\hwspinlock.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\timer_if.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\timer.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\utils.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\cpu.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\uart.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2s.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\utils.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\udma.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\pin.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\spi.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\pin.pbi</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\camera.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\timer.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\utils_if.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\crc.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\shamd5.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\systick.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\camera.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\des.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\flash.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\hwspinlock.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2s.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\aes.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\prcm.pbi</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\sdhost.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2s.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\utils_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\aes.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2s_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\cpu.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2c.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\systick_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\prcm.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\LL_prcm.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\SystemInit.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\interrupt.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\timer_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\wdt.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2c_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\SystemInit.pbi</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\wdt.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\udma.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\PRCM.pbd</file>
-            <file>$PROJ_DIR$\Debug\Obj\systick.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\gpio_if.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\systick_if.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\button_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\pin.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Exe\PRCM.out</file>
-            <file>$PROJ_DIR$\Debug\Obj\button_if.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\gpio_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\des.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\gpio.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\crc.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\flash.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\hwspinlock.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\sdhost.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\aes.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\utils.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\interrupt.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\camera.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\des.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2c.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\wdt.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\flash.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\spi.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\udma.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\camera.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\SystemInit.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\cpu.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\uart_if.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2c.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\uart_if.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\utils_if.pbi</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2c.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2s_if.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\uart.__cstat.et</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\crc.h</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\LL_prcm.o</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\startup_ewarm.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\button_if.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\LL_prcm.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\shamd5.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\timer_if.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\uart_if.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2c_if.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_wdt.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\systick_if.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\uart_if.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\crc.o</file>
-            <file>$PROJ_DIR$\1-lowLayer\SystemInit.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2s_if.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\systick_if.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_uart.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2c_if.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2s_if.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\gpio_if.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\LL_prcm.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\RegisterTypes.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_types.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_udma.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\button_if.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\gpio_if.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\timer_if.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\wdt_if.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\wdt_if.h</file>
-            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\utils_if.c</file>
-            <file>$PROJ_DIR$\1-lowLayer\common.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_gpio.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_aes.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_apps_rcm.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_common_reg.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_gprcm.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_adc.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_hib3p3.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_ints.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_memmap.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_i2c.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_nvic.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_ocp_shared.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_stack_die_ctrl.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_shamd5.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\wdt.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\uart.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_mcasp.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_mmchs.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_apps_config.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_timer.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_dthe.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_mcspi.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\asmdefs.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\timer.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\udma.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_des.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_flash_ctrl.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\utils.c</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_hib1p2.h</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_camera.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\uart_if.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\systick_if.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\interrupt.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\sdhost.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\i2c_if.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\wdt.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\utils.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\hwspinlock.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm_if.__cstat.et</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\init_if.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\init_if.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\init_if.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\init_if.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\LL_init.__cstat.et</file>
+            <file>$PROJ_DIR$\1-lowLayer\LL_init.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\List\PRCM.map</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\ewarm\Release\Exe\driverlib.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer_if.pbi</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\cc3200.icf</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\flash.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\PRCM.bin</file>
             <file>$PROJ_DIR$\Debug\Obj\cpu.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LL_prcm.o</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\interrupt.h</file>
             <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
             <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2s_if.o</file>
             <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\spi.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick_if.pbi</file>
             <file>$PROJ_DIR$\Debug\Obj\i2s_if.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\udma.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\systick.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\pin.o</file>
             <file>$PROJ_DIR$\Debug\Obj\gpio_if.o</file>
             <file>$PROJ_DIR$\Debug\Obj\i2c_if.o</file>
             <file>$PROJ_DIR$\Debug\Obj\button_if.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2c_if.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_if.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick.pbi</file>
             <file>$PROJ_DIR$\Debug\Obj\wdt_if.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\shamd5.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\interrupt.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\timer_if.pbi</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\adc.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\timer.pbi</file>
-            <file>$PROJ_DIR$\Debug\Obj\flash.o</file>
-            <file>$PROJ_DIR$\Debug\Exe\PRCM.bin</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\cc3200.icf</file>
-            <file>$PROJ_DIR$\Debug\List\PRCM.map</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\ewarm\Release\Exe\driverlib.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\hwspinlock.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_if.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils_if.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\des.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\des.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\hwspinlock.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\flash.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio_if.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\cpu.pbi</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2c.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\flash.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_if.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2s_if.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2c_if.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\PRCM.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick_if.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils_if.__cstat.et</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\wdt.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio_if.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\button_if.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\cpu.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Exe\PRCM.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\LL_prcm.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\button_if.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick_if.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer_if.__cstat.et</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_gpio.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\gpio_if.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_hib1p2.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_nvic.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\gpio_if.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2c_if.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2c_if.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2s_if.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2s_if.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_mmchs.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_shamd5.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_ints.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_mcasp.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_memmap.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_flash_ctrl.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_hib3p3.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_mcspi.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_types.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_common_reg.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_des.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_ocp_shared.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\startup_ewarm.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\button_if.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_stack_die_ctrl.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\button_if.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_i2c.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_gprcm.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_dthe.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\pin.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\asmdefs.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_aes.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\utils.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\systick.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_apps_config.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\flash.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_camera.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\cpu.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\gpio.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\version.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\interrupt.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_apps_rcm.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\des.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\rom.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\hwspinlock.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\prcm.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\debug.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\rom_patch.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\rom_map.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\wdt_if.o</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\des.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\utils_if.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\1-lowLayer\common.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\uart_if.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\timer_if.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\uart_if.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\wdt_if.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\wdt_if.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\timer_if.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\prcm.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\LL_prcm.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm.o</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\systick_if.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\LL_prcm.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\LL_prcm.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\wdt_if.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\systick_if.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\des.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\flash.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\hwspinlock.pbi</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\uart.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer_if.o</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\cpu.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2s.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\udma.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\hwspinlock.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\utils.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\timer.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils_if.o</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\systick.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\spi.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\pin.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\prcm_if.c</file>
+            <file>$PROJ_DIR$\1-lowLayer\LL_init.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\prcm_if.h</file>
+            <file>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\init_if.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\LL_init.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm_if.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\LL_init.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm_if.pbi</file>
         </outputs>
+        <file>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\init_if.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 4</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98 92 94 121 107 99 141 19 162 49 166 128 127 177</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 162 107 177 94 141 166 92 121 99 19 49 128 98 127</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\1-lowLayer\LL_init.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 178</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 180</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 177 175</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 177 175</file>
+                </tool>
+            </inputs>
+        </file>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 98 230</file>
+                    <file> 74 10</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\systick.c</name>
+            <name>$PROJ_DIR$\Debug\Exe\PRCM.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 13 28 17 41 15 21 26 36 27 22 2 7 178 18 133 32 143 179 65 23 63 161 38 37 170 130 11 14 8 9</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\gpio_if.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 91</file>
+                    <file> 51</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 211</file>
+                    <file> 26</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 215</file>
+                    <file> 71</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 174 177 158 7 200 63</file>
+                    <file> 46 148 152 151 153 156 57 98 92 94 121 19 173 129 141 123 128 127 82</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 200 158 177 7 63 174</file>
+                    <file> 127 141 121 92 173 128 152 98 94 19 129 123 82 151 46 148 57 153 156</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\prcm.c</name>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2c_if.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 80</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 29</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 70</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 158 174 175 169 171 195 173 170 27 200 46 106 45</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 27 171 45 175 173 46 174 169 195 170 200 106 158</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\spi.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 37</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 121</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 212</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 174 158 175 188 185 200 53</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 185 175 53 158 188 200 174</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\des.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 102</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 114</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 65</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 100 72 25 34 33 59 43 192 187 174 175 158 7 26 200</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 26 174 192 158 25 72 187 175 7 200 34 33 100 59 43</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\sdhost.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 24</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 108</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 201</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 158 175 184 174 185 200 71</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 185 184 71 175 174 200 158</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\aes.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 75</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 109</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 69</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 100 72 25 34 33 59 43 168 187 174 175 177 158 32 7 200</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 32 59 174 168 177 200 72 187 175 158 7 25 43 100 34 33</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\adc.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 39</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 204</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 62</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 158 175 174 172 185 200 224</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 185 174 224 175 172 200 158</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\flash.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 119</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 226</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 66</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 158 193 175 174 171 195 173 170 179 7 106 45 200</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 179 171 200 175 173 106 193 174 195 170 7 45 158</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\interrupt.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 83</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 222</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 112</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 174 177 158 46 7 200</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 7 158 177 46 200 174</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\crc.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 104</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 148</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
                     <file> 60</file>
                 </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 29</file>
+                </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 100 72 25 34 33 59 43 187 175 158 135 7</file>
+                    <file> 78 68 148 152 151 153 156 169 57 42 98 94 92 106 53 173 123 128 127 141 87</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 158 59 187 7 25 43 72 175 135 34 33 100</file>
+                    <file> 173 148 151 94 87 42 169 106 128 152 68 98 92 53 123 141 153 156 57 127 78</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\pin.c</name>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2s_if.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 97</file>
+                    <file> 58</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 216</file>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46 148 152 151 153 156 57 98 93 92 94 126 141 123 128 127 164 19 158 173 163 134 88 82</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 88 128 94 158 152 98 93 141 19 163 151 92 126 123 164 173 134 82 148 57 153 156 46 127</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\startup_ewarm.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 40</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 65</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
@@ -538,38 +370,146 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 158 175 178 52</file>
+                    <file> 98 92 19</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 178 175 52 158</file>
+                    <file> 19 98 92</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\shamd5.c</name>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\button_if.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 22</file>
+                    <file> 72</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 61</file>
+                    <file> 28</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 221</file>
+                    <file> 77</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 100 72 25 34 33 59 43 187 174 175 177 180 158 7 200 141</file>
+                    <file> 169 148 152 151 153 156 57 42 98 92 123 128 127 129 19 173 94 105</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 7 175 187 180 141 72 174 177 158 200 34 33 100 25 59 43</file>
+                    <file> 94 153 148 128 152 92 19 42 156 127 98 123 129 173 105 57 151 169</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\pin.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 75</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 160</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98 94 101 173</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 101 94 173 98</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\utils.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 159</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 166</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 166</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\systick.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92 84 98 126 19 171</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19 98 84 126 171 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\flash.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 155</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98 95 94 92 107 83 96 99 104 126 49 166 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 104 107 19 94 96 49 95 92 83 99 126 166 98</file>
                 </tool>
             </inputs>
         </file>
@@ -578,25 +518,25 @@
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 77</file>
+                    <file> 73</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 208</file>
+                    <file> 17</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 125</file>
+                    <file> 52</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 46</file>
+                    <file> 162</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 46</file>
+                    <file> 162</file>
                 </tool>
             </inputs>
         </file>
@@ -605,25 +545,79 @@
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 103</file>
+                    <file> 48</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 210</file>
+                    <file> 21</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 127</file>
+                    <file> 47</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 158 167 174 175 170 7 35 200</file>
+                    <file> 98 81 92 94 99 126 129 19</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 170 174 167 175 35 158 7 200</file>
+                    <file> 126 92 81 94 19 98 99 129</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\interrupt.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92 84 98 162 126 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 126 98 84 162 19 92</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\des.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 154</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78 68 148 152 151 153 156 100 108 92 94 98 126 131 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 131 92 100 98 148 156 68 108 94 126 19 152 153 78 151</file>
                 </tool>
             </inputs>
         </file>
@@ -632,65 +626,38 @@
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 107</file>
+                    <file> 45</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 207</file>
+                    <file> 36</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 67</file>
+                    <file> 157</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 100 72 25 34 33 59 43 158 175 174 170 40</file>
+                    <file> 78 68 148 152 151 153 156 98 94 92 99 165</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 174 25 43 158 59 72 175 170 34 33 100 40</file>
+                    <file> 92 148 156 98 153 68 94 99 152 151 78 165</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2c.c</name>
+            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\prcm.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 78</file>
+                    <file> 66</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 116</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 128</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 100 72 25 34 33 59 43 176 174 175 158 7 131 200</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 200 175 176 7 72 174 158 131 34 33 100 25 59 43</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\camera.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 113</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 123</file>
+                    <file> 143</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
@@ -700,165 +667,115 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 158 174 175 196 185 200 55</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 185 175 55 174 196 200 158</file>
+                    <file> 98 92 94 121 107 83 96 99 141 19 162 49 166</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2s.c</name>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\utils_if.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 170</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 68 148 152 151 153 156 78 98 94 123 128 127 165 141 172</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 172 127 123 153 98 165 148 156 78 94 128 141 152 151 68</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\uart_if.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
                     <file> 38</file>
                 </tool>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 73</file>
-                </tool>
-                <tool>
                     <name>BICOMP</name>
-                    <file> 68</file>
+                    <file> 30</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 158 174 175 183 185 200 48</file>
+                    <file> 169 148 152 151 153 156 57 42 46 167 43 98 94 141 173 158 123 128 127 137</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 185 175 48 174 183 200 158</file>
+                    <file> 148 158 156 98 46 141 128 152 169 167 94 173 123 137 153 57 127 20 151 42 43</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\Debug\Exe\PRCM.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 230</file>
-                </tool>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 227</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 229 204 109 219 123 208 148 114 226 210 217 207 116 218 73 133 222 137 31 216 29 108 61 121 94 124 211 93 56 42 206 129 122 110 58 203 36 233 231 232 228</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\timer_if.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 199</file>
+                    <file> 80</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 31</file>
+                    <file> 161</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 95</file>
+                    <file> 12</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 118 25 34 33 59 43 105 158 174 175 170 200 169 27 4 11 12 35 45 161</file>
+                    <file> 98 94 92 126 19 168 123 128 127 141 140</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 4 25 170 45 174 169 27 105 43 158 175 200 11 35 161 34 33 59 118 12</file>
+                    <file> 141 19 92 123 94 126 168 128 140 98 127</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\startup_ewarm.c</name>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\wdt_if.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 132</file>
+                    <file> 147</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 94</file>
+                    <file> 130</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 111</file>
+                    <file> 35</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 158 174 200</file>
+                    <file> 46 148 152 151 153 156 57 98 92 94 141 70 123 128 127 19 139</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 200 174 158</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\LL_prcm.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 28</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 137</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 81</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 118 25 34 33 59 43 105 158 174 175 170 169 27 4 11 12 156</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 59 11 25 170 174 27 105 43 34 158 175 169 4 156 33 118 12</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2c_if.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 86</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 218</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 202</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 100 72 25 34 33 59 43 50 105 115 158 175 174 176 131 52 4 11 12 27 153</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 52 25 33 175 153 115 50 176 11 34 72 158 174 131 4 27 59 43 105 12 100</file>
+                    <file> 19 148 141 57 156 127 92 123 153 98 94 70 128 139 152 151 46</file>
                 </tool>
             </inputs>
         </file>
@@ -871,84 +788,57 @@
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 93</file>
+                    <file> 63</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 198</file>
+                    <file> 24</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 118 25 34 33 59 43 105 50 115 41 120 174 177 175 158 7 4 11 12 35 47 27 200 63 151</file>
+                    <file> 46 148 152 151 153 156 57 169 42 167 43 92 84 94 98 126 123 128 127 129 158 141 19 171 150</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 43 4 105 177 27 25 34 41 158 35 63 59 50 174 175 7 11 47 200 151 33 115 120 118 12</file>
+                    <file> 156 123 57 84 141 148 152 127 167 98 129 171 153 169 92 94 126 128 158 19 150 151 42 43 46</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\uart_if.c</name>
+            <name>$PROJ_DIR$\1-lowLayer\LL_prcm.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 126</file>
+                    <file> 142</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 129</file>
+                    <file> 18</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 197</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 50 25 34 33 59 43 105 115 118 41 120 158 175 27 52 47 4 11 12 143</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 25 47 43 158 118 27 11 34 50 41 175 52 4 143 59 105 12 209 33 115 120</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\SystemInit.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 82</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 124</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 87</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 118 25 34 33 59 43 105 158 174 175 170 169 27 4 11 12</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 25 11 170 105 43 174 27 59 12 158 175 169 4 34 33 118</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2s_if.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
                     <file> 76</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46 148 152 151 153 156 57 98 92 94 99 121 141 123 128 127 146</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 153 128 148 99 92 141 57 156 152 98 94 121 123 146 151 46 127</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 31</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
@@ -956,287 +846,40 @@
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 213</file>
+                    <file> 67</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 118 25 34 33 59 43 105 158 183 174 175 7 27 4 11 12 51 200 47 52 48 166 150 161</file>
+                    <file> 46 148 152 151 153 156 57 98 92 94 99 19 121 141 123 128 127 166 177 176 82 175</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 150 11 175 47 34 183 27 200 48 33 158 174 7 4 51 52 166 161 25 105 59 43 12 118</file>
+                    <file> 57 123 156 99 175 92 121 166 148 153 98 94 19 141 128 177 152 151 46 127</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\gpio_if.c</name>
+            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\prcm_if.c</name>
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 101</file>
+                    <file> 0</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 217</file>
+                    <file> 179</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 92</file>
+                    <file> 181</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 118 25 34 33 59 43 105 158 174 175 169 200 52 35 27 4 11 12 161</file>
-                </tool>
-                <tool>
                     <name>BICOMP</name>
-                    <file> 12 27 105 169 43 174 52 11 25 158 175 200 35 4 161 59 118 34 33</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\button_if.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 96</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 219</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 99</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 50 25 34 33 59 43 105 115 158 174 4 11 12 35 200 52 175 139</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 175 59 11 34 174 200 115 43 158 4 35 52 139 25 105 33 50 12</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\timer_if.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 84</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 42</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 223</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 158 175 174 7 200 44 4 11 12 27 142</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 27 200 174 4 175 7 44 11 142 158 12</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\wdt_if.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 30</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 36</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 220</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 118 25 34 33 59 43 105 158 174 175 27 88 4 11 12 200 164</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 200 25 27 105 43 12 174 4 59 158 175 88 11 164 34 33 118</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\utils_if.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 74</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 58</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 130</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 72 25 34 33 59 43 100 158 175 4 11 12 40 27 53</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 53 12 4 59 158 40 25 43 100 175 11 27 34 33 72</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\wdt.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 85</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 203</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 117</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 174 175 158 145 7 200 88</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 7 158 88 175 145 200 174</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\uart.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 134</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 206</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 57</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 174 175 158 152 7 200 47</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 7 158 47 175 152 200 174</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\timer.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 23</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 56</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 225</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 174 175 186 158 7 200 44</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 7 186 44 175 158 200 174</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\udma.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 89</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 122</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 214</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 158 159 174 175 7 200 51</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 7 174 51 159 175 200 158</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\utils.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 49</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 110</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 205</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 45</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 45</file>
+                    <file> 162 107 176 94 141 166 127 92 121 99 19 49 128 98</file>
                 </tool>
             </inputs>
         </file>

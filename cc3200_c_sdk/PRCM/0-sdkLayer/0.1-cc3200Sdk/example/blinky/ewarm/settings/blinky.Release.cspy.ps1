@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\TI\CC3200SDK_1.3.0\cc3200-sdk\example\blinky\ewarm\settings\blinky.Release.general.xcl" --backend -f "C:\TI\CC3200SDK_1.3.0\cc3200-sdk\example\blinky\ewarm\settings\blinky.Release.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\erhan\github\mcu\cc3200_c_sdk\PRCM\0-sdkLayer\0.1-cc3200Sdk\example\blinky\ewarm\settings\blinky.Release.general.xcl" --backend -f "C:\Users\erhan\github\mcu\cc3200_c_sdk\PRCM\0-sdkLayer\0.1-cc3200Sdk\example\blinky\ewarm\settings\blinky.Release.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\TI\CC3200SDK_1.3.0\cc3200-sdk\example\blinky\ewarm\settings\blinky.Release.general.xcl" --debug_file=$debugfile --backend -f "C:\TI\CC3200SDK_1.3.0\cc3200-sdk\example\blinky\ewarm\settings\blinky.Release.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\erhan\github\mcu\cc3200_c_sdk\PRCM\0-sdkLayer\0.1-cc3200Sdk\example\blinky\ewarm\settings\blinky.Release.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\erhan\github\mcu\cc3200_c_sdk\PRCM\0-sdkLayer\0.1-cc3200Sdk\example\blinky\ewarm\settings\blinky.Release.driver.xcl" 
 }

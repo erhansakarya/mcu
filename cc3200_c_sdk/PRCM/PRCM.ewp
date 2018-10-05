@@ -2040,19 +2040,7 @@
             <group>
                 <name>driverlib</name>
                 <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\adc.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\aes.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\camera.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\cpu.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\crc.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\debug.h</name>
@@ -2068,12 +2056,6 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\hwspinlock.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2c.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\i2s.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\interrupt.c</name>
@@ -2094,25 +2076,7 @@
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\rom_patch.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\sdhost.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\shamd5.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\spi.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\systick.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\timer.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\uart.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\udma.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\utils.c</name>
@@ -2120,17 +2084,11 @@
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\version.h</name>
                 </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\driverlib\wdt.c</name>
-                </file>
             </group>
             <group>
                 <name>inc</name>
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\asmdefs.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_adc.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_aes.h</name>
@@ -2169,9 +2127,6 @@
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_hib3p3.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_i2c.h</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_ints.h</name>
                 </file>
                 <file>
@@ -2199,19 +2154,7 @@
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_stack_die_ctrl.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_timer.h</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_types.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_uart.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_udma.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\hw_wdt.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\0-sdkLayer\0.1-cc3200Sdk\inc\startup_ewarm.c</name>
@@ -2227,68 +2170,47 @@
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\button_if.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\button_if.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\gpio_if.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\gpio_if.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2c_if.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2c_if.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2s_if.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\i2s_if.h</name>
+                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\init_if.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\prcm_if.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\prcm_if.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\systick_if.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\systick_if.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\timer_if.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\timer_if.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\uart_if.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\uart_if.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\utils_if.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\utils_if.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\wdt_if.c</name>
             </file>
-            <file>
-                <name>$PROJ_DIR$\1-lowLayer\1.2-hardInterfaces\wdt_if.h</name>
-            </file>
         </group>
         <file>
-            <name>$PROJ_DIR$\1-lowLayer\common.h</name>
+            <name>$PROJ_DIR$\1-lowLayer\LL_init.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\1-lowLayer\LL_init.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\1-lowLayer\LL_prcm.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\LL_prcm.h</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\1-lowLayer\RegisterTypes.h</name>
         </file>
     </group>
     <group>
