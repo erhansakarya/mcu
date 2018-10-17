@@ -2369,6 +2369,30 @@
             </data>
         </settings>
     </configuration>
+    <group>
+        <name>0-sdkLayer</name>
+        <group>
+            <name>inc</name>
+            <file>
+                <name>$PROJ_DIR$\0-sdkLayer\inc\hw_gpio.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\0-sdkLayer\inc\hw_memmap.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\0-sdkLayer\inc\hw_prcm.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\0-sdkLayer\inc\hw_types.h</name>
+            </file>
+        </group>
+        <group>
+            <name>src</name>
+            <file>
+                <name>$PROJ_DIR$\0-sdkLayer\src\hw_prcm.c</name>
+            </file>
+        </group>
+    </group>
     <file>
         <name>$PROJ_DIR$\main.c</name>
     </file>

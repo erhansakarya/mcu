@@ -1,4 +1,4 @@
-"C:\Users\erhan\github\mcu\cc3200_c_pure\PRCM\main.c"
+"C:\Users\erhan\github\mcu\cc3200_c_pure\PRCM\0-sdkLayer\src\hw_prcm.c"
 -std=c11
 -ferror-limit=0
 -I

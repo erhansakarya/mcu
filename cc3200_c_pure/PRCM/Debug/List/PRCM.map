@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.20.1.14183/W32 for ARM                03/Oct/2018  14:58:32
+# IAR ELF Linker V8.20.1.14183/W32 for ARM                17/Oct/2018  17:45:50
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,8 +8,9 @@
 #    Map file     =  
 #        C:\Users\erhan\github\mcu\cc3200_c_pure\PRCM\Debug\List\PRCM.map
 #    Command line =  
-#        -f C:\Users\erhan\AppData\Local\Temp\EWEE4D.tmp
-#        (C:\Users\erhan\github\mcu\cc3200_c_pure\PRCM\Debug\Obj\main.o -o
+#        -f C:\Users\erhan\AppData\Local\Temp\EWB17F.tmp
+#        (C:\Users\erhan\github\mcu\cc3200_c_pure\PRCM\Debug\Obj\hw_prcm.o
+#        C:\Users\erhan\github\mcu\cc3200_c_pure\PRCM\Debug\Obj\main.o -o
 #        C:\Users\erhan\github\mcu\cc3200_c_pure\PRCM\Debug\Exe\PRCM.out
 #        --config_def CC3200_ES_1_2_1=0 --map
 #        C:\Users\erhan\github\mcu\cc3200_c_pure\PRCM\Debug\List\PRCM.map

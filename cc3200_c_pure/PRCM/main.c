@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <stdbool.h>
+#include <stdint.h>
+
 // includes for hardware
 #include "hw_types.h"
 #include "hw_memmap.h"
