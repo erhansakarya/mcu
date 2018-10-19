@@ -93,7 +93,7 @@ typedef enum {
   SLEEP_MODE            = (uint32_t)0x100,
   DEEPSLEEP_MODE        = (uint32_t)0x10000,
 
-} PERIPH_EN_DIS_t;
+} PrcmEnum_t;
 
 // functions
 extern int8_t PRCM_GetPeriphClkState(uint32_t periph, uint32_t mode);

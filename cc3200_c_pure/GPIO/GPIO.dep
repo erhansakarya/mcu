@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>2</fileVersion>
-    <fileChecksum>4078749955</fileChecksum>
+    <fileChecksum>2342526552</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -11,15 +11,11 @@
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
             <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\..\PRCM\0-sdkLayer\inc\hw_gpio.h</file>
             <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
             <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$PROJ_DIR$\..\PRCM\0-sdkLayer\inc\hw_prcm.h</file>
-            <file>$PROJ_DIR$\..\PRCM\0-sdkLayer\inc\hw_types.h</file>
             <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
             <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\..\PRCM\0-sdkLayer\inc\hw_memmap.h</file>
             <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
             <file>$PROJ_DIR$\..\PRCM\0-sdkLayer\inc\driverlib.a</file>
             <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
@@ -40,13 +36,22 @@
             <file>$PROJ_DIR$\Debug\Obj\hw_prcm.o</file>
             <file>$PROJ_DIR$\0-sdkLayer\src\hw_prcm.c</file>
             <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\util.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\util.o</file>
+            <file>$PROJ_DIR$\0-sdkLayer\inc\util.h</file>
+            <file>$PROJ_DIR$\0-sdkLayer\src\util.c</file>
+            <file>$PROJ_DIR$\0-sdkLayer\src\hw_gpio.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\hw_gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\hw_gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\hw_gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\util.__cstat.et</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 31 21</file>
+                    <file> 27 17</file>
                 </tool>
             </outputs>
         </file>
@@ -54,22 +59,22 @@
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 26</file>
-                </tool>
-                <tool>
                     <name>BICOMP</name>
-                    <file> 34</file>
+                    <file> 30</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 25</file>
+                    <file> 21</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 7 8 17 3 5 18 12 9 20 19 11 14 10 6</file>
+                    <file> 6 7 13 3 5 14 9 8 16 15 19 2 0 1</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 2 15 1 9 13 16 19 0 3 6 8 5 14</file>
                 </tool>
             </inputs>
         </file>
@@ -78,17 +83,17 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 21</file>
+                    <file> 17</file>
                 </tool>
                 <tool>
                     <name>OBJCOPY</name>
-                    <file> 30</file>
+                    <file> 26</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 22 32 26 16 15 4 13</file>
+                    <file> 18 28 22 12 11 4 10</file>
                 </tool>
             </inputs>
         </file>
@@ -97,31 +102,67 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 32</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
                     <file> 28</file>
                 </tool>
                 <tool>
-                    <name>__cstat</name>
+                    <name>BICOMP</name>
                     <file> 24</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 20</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 7 8 17 3 5 18 12 9 20 19 11 14 10</file>
+                    <file> 6 7 13 3 5 14 9 8 16 15 19 2 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\src\util.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\0-sdkLayer\src\hw_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 37</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 7 13 3 5 14 9 8 16 15 19 2 1 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 13 2 14 15 8 5 16 19 1 9 3 6 33</file>
                 </tool>
             </inputs>
         </file>
         <forcedrebuild>
-            <name>$PROJ_DIR$\main.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\0-sdkLayer\src\hw_prcm.c</name>
-            <tool>ICCARM</tool>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
         </forcedrebuild>
     </configuration>
     <configuration>

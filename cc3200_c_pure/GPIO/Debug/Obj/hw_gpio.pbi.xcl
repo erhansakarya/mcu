@@ -1,4 +1,4 @@
-"C:\Users\erhan\github\mcu\cc3200_c_pure\GPIO\main.c"
+"C:\Users\erhan\github\mcu\cc3200_c_pure\GPIO\0-sdkLayer\src\hw_gpio.c"
 -std=c11
 -ferror-limit=0
 -I

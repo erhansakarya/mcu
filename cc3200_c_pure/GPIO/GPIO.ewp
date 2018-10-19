@@ -2046,11 +2046,20 @@
             <file>
                 <name>$PROJ_DIR$\0-sdkLayer\inc\hw_types.h</name>
             </file>
+            <file>
+                <name>$PROJ_DIR$\0-sdkLayer\inc\util.h</name>
+            </file>
         </group>
         <group>
             <name>src</name>
             <file>
+                <name>$PROJ_DIR$\0-sdkLayer\src\hw_gpio.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\0-sdkLayer\src\hw_prcm.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\0-sdkLayer\src\util.c</name>
             </file>
         </group>
     </group>
