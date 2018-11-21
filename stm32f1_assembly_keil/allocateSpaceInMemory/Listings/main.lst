@@ -1,0 +1,123 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             myCode, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000                 EXPORT           __main
+    4 00000000         
+    5 00000000         __main
+    6 00000000 4806            LDR              R0, =A      ; value at A(addres
+                                                            s), is loaded into 
+                                                            register R0
+    7 00000002 F04F 0105       MOV              R1, #5      ; 
+    8 00000006 6001            STR              R1, [R0]    ; value at R1, is s
+                                                            tored to R0(address
+                                                            )
+    9 00000008         
+   10 00000008 4805            LDR              R0, =C
+   11 0000000A F04F 0104       MOV              R1, #4
+   12 0000000E 6001            STR              R1, [R0]
+   13 00000010         
+   14 00000010 4804            LDR              R0, =D
+   15 00000012 F04F 01C8       MOV              R1, #200
+   16 00000016 6001            STR              R1, [R0]
+   17 00000018 E7FE    Stop    B                Stop
+   18 0000001A         
+   19 0000001A         
+   20 0000001A 00 00 00000000 
+              00000000 
+              00000000         AREA             myData, DATA, READWRITE
+   21 00000000 00 00 00 
+              00       A       SPACE            4           ; allocate 4 Bytes 
+                                                            in SRAM memory and 
+                                                            assign the address 
+                                                            to A, A acts like a
+                                                             pointer.
+   22 00000004         ;B SPACE 4 ; B can not use; beacuse it is Branch instruc
+                       tion.
+   23 00000004 00 00 00 
+              00       C       SPACE            4
+   24 00000008 00 00 00 
+              00       D       SPACE            4
+   25 0000000C                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\main.d -o.\objects\main.o -I.\RTE\Device\STM32F103RB -I.
+\RTE\_Target_1 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include -IC:\Ke
+il_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include --predefine="__EVAL SETA
+ 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 526" --
+predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --list=.\listings\ma
+in.lst main.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Stop 00000018
+
+Symbol: Stop
+   Definitions
+      At line 17 in file main.s
+   Uses
+      At line 17 in file main.s
+Comment: Stop used once
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 5 in file main.s
+   Uses
+      At line 3 in file main.s
+Comment: __main used once
+myCode 00000000
+
+Symbol: myCode
+   Definitions
+      At line 1 in file main.s
+   Uses
+      None
+Comment: myCode unused
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+A 00000000
+
+Symbol: A
+   Definitions
+      At line 21 in file main.s
+   Uses
+      At line 6 in file main.s
+Comment: A used once
+C 00000004
+
+Symbol: C
+   Definitions
+      At line 23 in file main.s
+   Uses
+      At line 10 in file main.s
+Comment: C used once
+D 00000008
+
+Symbol: D
+   Definitions
+      At line 24 in file main.s
+   Uses
+      At line 14 in file main.s
+Comment: D used once
+myData 00000000
+
+Symbol: myData
+   Definitions
+      At line 20 in file main.s
+   Uses
+      None
+Comment: myData unused
+4 symbols
+344 symbols in table
