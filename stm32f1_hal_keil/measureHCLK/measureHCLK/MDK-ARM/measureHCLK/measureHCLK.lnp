@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"measurehclk\startup_stm32f103xb.o"
+"measurehclk\main.o"
+"measurehclk\stm32f1xx_it.o"
+"measurehclk\stm32f1xx_hal_msp.o"
+"measurehclk\stm32f1xx_hal_gpio_ex.o"
+"measurehclk\stm32f1xx_hal_tim.o"
+"measurehclk\stm32f1xx_hal_tim_ex.o"
+"measurehclk\stm32f1xx_hal_uart.o"
+"measurehclk\stm32f1xx_hal.o"
+"measurehclk\stm32f1xx_hal_rcc.o"
+"measurehclk\stm32f1xx_hal_rcc_ex.o"
+"measurehclk\stm32f1xx_hal_gpio.o"
+"measurehclk\stm32f1xx_hal_dma.o"
+"measurehclk\stm32f1xx_hal_cortex.o"
+"measurehclk\stm32f1xx_hal_pwr.o"
+"measurehclk\stm32f1xx_hal_flash.o"
+"measurehclk\stm32f1xx_hal_flash_ex.o"
+"measurehclk\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "measureHCLK\measureHCLK.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "measureHCLK.map" -o measureHCLK\measureHCLK.axf
