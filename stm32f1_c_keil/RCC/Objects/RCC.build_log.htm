@@ -28,16 +28,19 @@ Project File Date:  12/08/2018
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 compiling Utils.c...
-compiling RCC.c...
 compiling main.c...
-main.c(22): warning:  #1-D: last line of file ends without a newline
+main.c(24): warning:  #1-D: last line of file ends without a newline
   }
 main.c: 1 warning, 0 errors
+compiling RCC.c...
+RCC.c(51): warning:  #940-D: missing return statement at end of non-void function "setSystemClkSource" 
+  }
+RCC.c: 1 warning, 0 errors
 assembling startup_stm32f10x_md.s...
 compiling system_stm32f10x.c...
 linking...
-Program Size: Code=812 RO-data=252 RW-data=0 ZI-data=1632  
-".\Objects\RCC.axf" - 0 Error(s), 1 Warning(s).
+Program Size: Code=892 RO-data=252 RW-data=0 ZI-data=1632  
+".\Objects\RCC.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -68,7 +71,7 @@ Package Vendor: Keil
       Source file:   Device\Source\ARM\STM32F1xx_OPT.s
       Include file:  RTE_Driver\Config\RTE_Device.h
       Source file:   Device\Source\ARM\startup_stm32f10x_md.s
-Build Time Elapsed:  00:00:08
+Build Time Elapsed:  00:00:07
 </pre>
 </body>
 </html>

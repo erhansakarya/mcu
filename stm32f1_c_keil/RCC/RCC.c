@@ -7,6 +7,42 @@
 #include "utils.h"
 
 /*
+RCC_CFGR_SW_HSI	HSI selected as system clock
+RCC_CFGR_SW_HSE	HSE selected as system clock
+RCC_CFGR_SW_PLL	PLL selected as system clock
+if the Clock Security System is enabled ???
+*/
+uint8_t setSystemClkSource(uint32_t systemClkSource){
+	assert_param(IS_RCC_SYSCLK_SOURCE(systemClkSource));
+	
+	RCC_TypeDef *pRCC = (RCC_TypeDef *)RCC_BASE;
+	uint32_t temp = 0;
+	
+	temp = pRCC->CFGR;
+	temp &= CFGR_SW_Mask;
+	temp |= systemClkSource;
+	
+	pRCC->CFGR |= temp;
+}
+
+/*
+RCC_CFGR_MCO_NOCLOCK	No clock
+RCC_CFGR_MCO_SYSCLK 	System clock selected as MCO source
+RCC_CFGR_MCO_HSI    	HSI clock selected as MCO source
+RCC_CFGR_MCO_HSE    	HSE clock selected as MCO source
+RCC_CFGR_MCO_PLL    	PLL clock divided by 2 selected as MCO source
+When the System Clock is selected to output to the MCO pin, make sure that this clock does not exceed 50 MHz (the maximum IO speed). 
+*/
+uint8_t setMcoClkSource(uint32_t mcoClkSource){
+	assert_param(IS_MCO_CLK_SOURCE(mcoClkSource));
+	
+	RCC_TypeDef *pRCC = (RCC_TypeDef *)RCC_BASE;
+	
+	*(__IO uint8_t *) CFGR_BYTE4_ADDRESS |= GET_FIRST_MSB_OF_32BIT(mcoClkSource);
+	
+}
+
+/*
 	RCC_APB1ENR_TIM2EN
 	RCC_APB1ENR_TIM3EN
 	RCC_APB1ENR_TIM4EN

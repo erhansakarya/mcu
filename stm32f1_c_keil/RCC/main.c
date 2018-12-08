@@ -6,6 +6,8 @@
 
 int main(void){
 	
+	setSystemClkSource(RCC_CFGR_SW_HSE);
+	
 	// address of RCC is 0x4002 1000
 	controlAPB1PeriphClk(RCC_APB1ENR_TIM2EN, ENABLE);		// offset of RCC_APB1ENR register is 0x1C, TIM2_EN is 0. bit 
 	controlAPB1PeriphClk(RCC_APB1ENR_TIM3EN, ENABLE);		// offset of RCC_APB1ENR register is 0x1C, TIM3_EN is 1. bit
