@@ -1,0 +1,26 @@
+!SESSION 2018-12-10 15:10:23.775 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product -data C:\Users\erhan\github\mcu\stm32f1_freertos_sw\freeRtosTemplateWithCubeMX -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-10 15:12:00.769
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\erhan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2018-12-10 15:12:05.455
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-10 15:13:29.483
+!MESSAGE Indexed 'stm32f103rbFreeRtosTemplate' (27 sources, 86 headers) in 8,82 sec: 5.409 declarations; 22.926 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (%0)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-12-10 15:16:14.024
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-12-10 15:16:14.054
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType

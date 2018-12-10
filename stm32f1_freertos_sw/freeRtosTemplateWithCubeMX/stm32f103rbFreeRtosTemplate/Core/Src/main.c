@@ -49,6 +49,8 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
+#include <stdio.h>
+#include <stdint.h>
 #include "main.h"
 #include "cmsis_os.h"
 
@@ -69,7 +71,9 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+#define AVAILABLE		1
+#define NON_AVAILABLE	0
+uint8_t KEY = AVAILABLE;
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -92,6 +96,9 @@ void StartDefaultTask(void const * argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+#ifdef USE_SEMIHOSTING
+extern void initialise_monitor_handles(void);
+#endif
 void task1Handler(void *params);
 void task2Handler(void *params);
 /* USER CODE END 0 */
@@ -102,7 +109,11 @@ void task2Handler(void *params);
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
+#ifdef USE_SEMIHOSTING
+	initialise_monitor_handles();
+	printf("hello world!\n");
+#endif
+	/* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
 
@@ -110,31 +121,17 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
   /* Configure the system clock */
   SystemClock_Config();
+  MX_GPIO_Init();
+  MX_USART2_UART_Init();
 
-  /* USER CODE BEGIN SysInit */
+  // create two task
+  xTaskCreate(task1Handler, "task1", configMINIMAL_STACK_SIZE, NULL, 2, NULL);
+  xTaskCreate(task2Handler, "task2", configMINIMAL_STACK_SIZE, NULL, 2, NULL);
 
-  	  // create two task
-	xTaskCreate(task1Handler, "task1", configMINIMAL_STACK_SIZE, NULL, 2, NULL);
-	xTaskCreate(task2Handler, "task2", configMINIMAL_STACK_SIZE, NULL, 2, NULL);
-
-	// start scheduler
-	vTaskStartScheduler();
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  //MX_GPIO_Init();
-  //MX_USART2_UART_Init();
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
+  // start scheduler
+  vTaskStartScheduler();
 
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
@@ -166,24 +163,39 @@ int main(void)
   //osKernelStart();
   
   /* We should never get here as control is now taken by the scheduler */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
   }
-  /* USER CODE END 3 */
 }
 
 void task1Handler(void *params){
-	while(1);
+	while(1){
+#ifdef USE_SEMIHOSTING
+		printf("hello world1 !\n");
+#endif
+		// key is used for prevent to corrupting data
+		if(KEY == AVAILABLE){
+			KEY = NON_AVAILABLE;
+			HAL_UART_Transmit(&huart2, "hello world1 !\r\n", sizeof("hello world1 !\r\n"), 1000);
+			KEY = AVAILABLE;
+			taskYIELD();	// context switching manually
+		}
+	}
 }
 
 void task2Handler(void *params){
-	while(1);
+	while(1){
+#ifdef USE_SEMIHOSTING
+		printf("hello world2 !\n");
+#endif
+// key is used for prevent to corrupting data
+		if(KEY == AVAILABLE){
+			KEY = NON_AVAILABLE;
+			HAL_UART_Transmit(&huart2, "hello world2 !\r\n", sizeof("hello world2 !\r\n"), 1000);
+			KEY = AVAILABLE;
+			taskYIELD();	// context switching manually
+		}
+	}
 }
 
 /**
