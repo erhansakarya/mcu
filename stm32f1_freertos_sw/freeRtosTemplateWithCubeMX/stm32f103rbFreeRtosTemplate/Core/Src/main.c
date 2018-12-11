@@ -54,6 +54,8 @@
 #include "main.h"
 #include "cmsis_os.h"
 
+#include "SEGGER_SYSVIEW.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -109,6 +111,9 @@ void task2Handler(void *params);
   */
 int main(void)
 {
+
+	DWT->CTRL |= (1 << 0);	// enable cycle counter for segger systemview
+
 #ifdef USE_SEMIHOSTING
 	initialise_monitor_handles();
 	printf("hello world!\n");
@@ -120,11 +125,16 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+  //HAL_Init();
   /* Configure the system clock */
-  SystemClock_Config();
-  MX_GPIO_Init();
-  MX_USART2_UART_Init();
+  //SystemClock_Config();
+
+	HAL_RCC_DeInit();	// use HSI 8MHz
+	MX_GPIO_Init();
+	MX_USART2_UART_Init();
+  // starting segger systemview
+  SEGGER_SYSVIEW_Conf();
+  SEGGER_SYSVIEW_Start();
 
   // create two task
   xTaskCreate(task1Handler, "task1", configMINIMAL_STACK_SIZE, NULL, 2, NULL);

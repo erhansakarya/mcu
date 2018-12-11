@@ -1,11 +1,11 @@
-16:51:59 **** Incremental Build of configuration Debug for project stm32f103rbFreeRtosTemplate ****
+11:10:19 **** Incremental Build of configuration Debug for project stm32f103rbFreeRtosTemplate ****
 make all 
 Building file: ../Core/Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\erhan\github\mcu\stm32f1_freertos_sw\freeRtosTemplateWithCubeMX\stm32f103rbFreeRtosTemplate\Debug
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Core/Inc" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Core/Inc" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/ThirdParty/SEGGER/Config" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/ThirdParty/SEGGER/OS" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/ThirdParty/SEGGER/SEGGER" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
 ../Core/Src/main.c: In function 'task1Handler':
-../Core/Src/main.c:179:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+../Core/Src/main.c:189:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
     HAL_UART_Transmit(&huart2, "hello world1 !\r\n", sizeof("hello world1 !\r\n"), 1000);
                                ^~~~~~~~~~~~~~~~~~~~
 In file included from C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Core/Inc/stm32f1xx_hal_conf.h:319:0,
@@ -16,7 +16,7 @@ C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f1
  HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
                    ^~~~~~~~~~~~~~~~~
 ../Core/Src/main.c: In function 'task2Handler':
-../Core/Src/main.c:194:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+../Core/Src/main.c:204:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
     HAL_UART_Transmit(&huart2, "hello world2 !\r\n", sizeof("hello world2 !\r\n"), 1000);
                                ^~~~~~~~~~~~~~~~~~~~
 In file included from C:/Users/erhan/github/mcu/stm32f1_freertos_sw/freeRtosTemplateWithCubeMX/stm32f103rbFreeRtosTemplate/Core/Inc/stm32f1xx_hal_conf.h:319:0,
@@ -38,5 +38,47 @@ Generating hex and Printing size information:
 arm-none-eabi-objcopy -O ihex "stm32f103rbFreeRtosTemplate.elf" "stm32f103rbFreeRtosTemplate.hex"
 arm-none-eabi-size "stm32f103rbFreeRtosTemplate.elf"
    text	   data	    bss	    dec	    hex	filename
-   7504	     28	   5044	  12576	   3120	stm32f103rbFreeRtosTemplate.elf
+   9528	     28	   7724	  17280	   4380	stm32f103rbFreeRtosTemplate.elf
  
+11:10:42 **** Programming project stm32f103rbFreeRtosTemplate on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.21.0.201811131241\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.1547963450703410898.cfg -s "C:\\Users\\erhan\\github\\mcu\\stm32f1_freertos_sw\\freeRtosTemplateWithCubeMX\\stm32f103rbFreeRtosTemplate" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.3.1.201811131241\\resources\\openocd\\st_scripts" -c "program Debug/stm32f103rbFreeRtosTemplate.elf verify reset exit" 
+Open On-Chip Debugger 0.10.0-dev-00015-gaaf1808 (2018-11-13-13:07)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter_nsrst_delay: 100
+adapter speed: 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2.1 JTAG v31 API v2 M21 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.286715
+Info : Stlink adapter speed set to 950 kHz
+Info : STM32F103RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Stlink adapter speed set to 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08001ddc msp: 0x20005000
+Info : Stlink adapter speed set to 4000 kHz
+adapter speed: 4000 kHz
+** Programming Started **
+auto erase enabled
+Info : device id = 0x20036410
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20005000
+wrote 10240 bytes from file Debug/stm32f103rbFreeRtosTemplate.elf in 0.635959s (15.724 KiB/s)
+** Programming Finished **
+** Verify Started **
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20005000
+verified 9560 bytes in 0.167118s (55.864 KiB/s)
+** Verified OK **
+** Resetting Target **
+Info : Stlink adapter speed set to 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+11:10:50 **** Incremental Build of configuration Debug for project stm32f103rbFreeRtosTemplate ****
+make all 
+make: Nothing to be done for 'all'.
