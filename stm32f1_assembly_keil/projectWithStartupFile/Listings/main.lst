@@ -1,0 +1,60 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000                 AREA             startupFileProject, CODE, READO
+NLY
+    3 00000000                 ENTRY                        ; Points the execut
+                                                            ion start
+    4 00000000                 EXPORT           __main      ; makes accesible m
+                                                            ain routine by othe
+                                                            r modules
+    5 00000000         
+    6 00000000         __main
+    7 00000000 F241 2534       MOV              R5, #0x1234
+    8 00000004 F241 2334       MOV              R3, #0x1234
+    9 00000008 EB03 0605       ADD              R6, R3, R5
+   10 0000000C E7FE    STOP    B                STOP
+   11 0000000E                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\main.d -o.\objects\main.o -I.\RTE\Device\STM32F103RB -I.
+\RTE\_Target_1 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include -IC:\Ke
+il_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include --predefine="__EVAL SETA
+ 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 526" --
+predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --list=.\listings\ma
+in.lst main.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+STOP 0000000C
+
+Symbol: STOP
+   Definitions
+      At line 10 in file main.s
+   Uses
+      At line 10 in file main.s
+Comment: STOP used once
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 6 in file main.s
+   Uses
+      At line 4 in file main.s
+Comment: __main used once
+startupFileProject 00000000
+
+Symbol: startupFileProject
+   Definitions
+      At line 2 in file main.s
+   Uses
+      None
+Comment: startupFileProject unused
+3 symbols
+338 symbols in table
