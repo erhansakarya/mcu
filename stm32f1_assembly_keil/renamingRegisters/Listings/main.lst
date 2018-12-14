@@ -1,0 +1,64 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000        0 
+                       REG0    RN               R0
+    2 00000000         ; REG0 EQU R0; can not use because EQU uses with 32-bit 
+                       size values, but RN uses only registers
+    3 00000000        1 
+                       REG1    RN               R1
+    4 00000000        2 
+                       SUM     RN               R2
+    5 00000000         
+    6 00000000                 AREA             RN, CODE, READONLY
+    7 00000000                 ENTRY
+    8 00000000                 EXPORT           __main
+    9 00000000         
+   10 00000000         __main
+   11 00000000 F04F 0001       MOV              REG0, #0x01
+   12 00000004 F04F 0102       MOV              REG1, #0x02
+   13 00000008 EB00 0201       ADD              SUM, REG0, REG1
+   14 0000000C E7FE    Stop    B                Stop
+   15 0000000E                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\main.d -o.\objects\main.o -I.\RTE\Device\STM32F103RB -I.
+\RTE\_Target_1 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include -IC:\Ke
+il_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include --predefine="__EVAL SETA
+ 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 526" --
+predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --list=.\listings\ma
+in.lst main.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RN 00000000
+
+Symbol: RN
+   Definitions
+      At line 6 in file main.s
+   Uses
+      None
+Comment: RN unused
+Stop 0000000C
+
+Symbol: Stop
+   Definitions
+      At line 14 in file main.s
+   Uses
+      At line 14 in file main.s
+Comment: Stop used once
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 10 in file main.s
+   Uses
+      At line 8 in file main.s
+Comment: __main used once
+3 symbols
+341 symbols in table
