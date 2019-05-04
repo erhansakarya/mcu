@@ -1,0 +1,76 @@
+!SESSION 2019-05-04 23:07:10.767 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-05-04 23:07:26.078
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-05-04 23:07:26.892
+!MESSAGE OS info: Windows 10, 10.0, x86
+
+!ENTRY TrueSTUDIO 1 0 2019-05-04 23:07:34.922
+!MESSAGE Target: STM32, Version: 9.3.0, Build date: 20190212-0734, Installation dir: /C:/Program Files (x86)/Atollic/TrueSTUDIO for STM32 9.3.0/ide/
+
+!ENTRY TrueSTUDIO 1 0 2019-05-04 23:07:34.925
+!MESSAGE Workspace: C:\Users\erhan\github\mcu\stm32f1_c_sw\I2C
+
+!ENTRY org.eclipse.jface 2 0 2019-05-04 23:08:06.136
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-04 23:08:06.137
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ee9d31,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ffff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2019-05-04 23:08:56.961
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-04 23:08:58.681
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\erhan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2019-05-04 23:09:00.193
+!MESSAGE Code Review is up.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2019-05-04 23:09:50.060
+!MESSAGE I2C_Driver needs property 'com.atollic.truestudio.general.runtimelib.1240477170' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2019-05-04 23:09:50.472
+!MESSAGE I2C_Driver needs property 'com.atollic.truestudio.toolchain_options.mcu.241906398' fixed. Fixing to 'STM32F103RB'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2019-05-04 23:09:50.476
+!MESSAGE I2C_Driver needs property 'com.atollic.truestudio.toolchain_options.vendor.827572882' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2019-05-04 23:09:51.734
+!MESSAGE I2C_Driver needs property 'com.atollic.truestudio.general.runtimelib.1063182628' fixed. Fixing to 'com.atollic.truestudio.ld.general.clib.small'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2019-05-04 23:09:51.738
+!MESSAGE I2C_Driver needs property 'com.atollic.truestudio.toolchain_options.mcu.800051676' fixed. Fixing to 'STM32F103RB'.
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2019-05-04 23:09:51.740
+!MESSAGE I2C_Driver needs property 'com.atollic.truestudio.toolchain_options.vendor.1592489784' fixed. Fixing to 'STMicroelectronics'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-05-04 23:10:13.912
+!MESSAGE Indexed 'I2C_Driver' (17 sources, 96 headers) in 7,58 sec: 7.865 declarations; 18.659 references; 0 unresolved inclusions; 90 syntax errors; 54 unresolved names (%0,2)
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-05-04 23:22:39.752
+!MESSAGE Unloading product manager

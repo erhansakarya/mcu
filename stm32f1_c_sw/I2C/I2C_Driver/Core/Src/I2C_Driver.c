@@ -1,0 +1,128 @@
+/**
+  ******************************************************************************
+  * @file           : I2C_Driver.c
+  * @brief          : I2C Driver for stm32f103xb microcontrollers
+  ******************************************************************************
+  * @attention
+  *
+  ******************************************************************************
+  */
+
+#include "main.h"
+
+#include "I2C_Driver.h"
+
+I2Cx_init_s i2cX_init;
+
+static int8_t i2cMasterClockConfig(I2Cx_init_s *i2cX_init);
+
+uint8_t i2cDeinit(){
+
+}
+
+uint8_t i2cConfig(I2C_TypeDef *i2cX,  I2Cx_mode_e i2cX_mode,
+				I2Cx_speedMode_e i2cX_speedMode, uint16_t i2cX_speedValue,
+				I2Cx_dutyCycle_e i2cX_dutyCycle){
+
+	i2cX_init.i2cBase = i2cX;
+	i2cX_init.i2cConfig.i2cMode = i2cX_mode;
+	i2cX_init.i2cConfig.i2cSpeedMode = i2cX_speedMode;
+	i2cX_init.i2cConfig.i2cSpeedValue = i2cX_speedValue;
+	i2cX_init.i2cConfig.i2cDutyCycle = i2cX_dutyCycle;
+}
+
+/*
+ * for master mode:
+* Program the peripheral input clock in I2C_CR2 Register in order to generate correct
+timings
+• Configure the clock control registers
+• Configure the rise time register
+• Program the I2C_CR1 register to enable the peripheral
+• Set the START bit in the I2C_CR1 register to generate a Start condition
+*/
+uint8_t i2cInit(I2Cx_init_s *i2cX_init){
+	// clock ve gpio init, gerekli ise alternate function
+
+	switch(i2cX_init->i2cConfig.i2cMode){
+		case I2C_MASTER:
+			i2cMasterClockConfig(i2cX_init);
+			break;
+		case I2C_SLAVE:
+			break;
+		default:
+			break;
+	}
+}
+
+static int8_t i2cMasterClockConfig(I2Cx_init_s *i2cX_init){
+	uint32_t value = 0;
+	value = HAL_RCC_GetPCLK1Freq();
+
+	/* NOTE: update FREQ[5:0] field of I2C_CR2 register with APB1 clock */
+	/* NOTE: APB1 Clock is 32 MHz (0x20) */
+	i2cX_init->i2cBase->CR2 &= ~I2C_CR2_FREQ;
+	i2cX_init->i2cBase->CR2 |= 0x20;
+
+	switch(i2cX_init->i2cConfig.i2cSpeedMode){
+		case I2C_STANDART_MODE:
+		{
+			if(i2cX_init->i2cConfig.i2cSpeedValue < 100000){
+				/* NOTE: update F/S field of I2C_CCR register */
+				i2cX_init->i2cBase->CCR &= ~I2C_CCR_FS;
+				i2cX_init->i2cBase->CCR |= I2C_STANDART_MODE << I2C_CCR_FS_Pos;
+				/* NOTE: update CCR[11:0] field of I2C_CCR register */
+				/* NOTE: FREQ = 32MHz, Tplck1 = 31.25ns */
+				i2cX_init->i2cBase->CCR &=  ~I2C_CCR_CCR;
+				i2cX_init->i2cBase->CCR |= (1 / i2cX_init->i2cConfig.i2cSpeedMode) / (2 * (1 / 32000000));
+
+			}else if(i2cX_init->i2cConfig.i2cSpeedMode == I2C_STANDART_MODE){
+				/* NOTE: update F/S field of I2C_CCR register */
+				i2cX_init->i2cBase->CCR &= ~I2C_CCR_FS;
+				i2cX_init->i2cBase->CCR |= I2C_STANDART_MODE << I2C_CCR_FS_Pos;
+				/* NOTE: update CCR[11:0] field of I2C_CCR register */
+				/* NOTE: FREQ = 32MHz, Tplck1 = 31.25ns */
+				i2cX_init->i2cBase->CCR &=  ~I2C_CCR_CCR;
+				i2cX_init->i2cBase->CCR |= (1 / I2C_STANDARD_MODE_VALUE) / (2 * (1 / 32000000));
+
+			}
+
+			break;
+		}
+		case I2C_FAST_MODE:
+		{
+			if(i2cX_init->i2cConfig.i2cSpeedMode > 100000 && i2cX_init->i2cConfig.i2cSpeedMode < 400000){
+				/* NOTE: update F/S field of I2C_CCR register */
+				i2cX_init->i2cBase->CCR &= ~I2C_CCR_FS;
+				i2cX_init->i2cBase->CCR |= I2C_FAST_MODE << I2C_CCR_FS_Pos;
+				/* NOTE: set DUTY field of I2C_CCR register to 1 for reaching 400kHz speed */
+				i2cX_init->i2cBase->CCR &= ~I2C_CCR_DUTY;
+				i2cX_init->i2cBase->CCR |= I2C_DUTYCYCLE_2 << I2C_CCR_DUTY_Pos;
+				/* NOTE: update CCR[11:0] field of I2C_CCR register */
+				/* NOTE: FREQ = 32MHz, Tplck1 = 31.25ns */
+				i2cX_init->i2cBase->CCR &=  ~I2C_CCR_CCR;
+				i2cX_init->i2cBase->CCR |= (1 / I2C_FAST_MODE_VALUE) / (3 * (1 / 32000000));
+
+			}else if(i2cX_init->i2cConfig.i2cSpeedMode == I2C_FAST_MODE){
+				/* NOTE: update F/S field of I2C_CCR register */
+				i2cX_init->i2cBase->CCR &= ~I2C_CCR_FS;
+				i2cX_init->i2cBase->CCR |= I2C_FAST_MODE << I2C_CCR_FS_Pos;
+				/* NOTE: set DUTY field of I2C_CCR register to 1 for reaching 400kHz speed */
+				i2cX_init->i2cBase->CCR &= ~I2C_CCR_DUTY;
+				i2cX_init->i2cBase->CCR |= I2C_DUTYCYCLE_16_9 << I2C_CCR_DUTY_Pos;
+				/* NOTE: update CCR[11:0] field of I2C_CCR register */
+				/* NOTE: FREQ = 32MHz, Tplck1 = 31.25ns */
+				i2cX_init->i2cBase->CCR &=  ~I2C_CCR_CCR;
+				i2cX_init->i2cBase->CCR |= (1 / I2C_FAST_MODE_VALUE) / (25 * (1 / 32000000));
+
+			}
+
+			break;
+		}
+
+		default:
+		{
+			break;
+		}
+	}
+
+}

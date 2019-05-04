@@ -1,0 +1,49 @@
+23:21:03 **** Incremental Build of configuration Debug for project I2C_Driver ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F103xB -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\I2C_Driver.o ..\Core\Src\I2C_Driver.c 
+..\Core\Src\I2C_Driver.c: In function 'i2cMasterClockConfig':
+..\Core\Src\I2C_Driver.c:77:72: warning: division by zero [-Wdiv-by-zero]
+     i2cX_init->i2cBase->CCR |= (1 / i2cX_init->i2cConfig.i2cSpeedMode) / (2 * (1 / 32000000));
+                                                                        ^
+..\Core\Src\I2C_Driver.c:86:62: warning: division by zero [-Wdiv-by-zero]
+     i2cX_init->i2cBase->CCR |= (1 / I2C_STANDARD_MODE_VALUE) / (2 * (1 / 32000000));
+                                                              ^
+..\Core\Src\I2C_Driver.c:104:58: warning: division by zero [-Wdiv-by-zero]
+     i2cX_init->i2cBase->CCR |= (1 / I2C_FAST_MODE_VALUE) / (3 * (1 / 32000000));
+                                                          ^
+..\Core\Src\I2C_Driver.c:116:58: warning: division by zero [-Wdiv-by-zero]
+     i2cX_init->i2cBase->CCR |= (1 / I2C_FAST_MODE_VALUE) / (25 * (1 / 32000000));
+                                                          ^
+..\Core\Src\I2C_Driver.c:59:11: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  uint32_t value = 0;
+           ^~~~~
+..\Core\Src\I2C_Driver.c:129:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+..\Core\Src\I2C_Driver.c: In function 'i2cDeinit':
+..\Core\Src\I2C_Driver.c:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\Core\Src\I2C_Driver.c: In function 'i2cConfig':
+..\Core\Src\I2C_Driver.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\Core\Src\I2C_Driver.c: In function 'i2cInit':
+..\Core\Src\I2C_Driver.c:56:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-atollic-eabi-gcc -o I2C_Driver.elf Core\Src\I2C_Driver.o Core\Src\main.o Core\Src\stm32f1xx_hal_msp.o Core\Src\stm32f1xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f1xx.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.o Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.o startup\startup_stm32f103xb.o -mthumb -mcpu=cortex-m3 -T../STM32F103RB_FLASH.ld -specs=nosys.specs -static -Wl,-Map=I2C_Driver.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list I2C_Driver.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   3112	     20	   1568	   4700	   125c	I2C_Driver.elf
+Print size information done
+Generate listing file
+Output sent to: I2C_Driver.list
+Generate listing file done
+Generate build reports done
+arm-atollic-eabi-objcopy.exe -O ihex I2C_Driver.elf I2C_Driver.hex 
+
+23:21:06 Build Finished (took 2s.254ms)
+
