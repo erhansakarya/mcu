@@ -27,7 +27,6 @@ uint8_t i2cConfig(I2C_TypeDef *i2cX,  I2Cx_mode_e i2cX_mode,
 	i2cX_init.i2cConfig.i2cMode = i2cX_mode;
 	i2cX_init.i2cConfig.i2cSpeedMode = i2cX_speedMode;
 	i2cX_init.i2cConfig.i2cDutyCycle = i2cX_dutyCycle;
-
 }
 
 /*
@@ -80,7 +79,19 @@ static int8_t i2cMasterClockConfig(I2Cx_init_s *i2cX_init){
 		}
 		case I2C_FAST_MODE:
 		{
-			if(i2cX_init->i2cConfig.i2cSpeedMode == I2C_FAST_MODE){
+			if(i2cX_init->i2cConfig.i2cSpeedMode > 100000 && i2cX_init->i2cConfig.i2cSpeedMode < 400000){
+				/* NOTE: update F/S field of I2C_CCR register */
+				i2cX_init->i2cBase->CCR &= ~I2C_CCR_FS;
+				i2cX_init->i2cBase->CCR |= I2C_FAST_MODE << I2C_CCR_FS_Pos;
+				/* NOTE: set DUTY field of I2C_CCR register to 1 for reaching 400kHz speed */
+				i2cX_init->i2cBase->CCR &= ~I2C_CCR_DUTY;
+				i2cX_init->i2cBase->CCR |= I2C_DUTYCYCLE_2 << I2C_CCR_DUTY_Pos;
+				/* NOTE: update CCR[11:0] field of I2C_CCR register */
+				/* NOTE: FREQ = 32MHz, Tplck1 = 31.25ns */
+				i2cX_init->i2cBase->CCR &=  ~I2C_CCR_CCR;
+				i2cX_init->i2cBase->CCR |= (1 / I2C_FAST_MODE_VALUE) / (3 * (1 / 32000000));
+
+			}else if(i2cX_init->i2cConfig.i2cSpeedMode == I2C_FAST_MODE){
 				/* NOTE: update F/S field of I2C_CCR register */
 				i2cX_init->i2cBase->CCR &= ~I2C_CCR_FS;
 				i2cX_init->i2cBase->CCR |= I2C_FAST_MODE << I2C_CCR_FS_Pos;

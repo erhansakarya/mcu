@@ -27,7 +27,6 @@ uint8_t i2cConfig(I2C_TypeDef *i2cX,  I2Cx_mode_e i2cX_mode,
 	i2cX_init.i2cConfig.i2cMode = i2cX_mode;
 	i2cX_init.i2cConfig.i2cSpeedMode = i2cX_speedMode;
 	i2cX_init.i2cConfig.i2cDutyCycle = i2cX_dutyCycle;
-
 }
 
 /*

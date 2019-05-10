@@ -40,6 +40,7 @@ typedef enum{
 typedef struct{
 	I2Cx_mode_e			i2cMode;
 	I2Cx_speedMode_e 	i2cSpeedMode;
+	uint16_t			i2cSpeedValue;
 	I2Cx_dutyCycle_e	i2cDutyCycle;
 }I2Cx_config_s;
 
