@@ -1,0 +1,7 @@
+#ifdef __cplusplus
+ extern "C" {
+#endif /* __cplusplus */
+
+#include "stm32f767xx.h"
+
+#endif

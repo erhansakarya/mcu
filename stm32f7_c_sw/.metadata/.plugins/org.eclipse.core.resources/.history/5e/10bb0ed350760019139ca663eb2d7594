@@ -1,0 +1,12 @@
+#ifdef __cplusplus
+ extern "C" {
+#endif /* __cplusplus */
+
+#include "stm32f767xx.h"
+
+typedef enum{
+	ENABLE = 1,
+	DISABLE = 0
+}UTIL_enableDisable_e;
+
+#endif
