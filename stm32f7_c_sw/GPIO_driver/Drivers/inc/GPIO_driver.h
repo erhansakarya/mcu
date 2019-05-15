@@ -51,13 +51,13 @@ typedef enum{
 	GPIO_NOPUPD 	= 0x00,
 	GPIO_PULLUP 	= 0x01,
 	GPIO_PULLDOWN 	= 0x10
-}GPIO_pinPuPdCntrl_e;
+}GPIO_pinPuPd_e;
 
 typedef struct{
 	GPIO_pinNumber_e 	pinNumber;
 	GPIO_pinMode_e		pinMode;
 	GPIO_pinSpeed_e 	pinSpeed;
-	GPIO_pinPuPdCntrl_e pinPuPdCntrl;
+	GPIO_pinPuPd_e 		pinPuPdCntrl;
 	GPIO_pinOutType_e 	pinOutType;
 	uint8_t 			pinAltFuncMode;
 }GPIO_config_s;
