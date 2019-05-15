@@ -1,17 +1,10 @@
-15:29:33 **** Incremental Build of configuration Debug for project GPIO_driver ****
+19:00:46 **** Incremental Build of configuration Debug for project GPIO_driver ****
 make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32 -DNUCLEO_F767ZI -DSTM32F7 -DDEBUG -DSTM32F767ZITx -c -I../Inc -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/Drivers/inc" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "GPIO_driver.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\erhan\github\mcu\stm32f7_c_sw\GPIO_driver\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: GPIO_driver.elf
- 
-arm-none-eabi-objdump -h -S  GPIO_driver.elf  > "GPIO_driver.list"
 arm-none-eabi-size   GPIO_driver.elf 
    text	   data	    bss	    dec	    hex	filename
-    756	      8	   1568	   2332	    91c	GPIO_driver.elf
+   2044	      8	   1568	   3620	    e24	GPIO_driver.elf
 Finished building: default.size.stdout
  
-Finished building: GPIO_driver.list
- 
 
-15:29:47 Build Finished. 0 errors, 0 warnings. (took 14s.404ms)
+19:00:47 Build Finished. 0 errors, 0 warnings. (took 937ms)
 

@@ -1,5 +1,8 @@
 #include "stm32f767xx.h"
 
+#include "util.h"
+#include "GPIO_driver.h"
+
 void GPIO_clkCntrl(GPIO_TypeDef *pBaseAddress, UTIL_enableDisable_e enableDisable){
 	switch(enableDisable){
 	case ENABLE:
@@ -88,11 +91,49 @@ void GPIO_deInit(GPIO_TypeDef *pBaseAddress){
 
 }
 
-UTIL_setReset_e GPIO_readPin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber);
-uint16_t GPIO_readPort(GPIO_TypeDef *pBaseAddress);
-void GPIO_writePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber, UTIL_setReset_e UTIL_setReset);
-void GPIO_writePort(GPIO_TypeDef *pBaseAddress, uint16_t portValue);
-void GPIO_togglePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber);
+UTIL_setReset_e GPIO_readPin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber){
+
+	return (pBaseAddress->IDR & (GPIO_IDR_IDR_0 << pinNumber)) ? (SET) : (RESET);
+
+}
+
+uint16_t GPIO_readPort(GPIO_TypeDef *pBaseAddress){
+
+	return (uint16_t)(pBaseAddress->IDR);
+
+}
+
+void GPIO_writePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber, UTIL_setReset_e UTIL_setReset){
+
+	switch(UTIL_setReset){
+
+		case SET:
+			pBaseAddress->BSRR &= ~(GPIO_BSRR_BR_0 << pinNumber);
+			pBaseAddress->BSRR |= GPIO_BSRR_BS_0 << pinNumber;
+			break;
+
+		case RESET:
+			pBaseAddress->BSRR &= ~(GPIO_BSRR_BS_0 << pinNumber);
+			pBaseAddress->BSRR |= GPIO_BSRR_BR_0 << pinNumber;
+			break;
+
+		default:
+			break;
+	}
+
+}
+
+void GPIO_writePort(GPIO_TypeDef *pBaseAddress, uint16_t portValue){
+
+	pBaseAddress->ODR = portValue;
+
+}
+
+void GPIO_togglePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber){
+
+	pBaseAddress->ODR ^= (GPIO_BSRR_BS_0 << pinNumber);
+
+}
 
 void GPIO_irqConfig(uint8_t irqNumber, uint8_t irqGrouping, uint8_t irqPriority, UTIL_enableDisable_e enableDisable);
 void GPIO_irqHandler(uint8_t pinNumber);

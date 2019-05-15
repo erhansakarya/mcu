@@ -399,3 +399,36 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-05-15 12:18:15.287
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2019-05-15 17:28:47.870 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-05-15 17:29:51.857
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-05-15 17:29:51.876
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-05-15 17:29:52.106
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-05-15 17:29:52.114
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-05-15 17:29:52.126
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-05-15 17:29:52.134
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-05-15 17:29:52.142
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-05-15 17:29:52.150
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-05-15 17:30:13.270
+!MESSAGE Started RMI Server, listening on port 41337
