@@ -35,8 +35,6 @@ int main(void)
 	initLED(LED_2_PIN);
 	initLED(LED_3_PIN);
 
-	initButton();
-
 	controlLED(LED_1_PIN, SET);
 	controlLED(LED_2_PIN, SET);
 	controlLED(LED_3_PIN, SET);

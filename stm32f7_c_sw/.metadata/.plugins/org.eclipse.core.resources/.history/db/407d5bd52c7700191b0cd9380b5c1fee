@@ -24,9 +24,7 @@ typedef enum{
 #define BUTTON_PIN	13
 
 static void initLED(led_pin_number_e ledNumber);
-static void initButton(void);
 static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset);
-static UTIL_setReset_e getButtonState(void);
 
 int main(void)
 {
@@ -34,8 +32,6 @@ int main(void)
 	initLED(LED_1_PIN);
 	initLED(LED_2_PIN);
 	initLED(LED_3_PIN);
-
-	initButton();
 
 	controlLED(LED_1_PIN, SET);
 	controlLED(LED_2_PIN, SET);
@@ -45,10 +41,7 @@ int main(void)
 	controlLED(LED_2_PIN, RESET);
 	controlLED(LED_3_PIN, RESET);
 
-	for(;;){
-		controlLED(LED_3_PIN, getButtonState());
-	}
-
+	for(;;);
 }
 
 static void initLED(led_pin_number_e ledNumber){
@@ -95,6 +88,6 @@ static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset){
 
 static UTIL_setReset_e getButtonState(void){
 
-	GPIO_readPin(BUTTON_PORT, BUTTON_PIN);
+	GPIO_readPin(LED_PORT, LED_PIN)
 
 }

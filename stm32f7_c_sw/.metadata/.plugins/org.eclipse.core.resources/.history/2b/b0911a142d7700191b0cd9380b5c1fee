@@ -35,8 +35,6 @@ int main(void)
 	initLED(LED_2_PIN);
 	initLED(LED_3_PIN);
 
-	initButton();
-
 	controlLED(LED_1_PIN, SET);
 	controlLED(LED_2_PIN, SET);
 	controlLED(LED_3_PIN, SET);
@@ -95,6 +93,6 @@ static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset){
 
 static UTIL_setReset_e getButtonState(void){
 
-	GPIO_readPin(BUTTON_PORT, BUTTON_PIN);
+	GPIO_readPin(LED_PORT, LED_PIN);
 
 }
