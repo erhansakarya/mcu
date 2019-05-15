@@ -55,7 +55,6 @@ int main(void)
 
 	for(;;){
 		controlLED(LED_3_PIN, getButtonState());
-		controlLED(LED_2_PIN, getTouchedState());
 	}
 
 }
@@ -122,12 +121,12 @@ static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset){
 
 static UTIL_setReset_e getButtonState(void){
 
-	return GPIO_readPin(BUTTON_PORT, BUTTON_PIN);
+	GPIO_readPin(BUTTON_PORT, BUTTON_PIN);
 
 }
 
 static UTIL_setReset_e getTouchedState(void){
 
-	return GPIO_readPin(TOUCH_SENSOR_PORT, TOUCH_SENSOR_PIN);
+	GPIO_readPin(TOUCH_SENSOR_PORT, TOUCH_SENSOR_PIN);
 
 }

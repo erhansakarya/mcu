@@ -15,8 +15,6 @@
 
 #define BUTTON_PORT	GPIOC
 
-#define TOUCH_SENSOR_PORT	GPIOG
-
 typedef enum{
 	LED_1_PIN = 0,
 	LED_2_PIN = 7,
@@ -25,14 +23,10 @@ typedef enum{
 
 #define BUTTON_PIN	13
 
-#define TOUCH_SENSOR_PIN	0
-
 static void initLED(led_pin_number_e ledNumber);
 static void initButton(void);
-static void initTouchSensor(void);
 static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset);
 static UTIL_setReset_e getButtonState(void);
-static UTIL_setReset_e getTouchedState(void);
 
 int main(void)
 {
@@ -55,7 +49,6 @@ int main(void)
 
 	for(;;){
 		controlLED(LED_3_PIN, getButtonState());
-		controlLED(LED_2_PIN, getTouchedState());
 	}
 
 }
@@ -100,8 +93,8 @@ static void initTouchSensor(void){
 
 	GPIO_handle_s GPIO_handle;
 
-	GPIO_handle.pBaseAddress 			= TOUCH_SENSOR_PORT;
-	GPIO_handle.config.pinNumber 		= TOUCH_SENSOR_PIN;
+	GPIO_handle.pBaseAddress 			= BUTTON_PORT;
+	GPIO_handle.config.pinNumber 		= BUTTON_PIN;
 	GPIO_handle.config.pinMode 			= GPIO_INPUT;
 	GPIO_handle.config.pinSpeed 		= GPIO_MEDIUM;
 	GPIO_handle.config.pinPuPd 			= GPIO_NOPUPD;
@@ -122,12 +115,6 @@ static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset){
 
 static UTIL_setReset_e getButtonState(void){
 
-	return GPIO_readPin(BUTTON_PORT, BUTTON_PIN);
-
-}
-
-static UTIL_setReset_e getTouchedState(void){
-
-	return GPIO_readPin(TOUCH_SENSOR_PORT, TOUCH_SENSOR_PIN);
+	GPIO_readPin(BUTTON_PORT, BUTTON_PIN);
 
 }
