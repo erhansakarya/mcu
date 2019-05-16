@@ -10,6 +10,7 @@
 
 #include "util.h"
 #include "GPIO_driver.h"
+#include "EXTI_driver.h"
 
 #define LED_PORT 	GPIOB
 
@@ -30,6 +31,7 @@ typedef enum{
 static void initLED(led_pin_number_e ledNumber);
 static void initButton(void);
 static void initTouchSensor(void);
+static void initTouchSensorITMode(void);
 static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset);
 static UTIL_setReset_e getButtonState(void);
 static UTIL_setReset_e getTouchedState(void);
@@ -45,9 +47,10 @@ int main(void)
 
 	initButton();
 
-	initTouchSensor();
+	//initTouchSensor();
+	initTouchSensorITMode();
 
-	lockState = GPIO_lockPort(TOUCH_SENSOR_PORT, 0x00000001U << TOUCH_SENSOR_PIN);
+	//lockState = GPIO_lockPort(TOUCH_SENSOR_PORT, 0x00000001U << TOUCH_SENSOR_PIN);
 
 	controlLED(LED_1_PIN, SET);
 	controlLED(LED_2_PIN, SET);
@@ -59,8 +62,16 @@ int main(void)
 
 	for(;;){
 		controlLED(LED_3_PIN, getButtonState());
-		controlLED(LED_2_PIN, getTouchedState());
+		//controlLED(LED_2_PIN, getTouchedState());
 	}
+
+}
+
+void EXTI0_IRQHandler(void){
+
+	GPIO_togglePin(LED_PORT, LED_2_PIN);
+
+	EXTI_interruptHandler(0);
 
 }
 
@@ -115,6 +126,35 @@ static void initTouchSensor(void){
 	GPIO_clkCntrl(GPIO_handle.pBaseAddress, ENABLE);
 
 	GPIO_init(&GPIO_handle);
+
+}
+
+static void initTouchSensorITMode(void){
+
+	GPIO_handle_s GPIO_handle;
+	EXTI_handle_s EXTI_handle;
+
+	GPIO_handle.pBaseAddress 			= TOUCH_SENSOR_PORT;
+	GPIO_handle.config.pinNumber 		= TOUCH_SENSOR_PIN;
+	GPIO_handle.config.pinMode 			= GPIO_INPUT;
+	GPIO_handle.config.pinSpeed 		= GPIO_MEDIUM;
+	GPIO_handle.config.pinPuPd 			= GPIO_NOPUPD;
+	GPIO_handle.config.pinOutType 		= GPIO_OD;
+	GPIO_handle.config.pinAltFuncMode 	= 0x00U;
+
+	GPIO_clkCntrl(GPIO_handle.pBaseAddress, ENABLE);
+
+	GPIO_init(&GPIO_handle);
+
+	EXTI_handle.pBaseAddress = EXTI_BASE;
+	EXTI_handle.config.triggerSelection = RISING;
+	EXTI_handle.config.lineSelect = _EXTI0_IRQn;
+
+	EXTI_initExtInt(&GPIO_handle, &EXTI_handle);
+
+	EXTI_configPriority(&EXTI_handle, 0x01);
+
+	EXTI_enableDisable(&EXTI_handle, ENABLE);
 
 }
 

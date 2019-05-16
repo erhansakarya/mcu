@@ -1,3 +1,4 @@
+"Drivers/src/EXTI_driver.o"
 "Drivers/src/GPIO_driver.o"
 "Src/main.o"
 "Src/syscalls.o"

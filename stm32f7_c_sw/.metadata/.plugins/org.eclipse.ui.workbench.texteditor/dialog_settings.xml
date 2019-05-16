@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="ALT"/>
+		<item key="selection" value="AHB1PERIPH_BASE"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="ALT"/>
-			<item value="RCC_AHB1RST"/>
-			<item value="RCC_AHB1RSTR"/>
-			<item value="RCC_AHB1ENR_GPIOAEN"/>
-			<item value="MODER"/>
-			<item value="GPIO"/>
+			<item value="AHB1PERIPH_BASE"/>
 			<item value="GPIOA"/>
-			<item value="ENABLE"/>
-			<item value="GPIO_TypeDef"/>
+			<item value="pBaseAddress"/>
+			<item value="NVIC_EnableIRQ"/>
+			<item value="GPIOA_BASE"/>
+			<item value="EXTIEN"/>
+			<item value="SYSCFG"/>
+			<item value="EXTI"/>
+			<item value="EXYI"/>
+			<item value="ALT"/>
 		</list>
 		<list key="replacehistory">
 		</list>

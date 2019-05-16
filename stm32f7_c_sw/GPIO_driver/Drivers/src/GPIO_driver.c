@@ -2,6 +2,7 @@
 
 #include "util.h"
 #include "GPIO_driver.h"
+#include "EXTI_driver.h"
 
 void GPIO_clkCntrl(GPIO_TypeDef *pBaseAddress, UTIL_enableDisable_e enableDisable){
 	switch(enableDisable){
@@ -77,7 +78,9 @@ void GPIO_init(GPIO_handle_s *GPIO_handle){
 UTIL_lockUnlock_e GPIO_lockPort(GPIO_TypeDef *pBaseAddress, uint16_t lockValue){
 
 	uint32_t tempRegVal = 0x00000000U;
-	uint16_t tempLCKR = 0x0000U;
+	uint16_t tempLCKR;
+
+	tempLCKR = 0x0000U;
 
 	if(pBaseAddress->LCKR >> 16){
 
