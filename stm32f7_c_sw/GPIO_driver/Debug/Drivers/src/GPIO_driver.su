@@ -1,8 +1,9 @@
 GPIO_driver.c:6:6:GPIO_clkCntrl	16	static
 GPIO_driver.c:39:6:GPIO_init	16	static
-GPIO_driver.c:78:6:GPIO_deInit	16	static
-GPIO_driver.c:94:17:GPIO_readPin	16	static
-GPIO_driver.c:100:10:GPIO_readPort	16	static
-GPIO_driver.c:106:6:GPIO_writePin	16	static
-GPIO_driver.c:126:6:GPIO_writePort	16	static
-GPIO_driver.c:132:6:GPIO_togglePin	16	static
+GPIO_driver.c:77:19:GPIO_lockPort	24	static
+GPIO_driver.c:111:6:GPIO_deInit	16	static
+GPIO_driver.c:127:17:GPIO_readPin	16	static
+GPIO_driver.c:133:10:GPIO_readPort	16	static
+GPIO_driver.c:139:6:GPIO_writePin	16	static
+GPIO_driver.c:159:6:GPIO_writePort	16	static
+GPIO_driver.c:165:6:GPIO_togglePin	16	static

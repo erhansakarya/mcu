@@ -37,6 +37,8 @@ static UTIL_setReset_e getTouchedState(void);
 int main(void)
 {
 
+	UTIL_lockUnlock_e lockState = UNLOCK;
+
 	initLED(LED_1_PIN);
 	initLED(LED_2_PIN);
 	initLED(LED_3_PIN);
@@ -44,6 +46,8 @@ int main(void)
 	initButton();
 
 	initTouchSensor();
+
+	lockState = GPIO_lockPort(TOUCH_SENSOR_PORT, 0x00000001U << TOUCH_SENSOR_PIN);
 
 	controlLED(LED_1_PIN, SET);
 	controlLED(LED_2_PIN, SET);

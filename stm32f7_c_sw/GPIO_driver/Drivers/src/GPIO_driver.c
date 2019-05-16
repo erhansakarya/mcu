@@ -74,6 +74,39 @@ void GPIO_init(GPIO_handle_s *GPIO_handle){
 
 }
 
+UTIL_lockUnlock_e GPIO_lockPort(GPIO_TypeDef *pBaseAddress, uint16_t lockValue){
+
+	uint32_t tempRegVal = 0x00000000U;
+	uint16_t tempLCKR = 0x0000U;
+
+	if(pBaseAddress->LCKR >> 16){
+
+		/* NOTE: Lock already */
+		return LOCK;
+
+	}else{
+
+		tempRegVal |= (0x00000001U << 16);
+		tempRegVal |= lockValue;
+
+		/* NOTE: WR LCKR[16] = '1' + LCKR[15:0] */
+		pBaseAddress->LCKR = tempRegVal;
+
+		/* NOTE: WR LCKR[16] = '0' + LCKR[15:0] */
+		pBaseAddress->LCKR = lockValue;
+
+		/* NOTE: WR LCKR[16] = '1' + LCKR[15:0] */
+		pBaseAddress->LCKR = tempRegVal;
+
+		/* NOTE: RD LCKR */
+		tempLCKR = pBaseAddress->LCKR;
+
+		/* NOTE: RD LCKR[16] = '1' it confirms that lock is active*/
+		return ((pBaseAddress->LCKR >> 16) & 0x00000001U) ? (LOCKED) : (NOT_LOCKED);
+
+	}
+
+}
 
 void GPIO_deInit(GPIO_TypeDef *pBaseAddress){
 

@@ -10,6 +10,13 @@
 #include "util.h"
 
 typedef enum{
+	UNLOCK,				/* NOTE: already UNLOCK */
+ 	LOCK,				/* NOTE: already LOCK */
+	LOCKED,				/* NOTE: LOCKED */
+	NOT_LOCKED			/* NOTE: Can not LOCKED */
+}UTIL_lockUnlock_e;
+
+typedef enum{
 	GPIO_PIN_0 	= 0,
 	GPIO_PIN_1 	= 1,
 	GPIO_PIN_2 	= 2,
@@ -71,6 +78,8 @@ extern void GPIO_clkCntrl(GPIO_TypeDef *pBaseAddress, UTIL_enableDisable_e enabl
 
 extern void GPIO_init(GPIO_handle_s *GPIO_handle);
 extern void GPIO_deInit(GPIO_TypeDef *pBaseAddress);
+
+extern UTIL_lockUnlock_e GPIO_lockPort(GPIO_TypeDef *pBaseAddress, uint16_t lockValue);
 
 extern UTIL_setReset_e GPIO_readPin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber);
 extern uint16_t GPIO_readPort(GPIO_TypeDef *pBaseAddress);
