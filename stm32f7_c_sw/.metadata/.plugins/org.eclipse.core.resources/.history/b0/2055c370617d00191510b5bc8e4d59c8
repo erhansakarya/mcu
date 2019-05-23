@@ -9,7 +9,7 @@
 
 #include "util.h"
 
-#define GET_PORT_ADDR_VALUE(pBaseAddress) (((uint32_t)pBaseAddress - (uint32_t)GPIOA) / ((uint32_t)GPIOB - (uint32_t)GPIOA))
+#define GET_PORT_ADDR_VALUE(pBaseAddress) (((uint8_t)pBaseAddress - (uint8_t)GPIOA) / ((uint8_t)GPIOB - (uint8_t)GPIOA))
 
 typedef enum{
 	UNLOCK,				/* NOTE: already UNLOCK */

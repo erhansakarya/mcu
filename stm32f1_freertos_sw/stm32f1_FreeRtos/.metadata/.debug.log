@@ -1,0 +1,666 @@
+2019-05-22 16:33:53,968 [DEBUG] SingleClientConnManager:210 - Get connection for route {}->http://sw-center.st.com:80
+2019-05-22 16:33:54,179 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to sw-center.st.com:80
+2019-05-22 16:33:54,324 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:33:54,326 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:33:54,327 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:33:54,328 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:33:54,328 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:33:54,329 [DEBUG] DefaultClientConnection:274 - Sending request: GET /stm32cubeide/updatesite1/p2.index HTTP/1.1
+2019-05-22 16:33:54,338 [DEBUG] wire:73 -  >> "GET /stm32cubeide/updatesite1/p2.index HTTP/1.1[\r][\n]"
+2019-05-22 16:33:54,339 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:33:54,340 [DEBUG] wire:73 -  >> "User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)[\r][\n]"
+2019-05-22 16:33:54,345 [DEBUG] wire:73 -  >> "Host: sw-center.st.com[\r][\n]"
+2019-05-22 16:33:54,346 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:33:54,354 [DEBUG] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-22 16:33:54,354 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:33:54,356 [DEBUG] headers:278 - >> GET /stm32cubeide/updatesite1/p2.index HTTP/1.1
+2019-05-22 16:33:54,357 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:33:54,358 [DEBUG] headers:281 - >> User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)
+2019-05-22 16:33:54,358 [DEBUG] headers:281 - >> Host: sw-center.st.com
+2019-05-22 16:33:54,359 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:33:54,359 [DEBUG] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-05-22 16:33:54,422 [DEBUG] wire:73 -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2019-05-22 16:33:54,427 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:46 GMT[\r][\n]"
+2019-05-22 16:33:54,427 [DEBUG] wire:73 -  << "Server: PWS/8.3.2.1[\r][\n]"
+2019-05-22 16:33:54,427 [DEBUG] wire:73 -  << "X-Px: ht h0-s4003.p6-lhr.cdngp.net[\r][\n]"
+2019-05-22 16:33:54,428 [DEBUG] wire:73 -  << "Age: 500[\r][\n]"
+2019-05-22 16:33:54,428 [DEBUG] wire:73 -  << "Cache-Control: max-age=600[\r][\n]"
+2019-05-22 16:33:54,428 [DEBUG] wire:73 -  << "Expires: Wed, 22 May 2019 16:36:26 GMT[\r][\n]"
+2019-05-22 16:33:54,430 [DEBUG] wire:73 -  << "Content-Length: 368[\r][\n]"
+2019-05-22 16:33:54,431 [DEBUG] wire:73 -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+2019-05-22 16:33:54,432 [DEBUG] wire:73 -  << "x-amz-id-2: h5ttQrl9Ug+m+gDyUVhoeGM9jiFP7gAWxKv5sR5P6kXFIgVEVu8j7V6KzwQMl9JQh4SFPJErsQM=[\r][\n]"
+2019-05-22 16:33:54,432 [DEBUG] wire:73 -  << "x-amz-request-id: EBD22572A6112DD0[\r][\n]"
+2019-05-22 16:33:54,432 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:33:54,434 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:33:54,435 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 404 Not Found
+2019-05-22 16:33:54,435 [DEBUG] headers:262 - << HTTP/1.1 404 Not Found
+2019-05-22 16:33:54,435 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:46 GMT
+2019-05-22 16:33:54,435 [DEBUG] headers:265 - << Server: PWS/8.3.2.1
+2019-05-22 16:33:54,436 [DEBUG] headers:265 - << X-Px: ht h0-s4003.p6-lhr.cdngp.net
+2019-05-22 16:33:54,436 [DEBUG] headers:265 - << Age: 500
+2019-05-22 16:33:54,436 [DEBUG] headers:265 - << Cache-Control: max-age=600
+2019-05-22 16:33:54,437 [DEBUG] headers:265 - << Expires: Wed, 22 May 2019 16:36:26 GMT
+2019-05-22 16:33:54,437 [DEBUG] headers:265 - << Content-Length: 368
+2019-05-22 16:33:54,437 [DEBUG] headers:265 - << Content-Type: text/html; charset=utf-8
+2019-05-22 16:33:54,437 [DEBUG] headers:265 - << x-amz-id-2: h5ttQrl9Ug+m+gDyUVhoeGM9jiFP7gAWxKv5sR5P6kXFIgVEVu8j7V6KzwQMl9JQh4SFPJErsQM=
+2019-05-22 16:33:54,438 [DEBUG] headers:265 - << x-amz-request-id: EBD22572A6112DD0
+2019-05-22 16:33:54,438 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:33:54,443 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:33:54,453 [DEBUG] wire:73 -  << "<html>[\n]"
+2019-05-22 16:33:54,454 [DEBUG] wire:73 -  << "<head><title>404 Not Found</title></head>[\n]"
+2019-05-22 16:33:54,454 [DEBUG] wire:73 -  << "<body>[\n]"
+2019-05-22 16:33:54,455 [DEBUG] wire:73 -  << "<h1>404 Not Found</h1>[\n]"
+2019-05-22 16:33:54,462 [DEBUG] wire:73 -  << "<ul>[\n]"
+2019-05-22 16:33:54,462 [DEBUG] wire:73 -  << "<li>Code: NoSuchKey</li>[\n]"
+2019-05-22 16:33:54,463 [DEBUG] wire:73 -  << "<li>Message: The specified key does not exist.</li>[\n]"
+2019-05-22 16:33:54,463 [DEBUG] wire:73 -  << "<li>Key: stm32cubeide/updatesite1/p2.index</li>[\n]"
+2019-05-22 16:33:54,463 [DEBUG] wire:73 -  << "<li>RequestId: EBD22572A6112DD0</li>[\n]"
+2019-05-22 16:33:54,464 [DEBUG] wire:73 -  << "<li>HostId: h5ttQrl9Ug+m+gDyUVhoeGM9jiFP7gAWxKv5sR5P6kXFIgVEVu8j7V6KzwQMl9JQh4SFPJErsQM=</li>[\n]"
+2019-05-22 16:33:54,464 [DEBUG] wire:73 -  << "</ul>[\n]"
+2019-05-22 16:33:54,464 [DEBUG] wire:73 -  << "<hr/>[\n]"
+2019-05-22 16:33:54,464 [DEBUG] wire:73 -  << "</body>[\n]"
+2019-05-22 16:33:54,465 [DEBUG] wire:73 -  << "</html>[\n]"
+2019-05-22 16:33:54,465 [DEBUG] SingleClientConnManager:265 - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@3782e8f4
+2019-05-22 16:33:54,660 [DEBUG] BasicClientConnectionManager:161 - Get connection for route {}->http://sw-center.st.com:80
+2019-05-22 16:33:54,663 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to sw-center.st.com:80
+2019-05-22 16:33:54,727 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:33:54,727 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:33:54,727 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:33:54,727 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:33:54,728 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:33:54,728 [DEBUG] DefaultClientConnection:274 - Sending request: HEAD /stm32cubeide/updatesite1/compositeContent.jar HTTP/1.1
+2019-05-22 16:33:54,728 [DEBUG] wire:73 -  >> "HEAD /stm32cubeide/updatesite1/compositeContent.jar HTTP/1.1[\r][\n]"
+2019-05-22 16:33:54,729 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:33:54,729 [DEBUG] wire:73 -  >> "Host: sw-center.st.com[\r][\n]"
+2019-05-22 16:33:54,729 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:33:54,729 [DEBUG] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-05-22 16:33:54,730 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:33:54,730 [DEBUG] headers:278 - >> HEAD /stm32cubeide/updatesite1/compositeContent.jar HTTP/1.1
+2019-05-22 16:33:54,730 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:33:54,731 [DEBUG] headers:281 - >> Host: sw-center.st.com
+2019-05-22 16:33:54,731 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:33:54,731 [DEBUG] headers:281 - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-05-22 16:33:54,795 [DEBUG] wire:73 -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2019-05-22 16:33:54,796 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:46 GMT[\r][\n]"
+2019-05-22 16:33:54,796 [DEBUG] wire:73 -  << "Server: PWS/8.3.2.1[\r][\n]"
+2019-05-22 16:33:54,796 [DEBUG] wire:73 -  << "X-Px: ht h0-s4003.p6-lhr.cdngp.net[\r][\n]"
+2019-05-22 16:33:54,797 [DEBUG] wire:73 -  << "Age: 523[\r][\n]"
+2019-05-22 16:33:54,797 [DEBUG] wire:73 -  << "Cache-Control: max-age=600[\r][\n]"
+2019-05-22 16:33:54,797 [DEBUG] wire:73 -  << "Expires: Wed, 22 May 2019 16:36:03 GMT[\r][\n]"
+2019-05-22 16:33:54,797 [DEBUG] wire:73 -  << "Content-Length: 380[\r][\n]"
+2019-05-22 16:33:54,798 [DEBUG] wire:73 -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+2019-05-22 16:33:54,798 [DEBUG] wire:73 -  << "x-amz-id-2: Y9TtD1ZMl2KHckhMZElydTOQe7Glx3bn9gWnBwgkmpnV2t7chGsA538yh5hFMzolW9F6by5KVBQ=[\r][\n]"
+2019-05-22 16:33:54,800 [DEBUG] wire:73 -  << "x-amz-request-id: 60CC8F3D71B9AD17[\r][\n]"
+2019-05-22 16:33:54,800 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:33:54,800 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:33:54,800 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 404 Not Found
+2019-05-22 16:33:54,801 [DEBUG] headers:262 - << HTTP/1.1 404 Not Found
+2019-05-22 16:33:54,801 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:46 GMT
+2019-05-22 16:33:54,801 [DEBUG] headers:265 - << Server: PWS/8.3.2.1
+2019-05-22 16:33:54,801 [DEBUG] headers:265 - << X-Px: ht h0-s4003.p6-lhr.cdngp.net
+2019-05-22 16:33:54,801 [DEBUG] headers:265 - << Age: 523
+2019-05-22 16:33:54,801 [DEBUG] headers:265 - << Cache-Control: max-age=600
+2019-05-22 16:33:54,802 [DEBUG] headers:265 - << Expires: Wed, 22 May 2019 16:36:03 GMT
+2019-05-22 16:33:54,802 [DEBUG] headers:265 - << Content-Length: 380
+2019-05-22 16:33:54,802 [DEBUG] headers:265 - << Content-Type: text/html; charset=utf-8
+2019-05-22 16:33:54,802 [DEBUG] headers:265 - << x-amz-id-2: Y9TtD1ZMl2KHckhMZElydTOQe7Glx3bn9gWnBwgkmpnV2t7chGsA538yh5hFMzolW9F6by5KVBQ=
+2019-05-22 16:33:54,802 [DEBUG] headers:265 - << x-amz-request-id: 60CC8F3D71B9AD17
+2019-05-22 16:33:54,803 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:33:54,803 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:33:54,803 [DEBUG] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4020071c
+2019-05-22 16:33:54,803 [DEBUG] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-05-22 16:33:54,811 [DEBUG] BasicClientConnectionManager:161 - Get connection for route {}->http://sw-center.st.com:80
+2019-05-22 16:33:54,812 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to sw-center.st.com:80
+2019-05-22 16:33:54,870 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:33:54,871 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:33:54,871 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:33:54,871 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:33:54,872 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:33:54,872 [DEBUG] DefaultClientConnection:274 - Sending request: HEAD /stm32cubeide/updatesite1/compositeContent.xml HTTP/1.1
+2019-05-22 16:33:54,872 [DEBUG] wire:73 -  >> "HEAD /stm32cubeide/updatesite1/compositeContent.xml HTTP/1.1[\r][\n]"
+2019-05-22 16:33:54,872 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:33:54,872 [DEBUG] wire:73 -  >> "Host: sw-center.st.com[\r][\n]"
+2019-05-22 16:33:54,873 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:33:54,873 [DEBUG] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-05-22 16:33:54,873 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:33:54,873 [DEBUG] headers:278 - >> HEAD /stm32cubeide/updatesite1/compositeContent.xml HTTP/1.1
+2019-05-22 16:33:54,874 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:33:54,874 [DEBUG] headers:281 - >> Host: sw-center.st.com
+2019-05-22 16:33:54,874 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:33:54,874 [DEBUG] headers:281 - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-05-22 16:33:54,935 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:33:54,935 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:46 GMT[\r][\n]"
+2019-05-22 16:33:54,936 [DEBUG] wire:73 -  << "Server: PWS/8.3.2.1[\r][\n]"
+2019-05-22 16:33:54,936 [DEBUG] wire:73 -  << "X-Px: ht h0-s4003.p6-lhr.cdngp.net[\r][\n]"
+2019-05-22 16:33:54,936 [DEBUG] wire:73 -  << "ETag: "e6dc9b557b7e67eace8d998bc51285c7"[\r][\n]"
+2019-05-22 16:33:54,936 [DEBUG] wire:73 -  << "Age: 278967[\r][\n]"
+2019-05-22 16:33:54,937 [DEBUG] wire:73 -  << "Cache-Control: max-age=604800[\r][\n]"
+2019-05-22 16:33:54,937 [DEBUG] wire:73 -  << "Expires: Sun, 26 May 2019 11:05:19 GMT[\r][\n]"
+2019-05-22 16:33:54,937 [DEBUG] wire:73 -  << "Content-Length: 471[\r][\n]"
+2019-05-22 16:33:54,937 [DEBUG] wire:73 -  << "Content-Type: text/xml[\r][\n]"
+2019-05-22 16:33:54,938 [DEBUG] wire:73 -  << "Last-Modified: Fri, 26 Apr 2019 08:50:42 GMT[\r][\n]"
+2019-05-22 16:33:54,938 [DEBUG] wire:73 -  << "x-amz-version-id: Ov9wm_XnTgAFMBxmbTEks2kKhYgoYklQ[\r][\n]"
+2019-05-22 16:33:54,938 [DEBUG] wire:73 -  << "x-amz-id-2: Gr+lcLj/rBA01FDGHIX8LNYziUyreSwK0xMGigOgjVZU6qkRG5F6gJNy5jrA+C6AOdxNKuv4KQc=[\r][\n]"
+2019-05-22 16:33:54,938 [DEBUG] wire:73 -  << "x-amz-request-id: 3A1E5E097B040A06[\r][\n]"
+2019-05-22 16:33:54,938 [DEBUG] wire:73 -  << "x-amz-meta-cb-modifiedtime: Wed, 24 Apr 2019 09:04:42 GMT[\r][\n]"
+2019-05-22 16:33:54,939 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:33:54,939 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:33:54,939 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:33:54,939 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:33:54,939 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:46 GMT
+2019-05-22 16:33:54,940 [DEBUG] headers:265 - << Server: PWS/8.3.2.1
+2019-05-22 16:33:54,940 [DEBUG] headers:265 - << X-Px: ht h0-s4003.p6-lhr.cdngp.net
+2019-05-22 16:33:54,940 [DEBUG] headers:265 - << ETag: "e6dc9b557b7e67eace8d998bc51285c7"
+2019-05-22 16:33:54,940 [DEBUG] headers:265 - << Age: 278967
+2019-05-22 16:33:54,940 [DEBUG] headers:265 - << Cache-Control: max-age=604800
+2019-05-22 16:33:54,941 [DEBUG] headers:265 - << Expires: Sun, 26 May 2019 11:05:19 GMT
+2019-05-22 16:33:54,941 [DEBUG] headers:265 - << Content-Length: 471
+2019-05-22 16:33:54,941 [DEBUG] headers:265 - << Content-Type: text/xml
+2019-05-22 16:33:54,941 [DEBUG] headers:265 - << Last-Modified: Fri, 26 Apr 2019 08:50:42 GMT
+2019-05-22 16:33:54,941 [DEBUG] headers:265 - << x-amz-version-id: Ov9wm_XnTgAFMBxmbTEks2kKhYgoYklQ
+2019-05-22 16:33:54,941 [DEBUG] headers:265 - << x-amz-id-2: Gr+lcLj/rBA01FDGHIX8LNYziUyreSwK0xMGigOgjVZU6qkRG5F6gJNy5jrA+C6AOdxNKuv4KQc=
+2019-05-22 16:33:54,942 [DEBUG] headers:265 - << x-amz-request-id: 3A1E5E097B040A06
+2019-05-22 16:33:54,942 [DEBUG] headers:265 - << x-amz-meta-cb-modifiedtime: Wed, 24 Apr 2019 09:04:42 GMT
+2019-05-22 16:33:54,942 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:33:54,942 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:33:54,942 [DEBUG] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@43784c76
+2019-05-22 16:33:54,943 [DEBUG] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-05-22 16:33:55,041 [DEBUG] SingleClientConnManager:210 - Get connection for route {}->http://sw-center.st.com:80
+2019-05-22 16:33:55,042 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to sw-center.st.com:80
+2019-05-22 16:33:55,099 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:33:55,099 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:33:55,100 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:33:55,100 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:33:55,100 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:33:55,100 [DEBUG] DefaultClientConnection:274 - Sending request: GET /stm32cubeide/updatesite1/1.0.0/p2.index HTTP/1.1
+2019-05-22 16:33:55,101 [DEBUG] wire:73 -  >> "GET /stm32cubeide/updatesite1/1.0.0/p2.index HTTP/1.1[\r][\n]"
+2019-05-22 16:33:55,101 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:33:55,101 [DEBUG] wire:73 -  >> "User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)[\r][\n]"
+2019-05-22 16:33:55,101 [DEBUG] wire:73 -  >> "Host: sw-center.st.com[\r][\n]"
+2019-05-22 16:33:55,102 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:33:55,102 [DEBUG] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-22 16:33:55,113 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:33:55,113 [DEBUG] headers:278 - >> GET /stm32cubeide/updatesite1/1.0.0/p2.index HTTP/1.1
+2019-05-22 16:33:55,113 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:33:55,114 [DEBUG] headers:281 - >> User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)
+2019-05-22 16:33:55,114 [DEBUG] headers:281 - >> Host: sw-center.st.com
+2019-05-22 16:33:55,114 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:33:55,114 [DEBUG] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-05-22 16:33:55,192 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:33:55,193 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:46 GMT[\r][\n]"
+2019-05-22 16:33:55,193 [DEBUG] wire:73 -  << "Server: PWS/8.3.2.1[\r][\n]"
+2019-05-22 16:33:55,193 [DEBUG] wire:73 -  << "X-Px: ht h0-s4003.p6-lhr.cdngp.net[\r][\n]"
+2019-05-22 16:33:55,194 [DEBUG] wire:73 -  << "ETag: "284632ada586aaf9826d908d33d87a49"[\r][\n]"
+2019-05-22 16:33:55,195 [DEBUG] wire:73 -  << "Age: 85490[\r][\n]"
+2019-05-22 16:33:55,195 [DEBUG] wire:73 -  << "Cache-Control: max-age=604800[\r][\n]"
+2019-05-22 16:33:55,195 [DEBUG] wire:73 -  << "Expires: Tue, 28 May 2019 16:49:56 GMT[\r][\n]"
+2019-05-22 16:33:55,196 [DEBUG] wire:73 -  << "Content-Length: 172[\r][\n]"
+2019-05-22 16:33:55,196 [DEBUG] wire:73 -  << "Content-Type: application/octet-stream[\r][\n]"
+2019-05-22 16:33:55,196 [DEBUG] wire:73 -  << "Last-Modified: Fri, 26 Apr 2019 08:50:51 GMT[\r][\n]"
+2019-05-22 16:33:55,200 [DEBUG] wire:73 -  << "x-amz-version-id: 6TmQxlIR0LxPneaWQbf1z__wZKmE3NY7[\r][\n]"
+2019-05-22 16:33:55,200 [DEBUG] wire:73 -  << "x-amz-id-2: 35RPuUvcCrYujF6LEeVKMmXHUus66MrzJ8kIO7lZASmdU3RQHjm0yREGh3MNYaIGABrsnQsahl4=[\r][\n]"
+2019-05-22 16:33:55,200 [DEBUG] wire:73 -  << "x-amz-request-id: 0E2883C2A5BEB29E[\r][\n]"
+2019-05-22 16:33:55,201 [DEBUG] wire:73 -  << "x-amz-meta-cb-modifiedtime: Tue, 23 Apr 2019 19:03:42 GMT[\r][\n]"
+2019-05-22 16:33:55,201 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:33:55,201 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:33:55,202 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:33:55,204 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:33:55,204 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:46 GMT
+2019-05-22 16:33:55,204 [DEBUG] headers:265 - << Server: PWS/8.3.2.1
+2019-05-22 16:33:55,207 [DEBUG] headers:265 - << X-Px: ht h0-s4003.p6-lhr.cdngp.net
+2019-05-22 16:33:55,207 [DEBUG] headers:265 - << ETag: "284632ada586aaf9826d908d33d87a49"
+2019-05-22 16:33:55,207 [DEBUG] headers:265 - << Age: 85490
+2019-05-22 16:33:55,208 [DEBUG] headers:265 - << Cache-Control: max-age=604800
+2019-05-22 16:33:55,208 [DEBUG] headers:265 - << Expires: Tue, 28 May 2019 16:49:56 GMT
+2019-05-22 16:33:55,208 [DEBUG] headers:265 - << Content-Length: 172
+2019-05-22 16:33:55,208 [DEBUG] headers:265 - << Content-Type: application/octet-stream
+2019-05-22 16:33:55,208 [DEBUG] headers:265 - << Last-Modified: Fri, 26 Apr 2019 08:50:51 GMT
+2019-05-22 16:33:55,209 [DEBUG] headers:265 - << x-amz-version-id: 6TmQxlIR0LxPneaWQbf1z__wZKmE3NY7
+2019-05-22 16:33:55,209 [DEBUG] headers:265 - << x-amz-id-2: 35RPuUvcCrYujF6LEeVKMmXHUus66MrzJ8kIO7lZASmdU3RQHjm0yREGh3MNYaIGABrsnQsahl4=
+2019-05-22 16:33:55,209 [DEBUG] headers:265 - << x-amz-request-id: 0E2883C2A5BEB29E
+2019-05-22 16:33:55,209 [DEBUG] headers:265 - << x-amz-meta-cb-modifiedtime: Tue, 23 Apr 2019 19:03:42 GMT
+2019-05-22 16:33:55,209 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:33:55,210 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:33:55,265 [DEBUG] wire:73 -  << "#Tue Apr 23 21:03:43 UTC 2019[\n]"
+2019-05-22 16:33:55,265 [DEBUG] wire:73 -  << "version=1[\n]"
+2019-05-22 16:33:55,266 [DEBUG] wire:73 -  << "metadata.repository.factory.order=content.xml.xz,content.xml,\![\n]"
+2019-05-22 16:33:55,267 [DEBUG] wire:73 -  << "artifact.repository.factory.order=artifacts.xml.xz,artifacts.xml,\![\n]"
+2019-05-22 16:33:55,365 [DEBUG] SingleClientConnManager:265 - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@62897453
+2019-05-22 16:33:57,103 [DEBUG] DefaultClientConnection:180 - Connection 0.0.0.0:55904<->148.253.237.137:80 closed
+2019-05-22 16:33:57,104 [DEBUG] DefaultClientConnection:180 - Connection 0.0.0.0:55905<->148.253.237.137:80 closed
+2019-05-22 16:33:57,106 [DEBUG] DefaultClientConnection:164 - Connection 0.0.0.0:55906<->148.253.237.137:80 shut down
+2019-05-22 16:33:57,108 [DEBUG] DefaultClientConnection:164 - Connection 0.0.0.0:55903<->148.253.237.137:80 shut down
+2019-05-22 16:33:58,266 [DEBUG] BasicClientConnectionManager:161 - Get connection for route {}->http://sw-center.st.com:80
+2019-05-22 16:33:58,268 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to sw-center.st.com:80
+2019-05-22 16:33:58,327 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:33:58,327 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:33:58,327 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:33:58,328 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:33:58,328 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:33:58,328 [DEBUG] DefaultClientConnection:274 - Sending request: HEAD /stm32cubeide/updatesite1/1.0.0/content.xml.xz HTTP/1.1
+2019-05-22 16:33:58,328 [DEBUG] wire:73 -  >> "HEAD /stm32cubeide/updatesite1/1.0.0/content.xml.xz HTTP/1.1[\r][\n]"
+2019-05-22 16:33:58,329 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:33:58,329 [DEBUG] wire:73 -  >> "Host: sw-center.st.com[\r][\n]"
+2019-05-22 16:33:58,329 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:33:58,329 [DEBUG] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-05-22 16:33:58,329 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:33:58,330 [DEBUG] headers:278 - >> HEAD /stm32cubeide/updatesite1/1.0.0/content.xml.xz HTTP/1.1
+2019-05-22 16:33:58,330 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:33:58,330 [DEBUG] headers:281 - >> Host: sw-center.st.com
+2019-05-22 16:33:58,330 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:33:58,330 [DEBUG] headers:281 - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-05-22 16:33:58,392 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:33:58,392 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:49 GMT[\r][\n]"
+2019-05-22 16:33:58,392 [DEBUG] wire:73 -  << "Server: PWS/8.3.2.1[\r][\n]"
+2019-05-22 16:33:58,392 [DEBUG] wire:73 -  << "X-Px: ht h0-s4003.p6-lhr.cdngp.net[\r][\n]"
+2019-05-22 16:33:58,394 [DEBUG] wire:73 -  << "ETag: "0ae01ce1ffa429a5af9a7c1badadf2a8"[\r][\n]"
+2019-05-22 16:33:58,400 [DEBUG] wire:73 -  << "Age: 293309[\r][\n]"
+2019-05-22 16:33:58,400 [DEBUG] wire:73 -  << "Cache-Control: max-age=604800[\r][\n]"
+2019-05-22 16:33:58,400 [DEBUG] wire:73 -  << "Expires: Sun, 26 May 2019 07:06:20 GMT[\r][\n]"
+2019-05-22 16:33:58,401 [DEBUG] wire:73 -  << "Accept-Ranges: bytes[\r][\n]"
+2019-05-22 16:33:58,404 [DEBUG] wire:73 -  << "Content-Length: 69904[\r][\n]"
+2019-05-22 16:33:58,404 [DEBUG] wire:73 -  << "Content-Type: application/octet-stream[\r][\n]"
+2019-05-22 16:33:58,404 [DEBUG] wire:73 -  << "Last-Modified: Fri, 26 Apr 2019 08:50:51 GMT[\r][\n]"
+2019-05-22 16:33:58,405 [DEBUG] wire:73 -  << "x-amz-version-id: 8r6hCUl1L7ffx6AGOZCxQrEmyo986kNH[\r][\n]"
+2019-05-22 16:33:58,405 [DEBUG] wire:73 -  << "x-amz-id-2: rneU+WnBs6AQlKsko2cchxnWyKvqD238+QhMqQLh3yquVMPRCuNJJn+7nLp/2Jc5zg1jnMUC1eY=[\r][\n]"
+2019-05-22 16:33:58,405 [DEBUG] wire:73 -  << "x-amz-request-id: 2043486DEB8104A9[\r][\n]"
+2019-05-22 16:33:58,405 [DEBUG] wire:73 -  << "x-amz-meta-cb-modifiedtime: Tue, 23 Apr 2019 19:03:42 GMT[\r][\n]"
+2019-05-22 16:33:58,405 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:33:58,405 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:33:58,405 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:33:58,406 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:33:58,406 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:49 GMT
+2019-05-22 16:33:58,406 [DEBUG] headers:265 - << Server: PWS/8.3.2.1
+2019-05-22 16:33:58,406 [DEBUG] headers:265 - << X-Px: ht h0-s4003.p6-lhr.cdngp.net
+2019-05-22 16:33:58,406 [DEBUG] headers:265 - << ETag: "0ae01ce1ffa429a5af9a7c1badadf2a8"
+2019-05-22 16:33:58,407 [DEBUG] headers:265 - << Age: 293309
+2019-05-22 16:33:58,407 [DEBUG] headers:265 - << Cache-Control: max-age=604800
+2019-05-22 16:33:58,407 [DEBUG] headers:265 - << Expires: Sun, 26 May 2019 07:06:20 GMT
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << Accept-Ranges: bytes
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << Content-Length: 69904
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << Content-Type: application/octet-stream
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << Last-Modified: Fri, 26 Apr 2019 08:50:51 GMT
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << x-amz-version-id: 8r6hCUl1L7ffx6AGOZCxQrEmyo986kNH
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << x-amz-id-2: rneU+WnBs6AQlKsko2cchxnWyKvqD238+QhMqQLh3yquVMPRCuNJJn+7nLp/2Jc5zg1jnMUC1eY=
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << x-amz-request-id: 2043486DEB8104A9
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << x-amz-meta-cb-modifiedtime: Tue, 23 Apr 2019 19:03:42 GMT
+2019-05-22 16:33:58,408 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:33:58,409 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:33:58,410 [DEBUG] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@48cd4d9
+2019-05-22 16:33:58,410 [DEBUG] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-05-22 16:33:59,690 [DEBUG] SingleClientConnManager:210 - Get connection for route {s}->https://download.eclipse.org:443
+2019-05-22 16:33:59,844 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to download.eclipse.org:443
+2019-05-22 16:34:00,092 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:34:00,092 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:34:00,093 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:34:00,093 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:34:00,093 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:34:00,093 [DEBUG] DefaultClientConnection:274 - Sending request: GET /releases/2019-03/p2.index HTTP/1.1
+2019-05-22 16:34:00,093 [DEBUG] wire:73 -  >> "GET /releases/2019-03/p2.index HTTP/1.1[\r][\n]"
+2019-05-22 16:34:00,093 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:34:00,094 [DEBUG] wire:73 -  >> "User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)[\r][\n]"
+2019-05-22 16:34:00,094 [DEBUG] wire:73 -  >> "Host: download.eclipse.org[\r][\n]"
+2019-05-22 16:34:00,094 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:34:00,094 [DEBUG] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-22 16:34:00,094 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:34:00,095 [DEBUG] headers:278 - >> GET /releases/2019-03/p2.index HTTP/1.1
+2019-05-22 16:34:00,095 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:34:00,095 [DEBUG] headers:281 - >> User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)
+2019-05-22 16:34:00,095 [DEBUG] headers:281 - >> Host: download.eclipse.org
+2019-05-22 16:34:00,095 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:34:00,095 [DEBUG] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-05-22 16:34:00,866 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:34:00,867 [DEBUG] wire:73 -  << "Server: nginx[\r][\n]"
+2019-05-22 16:34:00,867 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:45 GMT[\r][\n]"
+2019-05-22 16:34:00,867 [DEBUG] wire:73 -  << "Content-Type: text/plain[\r][\n]"
+2019-05-22 16:34:00,867 [DEBUG] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-05-22 16:34:00,867 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:34:00,868 [DEBUG] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2019-05-22 16:34:00,868 [DEBUG] wire:73 -  << "Last-Modified: Wed, 19 Dec 2018 15:24:41 GMT[\r][\n]"
+2019-05-22 16:34:00,868 [DEBUG] wire:73 -  << "ETag: W/"7a-57d619ceaff8e"[\r][\n]"
+2019-05-22 16:34:00,868 [DEBUG] wire:73 -  << "X-NodeID: download1[\r][\n]"
+2019-05-22 16:34:00,868 [DEBUG] wire:73 -  << "Strict-Transport-Security: max-age=15552000; includeSubDomains; preload[\r][\n]"
+2019-05-22 16:34:00,869 [DEBUG] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-05-22 16:34:00,869 [DEBUG] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-05-22 16:34:00,869 [DEBUG] wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-05-22 16:34:00,869 [DEBUG] wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-05-22 16:34:00,869 [DEBUG] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-05-22 16:34:00,869 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:00,870 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:34:00,870 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:34:00,870 [DEBUG] headers:265 - << Server: nginx
+2019-05-22 16:34:00,870 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:45 GMT
+2019-05-22 16:34:00,870 [DEBUG] headers:265 - << Content-Type: text/plain
+2019-05-22 16:34:00,870 [DEBUG] headers:265 - << Transfer-Encoding: chunked
+2019-05-22 16:34:00,870 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:34:00,871 [DEBUG] headers:265 - << Vary: Accept-Encoding
+2019-05-22 16:34:00,871 [DEBUG] headers:265 - << Last-Modified: Wed, 19 Dec 2018 15:24:41 GMT
+2019-05-22 16:34:00,871 [DEBUG] headers:265 - << ETag: W/"7a-57d619ceaff8e"
+2019-05-22 16:34:00,871 [DEBUG] headers:265 - << X-NodeID: download1
+2019-05-22 16:34:00,871 [DEBUG] headers:265 - << Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+2019-05-22 16:34:00,871 [DEBUG] headers:265 - << X-Frame-Options: SAMEORIGIN
+2019-05-22 16:34:00,872 [DEBUG] headers:265 - << X-Content-Type-Options: nosniff
+2019-05-22 16:34:00,872 [DEBUG] headers:265 - << X-XSS-Protection: 1; mode=block
+2019-05-22 16:34:00,872 [DEBUG] headers:265 - << X-Proxy-Cache: HIT
+2019-05-22 16:34:00,872 [DEBUG] headers:265 - << Content-Encoding: gzip
+2019-05-22 16:34:00,875 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:34:00,877 [DEBUG] wire:73 -  << "5d[\r][\n]"
+2019-05-22 16:34:00,878 [DEBUG] wire:87 -  << "[0x1f]"
+2019-05-22 16:34:00,878 [DEBUG] wire:87 -  << "[0x8b]"
+2019-05-22 16:34:00,878 [DEBUG] wire:87 -  << "[0x8]"
+2019-05-22 16:34:00,878 [DEBUG] wire:87 -  << "[0x0]"
+2019-05-22 16:34:00,878 [DEBUG] wire:87 -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2019-05-22 16:34:00,879 [DEBUG] wire:87 -  << "+K-*[0xce][0xcc][0xcf][0xb3]5[0xe4][0xca]M-ILI,I[0xd4]+J-[0xc8]/[0xce],[0xc9]/[0xaa][0xd4]KKL[0x6][0xd3][0xf9]E)[0xa9]E[0xb6][0xc9][0xf9][0xb9]`[0x99]T[0xe7][0xfc][0xbc][0x92][0xd4][0xbc][0x12][0xbd][0x8a][0xdc][0x1c][0xae][0xc4][0xa2][0x92]L[0x90]2"[0xb4]9B[0x95][0x16][0x83]5[0x2][0x0]{[0xc4][0xca]iz[0x0][0x0][0x0]"
+2019-05-22 16:34:00,879 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:00,880 [DEBUG] wire:73 -  << "0[\r][\n]"
+2019-05-22 16:34:00,880 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:00,880 [DEBUG] SingleClientConnManager:265 - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@67a982e
+2019-05-22 16:34:01,002 [DEBUG] BasicClientConnectionManager:161 - Get connection for route {s}->https://download.eclipse.org:443
+2019-05-22 16:34:01,003 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to download.eclipse.org:443
+2019-05-22 16:34:01,777 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:34:01,777 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:34:01,777 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:34:01,777 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:34:01,777 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:34:01,778 [DEBUG] DefaultClientConnection:274 - Sending request: HEAD /releases/2019-03/compositeContent.jar HTTP/1.1
+2019-05-22 16:34:01,778 [DEBUG] wire:73 -  >> "HEAD /releases/2019-03/compositeContent.jar HTTP/1.1[\r][\n]"
+2019-05-22 16:34:01,778 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:34:01,778 [DEBUG] wire:73 -  >> "Host: download.eclipse.org[\r][\n]"
+2019-05-22 16:34:01,778 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:34:01,778 [DEBUG] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-05-22 16:34:01,778 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:34:01,779 [DEBUG] headers:278 - >> HEAD /releases/2019-03/compositeContent.jar HTTP/1.1
+2019-05-22 16:34:01,779 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:34:01,779 [DEBUG] headers:281 - >> Host: download.eclipse.org
+2019-05-22 16:34:01,779 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:34:01,779 [DEBUG] headers:281 - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-05-22 16:34:01,975 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:34:01,975 [DEBUG] wire:73 -  << "Server: nginx[\r][\n]"
+2019-05-22 16:34:01,976 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:46 GMT[\r][\n]"
+2019-05-22 16:34:01,976 [DEBUG] wire:73 -  << "Content-Type: application/x-java-archive[\r][\n]"
+2019-05-22 16:34:01,976 [DEBUG] wire:73 -  << "Content-Length: 491[\r][\n]"
+2019-05-22 16:34:01,976 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:34:01,976 [DEBUG] wire:73 -  << "Last-Modified: Wed, 20 Mar 2019 13:30:05 GMT[\r][\n]"
+2019-05-22 16:34:01,977 [DEBUG] wire:73 -  << "ETag: "1eb-584869ea1932a"[\r][\n]"
+2019-05-22 16:34:01,977 [DEBUG] wire:73 -  << "X-NodeID: download1[\r][\n]"
+2019-05-22 16:34:01,977 [DEBUG] wire:73 -  << "Strict-Transport-Security: max-age=15552000; includeSubDomains; preload[\r][\n]"
+2019-05-22 16:34:01,977 [DEBUG] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-05-22 16:34:01,977 [DEBUG] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-05-22 16:34:01,978 [DEBUG] wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-05-22 16:34:01,978 [DEBUG] wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-05-22 16:34:01,978 [DEBUG] wire:73 -  << "Accept-Ranges: bytes[\r][\n]"
+2019-05-22 16:34:01,978 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:01,978 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:34:01,979 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:34:01,979 [DEBUG] headers:265 - << Server: nginx
+2019-05-22 16:34:01,979 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:46 GMT
+2019-05-22 16:34:01,979 [DEBUG] headers:265 - << Content-Type: application/x-java-archive
+2019-05-22 16:34:01,979 [DEBUG] headers:265 - << Content-Length: 491
+2019-05-22 16:34:01,979 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:34:01,979 [DEBUG] headers:265 - << Last-Modified: Wed, 20 Mar 2019 13:30:05 GMT
+2019-05-22 16:34:01,979 [DEBUG] headers:265 - << ETag: "1eb-584869ea1932a"
+2019-05-22 16:34:01,980 [DEBUG] headers:265 - << X-NodeID: download1
+2019-05-22 16:34:01,980 [DEBUG] headers:265 - << Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+2019-05-22 16:34:01,980 [DEBUG] headers:265 - << X-Frame-Options: SAMEORIGIN
+2019-05-22 16:34:01,980 [DEBUG] headers:265 - << X-Content-Type-Options: nosniff
+2019-05-22 16:34:01,980 [DEBUG] headers:265 - << X-XSS-Protection: 1; mode=block
+2019-05-22 16:34:01,980 [DEBUG] headers:265 - << X-Proxy-Cache: HIT
+2019-05-22 16:34:01,980 [DEBUG] headers:265 - << Accept-Ranges: bytes
+2019-05-22 16:34:01,981 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:34:01,981 [DEBUG] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4632c0c6
+2019-05-22 16:34:01,981 [DEBUG] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-05-22 16:34:02,045 [DEBUG] SingleClientConnManager:210 - Get connection for route {s}->https://download.eclipse.org:443
+2019-05-22 16:34:02,045 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to download.eclipse.org:443
+2019-05-22 16:34:02,205 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:34:02,206 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:34:02,206 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:34:02,206 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:34:02,206 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:34:02,206 [DEBUG] DefaultClientConnection:274 - Sending request: GET /technology/epp/packages/2019-03/p2.index HTTP/1.1
+2019-05-22 16:34:02,207 [DEBUG] wire:73 -  >> "GET /technology/epp/packages/2019-03/p2.index HTTP/1.1[\r][\n]"
+2019-05-22 16:34:02,208 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:34:02,208 [DEBUG] wire:73 -  >> "User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)[\r][\n]"
+2019-05-22 16:34:02,208 [DEBUG] wire:73 -  >> "Host: download.eclipse.org[\r][\n]"
+2019-05-22 16:34:02,209 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:34:02,209 [DEBUG] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-22 16:34:02,209 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:34:02,209 [DEBUG] headers:278 - >> GET /technology/epp/packages/2019-03/p2.index HTTP/1.1
+2019-05-22 16:34:02,209 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:34:02,210 [DEBUG] headers:281 - >> User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)
+2019-05-22 16:34:02,210 [DEBUG] headers:281 - >> Host: download.eclipse.org
+2019-05-22 16:34:02,210 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:34:02,210 [DEBUG] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-05-22 16:34:02,719 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:34:02,719 [DEBUG] wire:73 -  << "Server: nginx[\r][\n]"
+2019-05-22 16:34:02,719 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:47 GMT[\r][\n]"
+2019-05-22 16:34:02,719 [DEBUG] wire:73 -  << "Content-Type: text/plain[\r][\n]"
+2019-05-22 16:34:02,720 [DEBUG] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-05-22 16:34:02,720 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:34:02,720 [DEBUG] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2019-05-22 16:34:02,720 [DEBUG] wire:73 -  << "Last-Modified: Wed, 20 Mar 2019 10:26:30 GMT[\r][\n]"
+2019-05-22 16:34:02,720 [DEBUG] wire:73 -  << "ETag: W/"8e-584840e0f8180"[\r][\n]"
+2019-05-22 16:34:02,720 [DEBUG] wire:73 -  << "X-NodeID: download1[\r][\n]"
+2019-05-22 16:34:02,721 [DEBUG] wire:73 -  << "Strict-Transport-Security: max-age=15552000; includeSubDomains; preload[\r][\n]"
+2019-05-22 16:34:02,721 [DEBUG] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-05-22 16:34:02,721 [DEBUG] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-05-22 16:34:02,721 [DEBUG] wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-05-22 16:34:02,721 [DEBUG] wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-05-22 16:34:02,721 [DEBUG] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-05-22 16:34:02,722 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:02,722 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:34:02,722 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:34:02,722 [DEBUG] headers:265 - << Server: nginx
+2019-05-22 16:34:02,722 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:47 GMT
+2019-05-22 16:34:02,722 [DEBUG] headers:265 - << Content-Type: text/plain
+2019-05-22 16:34:02,722 [DEBUG] headers:265 - << Transfer-Encoding: chunked
+2019-05-22 16:34:02,722 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:34:02,723 [DEBUG] headers:265 - << Vary: Accept-Encoding
+2019-05-22 16:34:02,723 [DEBUG] headers:265 - << Last-Modified: Wed, 20 Mar 2019 10:26:30 GMT
+2019-05-22 16:34:02,723 [DEBUG] headers:265 - << ETag: W/"8e-584840e0f8180"
+2019-05-22 16:34:02,723 [DEBUG] headers:265 - << X-NodeID: download1
+2019-05-22 16:34:02,723 [DEBUG] headers:265 - << Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+2019-05-22 16:34:02,723 [DEBUG] headers:265 - << X-Frame-Options: SAMEORIGIN
+2019-05-22 16:34:02,723 [DEBUG] headers:265 - << X-Content-Type-Options: nosniff
+2019-05-22 16:34:02,723 [DEBUG] headers:265 - << X-XSS-Protection: 1; mode=block
+2019-05-22 16:34:02,724 [DEBUG] headers:265 - << X-Proxy-Cache: HIT
+2019-05-22 16:34:02,724 [DEBUG] headers:265 - << Content-Encoding: gzip
+2019-05-22 16:34:02,724 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:34:02,726 [DEBUG] wire:73 -  << "63[\r][\n]"
+2019-05-22 16:34:02,726 [DEBUG] wire:87 -  << "[0x1f]"
+2019-05-22 16:34:02,727 [DEBUG] wire:87 -  << "[0x8b]"
+2019-05-22 16:34:02,727 [DEBUG] wire:87 -  << "[0x8]"
+2019-05-22 16:34:02,727 [DEBUG] wire:87 -  << "[0x0]"
+2019-05-22 16:34:02,727 [DEBUG] wire:87 -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2019-05-22 16:34:02,727 [DEBUG] wire:73 -  << "+K-*[0xce][0xcc][0xcf][0xb3]5[0xe4][0xca]M-ILI,I[0xd4]+J-[0xc8]/[0xce],[0xc9]/[0xaa][0xd4]KKL[0x6][0xd3][0xf9]E)[0xa9]E[0xb6][\n]"
+2019-05-22 16:34:02,727 [DEBUG] wire:87 -  << "[0xc9][0xf9]y%[0xa9]y%z[0x15][0xb9]9z[0x15]U:H\[0x1d]E[0xae][0xc4][0xa2][0x92]L[0x90]z<[0xfa]aJ[0x8a]a&[0xa0][0x8][0x0][0xcd][0x0][0x0][0x94][0x5]R[0xac][0x8e][0x0][0x0][0x0]"
+2019-05-22 16:34:02,728 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:02,728 [DEBUG] wire:73 -  << "0[\r][\n]"
+2019-05-22 16:34:02,729 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:02,729 [DEBUG] SingleClientConnManager:265 - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@353a02d
+2019-05-22 16:34:02,836 [DEBUG] BasicClientConnectionManager:161 - Get connection for route {s}->https://download.eclipse.org:443
+2019-05-22 16:34:02,837 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to download.eclipse.org:443
+2019-05-22 16:34:03,554 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:34:03,554 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:34:03,554 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:34:03,554 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:34:03,555 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:34:03,555 [DEBUG] DefaultClientConnection:274 - Sending request: HEAD /technology/epp/packages/2019-03/content.xml.xz HTTP/1.1
+2019-05-22 16:34:03,555 [DEBUG] wire:73 -  >> "HEAD /technology/epp/packages/2019-03/content.xml.xz HTTP/1.1[\r][\n]"
+2019-05-22 16:34:03,555 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:34:03,555 [DEBUG] wire:73 -  >> "Host: download.eclipse.org[\r][\n]"
+2019-05-22 16:34:03,555 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:34:03,556 [DEBUG] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-05-22 16:34:03,556 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:34:03,556 [DEBUG] headers:278 - >> HEAD /technology/epp/packages/2019-03/content.xml.xz HTTP/1.1
+2019-05-22 16:34:03,556 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:34:03,556 [DEBUG] headers:281 - >> Host: download.eclipse.org
+2019-05-22 16:34:03,556 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:34:03,557 [DEBUG] headers:281 - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-05-22 16:34:03,722 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:34:03,723 [DEBUG] wire:73 -  << "Server: nginx[\r][\n]"
+2019-05-22 16:34:03,723 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:48 GMT[\r][\n]"
+2019-05-22 16:34:03,723 [DEBUG] wire:73 -  << "Content-Type: text/xml[\r][\n]"
+2019-05-22 16:34:03,723 [DEBUG] wire:73 -  << "Content-Length: 25388[\r][\n]"
+2019-05-22 16:34:03,724 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:34:03,724 [DEBUG] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2019-05-22 16:34:03,724 [DEBUG] wire:73 -  << "Last-Modified: Thu, 14 Mar 2019 15:05:04 GMT[\r][\n]"
+2019-05-22 16:34:03,724 [DEBUG] wire:73 -  << "ETag: "632c-5840f3f3ea800"[\r][\n]"
+2019-05-22 16:34:03,724 [DEBUG] wire:73 -  << "X-NodeID: download1[\r][\n]"
+2019-05-22 16:34:03,724 [DEBUG] wire:73 -  << "Strict-Transport-Security: max-age=15552000; includeSubDomains; preload[\r][\n]"
+2019-05-22 16:34:03,724 [DEBUG] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-05-22 16:34:03,724 [DEBUG] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-05-22 16:34:03,725 [DEBUG] wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-05-22 16:34:03,725 [DEBUG] wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-05-22 16:34:03,725 [DEBUG] wire:73 -  << "Accept-Ranges: bytes[\r][\n]"
+2019-05-22 16:34:03,725 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:03,725 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:34:03,725 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:34:03,726 [DEBUG] headers:265 - << Server: nginx
+2019-05-22 16:34:03,726 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:48 GMT
+2019-05-22 16:34:03,726 [DEBUG] headers:265 - << Content-Type: text/xml
+2019-05-22 16:34:03,726 [DEBUG] headers:265 - << Content-Length: 25388
+2019-05-22 16:34:03,726 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:34:03,726 [DEBUG] headers:265 - << Vary: Accept-Encoding
+2019-05-22 16:34:03,726 [DEBUG] headers:265 - << Last-Modified: Thu, 14 Mar 2019 15:05:04 GMT
+2019-05-22 16:34:03,726 [DEBUG] headers:265 - << ETag: "632c-5840f3f3ea800"
+2019-05-22 16:34:03,727 [DEBUG] headers:265 - << X-NodeID: download1
+2019-05-22 16:34:03,727 [DEBUG] headers:265 - << Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+2019-05-22 16:34:03,727 [DEBUG] headers:265 - << X-Frame-Options: SAMEORIGIN
+2019-05-22 16:34:03,727 [DEBUG] headers:265 - << X-Content-Type-Options: nosniff
+2019-05-22 16:34:03,727 [DEBUG] headers:265 - << X-XSS-Protection: 1; mode=block
+2019-05-22 16:34:03,727 [DEBUG] headers:265 - << X-Proxy-Cache: HIT
+2019-05-22 16:34:03,727 [DEBUG] headers:265 - << Accept-Ranges: bytes
+2019-05-22 16:34:03,728 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:34:03,728 [DEBUG] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@67c4fc5c
+2019-05-22 16:34:03,728 [DEBUG] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-05-22 16:34:03,866 [DEBUG] SingleClientConnManager:210 - Get connection for route {s}->https://download.eclipse.org:443
+2019-05-22 16:34:03,867 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to download.eclipse.org:443
+2019-05-22 16:34:04,026 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:34:04,027 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:34:04,027 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:34:04,027 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:34:04,027 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:34:04,027 [DEBUG] DefaultClientConnection:274 - Sending request: GET /releases/2019-03/201903201000/p2.index HTTP/1.1
+2019-05-22 16:34:04,028 [DEBUG] wire:73 -  >> "GET /releases/2019-03/201903201000/p2.index HTTP/1.1[\r][\n]"
+2019-05-22 16:34:04,028 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:34:04,028 [DEBUG] wire:73 -  >> "User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)[\r][\n]"
+2019-05-22 16:34:04,028 [DEBUG] wire:73 -  >> "Host: download.eclipse.org[\r][\n]"
+2019-05-22 16:34:04,028 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:34:04,028 [DEBUG] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-22 16:34:04,028 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:34:04,029 [DEBUG] headers:278 - >> GET /releases/2019-03/201903201000/p2.index HTTP/1.1
+2019-05-22 16:34:04,029 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:34:04,029 [DEBUG] headers:281 - >> User-Agent: p2/1.2.100.v20180822-1354 (Java 1.8.0_202-b08 AdoptOpenJdk; Windows10 10.0.0 x86-64; en_US) com.st.stm32cube.ide.mcu.rcp.product/unknownBuildId (org.eclipse.ui.ide.workbench)
+2019-05-22 16:34:04,029 [DEBUG] headers:281 - >> Host: download.eclipse.org
+2019-05-22 16:34:04,029 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:34:04,029 [DEBUG] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-05-22 16:34:04,535 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:34:04,535 [DEBUG] wire:73 -  << "Server: nginx[\r][\n]"
+2019-05-22 16:34:04,535 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:49 GMT[\r][\n]"
+2019-05-22 16:34:04,535 [DEBUG] wire:73 -  << "Content-Type: text/plain[\r][\n]"
+2019-05-22 16:34:04,536 [DEBUG] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-05-22 16:34:04,536 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:34:04,536 [DEBUG] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2019-05-22 16:34:04,536 [DEBUG] wire:73 -  << "Last-Modified: Thu, 14 Mar 2019 12:58:33 GMT[\r][\n]"
+2019-05-22 16:34:04,536 [DEBUG] wire:73 -  << "ETag: W/"8e-5840d7acd9f07"[\r][\n]"
+2019-05-22 16:34:04,536 [DEBUG] wire:73 -  << "X-NodeID: download2[\r][\n]"
+2019-05-22 16:34:04,537 [DEBUG] wire:73 -  << "Strict-Transport-Security: max-age=15552000; includeSubDomains; preload[\r][\n]"
+2019-05-22 16:34:04,537 [DEBUG] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-05-22 16:34:04,537 [DEBUG] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-05-22 16:34:04,538 [DEBUG] wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-05-22 16:34:04,538 [DEBUG] wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-05-22 16:34:04,538 [DEBUG] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-05-22 16:34:04,539 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:04,542 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:34:04,542 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:34:04,542 [DEBUG] headers:265 - << Server: nginx
+2019-05-22 16:34:04,542 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:49 GMT
+2019-05-22 16:34:04,542 [DEBUG] headers:265 - << Content-Type: text/plain
+2019-05-22 16:34:04,542 [DEBUG] headers:265 - << Transfer-Encoding: chunked
+2019-05-22 16:34:04,542 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:34:04,543 [DEBUG] headers:265 - << Vary: Accept-Encoding
+2019-05-22 16:34:04,543 [DEBUG] headers:265 - << Last-Modified: Thu, 14 Mar 2019 12:58:33 GMT
+2019-05-22 16:34:04,543 [DEBUG] headers:265 - << ETag: W/"8e-5840d7acd9f07"
+2019-05-22 16:34:04,543 [DEBUG] headers:265 - << X-NodeID: download2
+2019-05-22 16:34:04,543 [DEBUG] headers:265 - << Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+2019-05-22 16:34:04,543 [DEBUG] headers:265 - << X-Frame-Options: SAMEORIGIN
+2019-05-22 16:34:04,543 [DEBUG] headers:265 - << X-Content-Type-Options: nosniff
+2019-05-22 16:34:04,543 [DEBUG] headers:265 - << X-XSS-Protection: 1; mode=block
+2019-05-22 16:34:04,544 [DEBUG] headers:265 - << X-Proxy-Cache: HIT
+2019-05-22 16:34:04,544 [DEBUG] headers:265 - << Content-Encoding: gzip
+2019-05-22 16:34:04,545 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:34:04,546 [DEBUG] wire:73 -  << "63[\r][\n]"
+2019-05-22 16:34:04,547 [DEBUG] wire:87 -  << "[0x1f]"
+2019-05-22 16:34:04,547 [DEBUG] wire:87 -  << "[0x8b]"
+2019-05-22 16:34:04,547 [DEBUG] wire:87 -  << "[0x8]"
+2019-05-22 16:34:04,547 [DEBUG] wire:87 -  << "[0x0]"
+2019-05-22 16:34:04,547 [DEBUG] wire:87 -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2019-05-22 16:34:04,548 [DEBUG] wire:73 -  << "+K-*[0xce][0xcc][0xcf][0xb3]5[0xe4][0xca]M-ILI,I[0xd4]+J-[0xc8]/[0xce],[0xc9]/[0xaa][0xd4]KKL[0x6][0xd3][0xf9]E)[0xa9]E[0xb6][\n]"
+2019-05-22 16:34:04,548 [DEBUG] wire:87 -  << "[0xc9][0xf9]y%[0xa9]y%z[0x15][0xb9]9z[0x15]U:H\[0x1d]E[0xae][0xc4][0xa2][0x92]L[0x90]z<[0xfa]aJ[0x8a]a&[0xa0][0x8][0x0][0xcd][0x0][0x0][0x94][0x5]R[0xac][0x8e][0x0][0x0][0x0]"
+2019-05-22 16:34:04,548 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:04,549 [DEBUG] wire:73 -  << "0[\r][\n]"
+2019-05-22 16:34:04,549 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:04,549 [DEBUG] SingleClientConnManager:265 - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@2d6c2113
+2019-05-22 16:34:04,674 [DEBUG] BasicClientConnectionManager:161 - Get connection for route {s}->https://download.eclipse.org:443
+2019-05-22 16:34:04,675 [DEBUG] DefaultClientConnectionOperator:177 - Connecting to download.eclipse.org:443
+2019-05-22 16:34:05,401 [DEBUG] RequestAddCookies:123 - CookieSpec selected: default
+2019-05-22 16:34:05,401 [DEBUG] RequestAuthCache:77 - Auth cache not set in the context
+2019-05-22 16:34:05,401 [DEBUG] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-05-22 16:34:05,401 [DEBUG] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-05-22 16:34:05,402 [DEBUG] SNIAwareHttpClient:682 - Attempt 1 to execute request
+2019-05-22 16:34:05,402 [DEBUG] DefaultClientConnection:274 - Sending request: HEAD /releases/2019-03/201903201000/content.xml.xz HTTP/1.1
+2019-05-22 16:34:05,402 [DEBUG] wire:73 -  >> "HEAD /releases/2019-03/201903201000/content.xml.xz HTTP/1.1[\r][\n]"
+2019-05-22 16:34:05,403 [DEBUG] wire:73 -  >> "Cache-Control: max-age=0[\r][\n]"
+2019-05-22 16:34:05,403 [DEBUG] wire:73 -  >> "Host: download.eclipse.org[\r][\n]"
+2019-05-22 16:34:05,403 [DEBUG] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-05-22 16:34:05,403 [DEBUG] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-05-22 16:34:05,403 [DEBUG] wire:73 -  >> "[\r][\n]"
+2019-05-22 16:34:05,403 [DEBUG] headers:278 - >> HEAD /releases/2019-03/201903201000/content.xml.xz HTTP/1.1
+2019-05-22 16:34:05,403 [DEBUG] headers:281 - >> Cache-Control: max-age=0
+2019-05-22 16:34:05,404 [DEBUG] headers:281 - >> Host: download.eclipse.org
+2019-05-22 16:34:05,404 [DEBUG] headers:281 - >> Connection: Keep-Alive
+2019-05-22 16:34:05,404 [DEBUG] headers:281 - >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-05-22 16:34:05,750 [DEBUG] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-22 16:34:05,750 [DEBUG] wire:73 -  << "Server: nginx[\r][\n]"
+2019-05-22 16:34:05,750 [DEBUG] wire:73 -  << "Date: Wed, 22 May 2019 16:34:50 GMT[\r][\n]"
+2019-05-22 16:34:05,750 [DEBUG] wire:73 -  << "Content-Type: text/xml[\r][\n]"
+2019-05-22 16:34:05,750 [DEBUG] wire:73 -  << "Content-Length: 1016284[\r][\n]"
+2019-05-22 16:34:05,751 [DEBUG] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2019-05-22 16:34:05,751 [DEBUG] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2019-05-22 16:34:05,751 [DEBUG] wire:73 -  << "Last-Modified: Thu, 21 Mar 2019 10:13:51 GMT[\r][\n]"
+2019-05-22 16:34:05,751 [DEBUG] wire:73 -  << "ETag: "f81dc-58497feaec139"[\r][\n]"
+2019-05-22 16:34:05,751 [DEBUG] wire:73 -  << "X-NodeID: download1[\r][\n]"
+2019-05-22 16:34:05,751 [DEBUG] wire:73 -  << "Strict-Transport-Security: max-age=15552000; includeSubDomains; preload[\r][\n]"
+2019-05-22 16:34:05,751 [DEBUG] wire:73 -  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2019-05-22 16:34:05,751 [DEBUG] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-05-22 16:34:05,752 [DEBUG] wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-05-22 16:34:05,752 [DEBUG] wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-05-22 16:34:05,752 [DEBUG] wire:73 -  << "Accept-Ranges: bytes[\r][\n]"
+2019-05-22 16:34:05,752 [DEBUG] wire:73 -  << "[\r][\n]"
+2019-05-22 16:34:05,752 [DEBUG] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-05-22 16:34:05,752 [DEBUG] headers:262 - << HTTP/1.1 200 OK
+2019-05-22 16:34:05,752 [DEBUG] headers:265 - << Server: nginx
+2019-05-22 16:34:05,752 [DEBUG] headers:265 - << Date: Wed, 22 May 2019 16:34:50 GMT
+2019-05-22 16:34:05,752 [DEBUG] headers:265 - << Content-Type: text/xml
+2019-05-22 16:34:05,753 [DEBUG] headers:265 - << Content-Length: 1016284
+2019-05-22 16:34:05,753 [DEBUG] headers:265 - << Connection: keep-alive
+2019-05-22 16:34:05,753 [DEBUG] headers:265 - << Vary: Accept-Encoding
+2019-05-22 16:34:05,753 [DEBUG] headers:265 - << Last-Modified: Thu, 21 Mar 2019 10:13:51 GMT
+2019-05-22 16:34:05,753 [DEBUG] headers:265 - << ETag: "f81dc-58497feaec139"
+2019-05-22 16:34:05,753 [DEBUG] headers:265 - << X-NodeID: download1
+2019-05-22 16:34:05,753 [DEBUG] headers:265 - << Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+2019-05-22 16:34:05,753 [DEBUG] headers:265 - << X-Frame-Options: SAMEORIGIN
+2019-05-22 16:34:05,754 [DEBUG] headers:265 - << X-Content-Type-Options: nosniff
+2019-05-22 16:34:05,754 [DEBUG] headers:265 - << X-XSS-Protection: 1; mode=block
+2019-05-22 16:34:05,754 [DEBUG] headers:265 - << X-Proxy-Cache: HIT
+2019-05-22 16:34:05,754 [DEBUG] headers:265 - << Accept-Ranges: bytes
+2019-05-22 16:34:05,755 [DEBUG] SNIAwareHttpClient:509 - Connection can be kept alive indefinitely
+2019-05-22 16:34:05,755 [DEBUG] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@501e64e9
+2019-05-22 16:34:05,755 [DEBUG] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-05-22 16:34:06,703 [DEBUG] DefaultClientConnection:180 - Connection 0.0.0.0:55907<->148.253.237.137:80 closed
+2019-05-22 16:34:06,797 [DEBUG] DefaultClientConnection:180 - Connection 0.0.0.0:55909<->198.41.30.199:443 closed
+2019-05-22 16:34:06,799 [DEBUG] DefaultClientConnection:164 - Connection 0.0.0.0:55910<->198.41.30.199:443 shut down
+2019-05-22 16:34:06,801 [DEBUG] DefaultClientConnection:180 - Connection 0.0.0.0:55911<->198.41.30.199:443 closed
+2019-05-22 16:34:06,802 [DEBUG] DefaultClientConnection:164 - Connection 0.0.0.0:55912<->198.41.30.199:443 shut down
+2019-05-22 16:34:06,803 [DEBUG] DefaultClientConnection:180 - Connection 0.0.0.0:55913<->198.41.30.199:443 closed
+2019-05-22 16:34:06,804 [DEBUG] DefaultClientConnection:164 - Connection 0.0.0.0:55908<->198.41.30.199:443 shut down

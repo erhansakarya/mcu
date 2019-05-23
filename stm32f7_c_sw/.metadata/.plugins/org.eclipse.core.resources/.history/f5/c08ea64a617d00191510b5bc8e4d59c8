@@ -35,7 +35,18 @@ void EXTI_initExtInt(GPIO_handle_s *GPIO_handle, EXTI_handle_s *EXTI_handle){
 	uint8_t EXTICRx = GPIO_handle->config.pinNumber / 4;
 	uint8_t EXTIx = GPIO_handle->config.pinNumber % 4;
 
-	SYSCFG->EXTICR[EXTICRx] |= (GET_PORT_ADDR_VALUE(GPIO_handle->pBaseAddress) << (4 * EXTIx));
+	uint8_t tempVal = 0;
+
+	//tempVal = GET_PORT_ADDR_VALUE(GPIO_handle->pBaseAddress);
+
+	tempVal = (((uint32_t)pBaseAddress - (uint32_t)GPIOA) / ((uint32_t)GPIOB - (uint32_t)GPIOA));
+
+	/*
+	tempVal = GPIO_handle->pBaseAddress;
+	tempVal -= GPIOA_BASE;
+	tempVal /= (GPIOB_BASE - GPIOA_BASE);
+	*/
+	SYSCFG->EXTICR[EXTICRx] |= (tempVal << (4 * EXTIx));
 
 }
 
