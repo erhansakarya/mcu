@@ -1,0 +1,3 @@
+SPI_driver.c:9:6:SPI_clkCntrl	16	static
+SPI_driver.c:34:6:SPI_init	16	static
+SPI_driver.c:40:6:SPI_deInit	16	static

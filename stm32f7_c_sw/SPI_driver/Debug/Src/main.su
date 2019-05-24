@@ -1,0 +1,9 @@
+main.c:40:5:main	16	static
+main.c:71:6:EXTI0_IRQHandler	8	static
+main.c:79:13:initLED	32	static
+main.c:97:13:initButton	24	static
+main.c:115:13:initTouchSensor	24	static
+main.c:133:13:initTouchSensorITMode	32	static
+main.c:162:13:controlLED	16	static
+main.c:168:24:getButtonState	8	static
+main.c:174:24:getTouchedState	8	static

@@ -1,0 +1,58 @@
+#include "stm32f767xx.h"
+
+#include "util.h"
+#include "GPIO_driver.h"
+#include "EXTI_driver.h"
+#include "RCC_driver.h"
+#include "SPI_driver.h"
+
+void SPI_clkCntrl(SPI_TypeDef *pBaseAddress, UTIL_enableDisable_e enableDisable){
+
+	switch(enableDisable){
+
+	case ENABLE:
+		if(pBaseAddress == SPI1){ GPIOA_CLK_EN; }
+		else if(pBaseAddress == SPI2){ GPIOB_CLK_EN; }
+		else if(pBaseAddress == SPI3){ GPIOC_CLK_EN; }
+		else if(pBaseAddress == SPI4){ GPIOD_CLK_EN; }
+		else if(pBaseAddress == GPIOE){ GPIOE_CLK_EN; }
+		else if(pBaseAddress == GPIOF){ GPIOF_CLK_EN; }
+		else if(pBaseAddress == GPIOG){ GPIOG_CLK_EN; }
+		else if(pBaseAddress == GPIOH){ GPIOH_CLK_EN; }
+		else if(pBaseAddress == GPIOI){ GPIOI_CLK_EN; }
+		else if(pBaseAddress == GPIOJ){ GPIOJ_CLK_EN; }
+		else if(pBaseAddress == GPIOK){ GPIOK_CLK_EN; }
+		break;
+
+	case DISABLE:
+		if(pBaseAddress == GPIOA){ GPIOA_CLK_DIS; }
+		else if(pBaseAddress == GPIOB){ GPIOB_CLK_DIS; }
+		else if(pBaseAddress == GPIOC){ GPIOC_CLK_DIS; }
+		else if(pBaseAddress == GPIOD){ GPIOD_CLK_DIS; }
+		else if(pBaseAddress == GPIOE){ GPIOE_CLK_DIS; }
+		else if(pBaseAddress == GPIOF){ GPIOF_CLK_DIS; }
+		else if(pBaseAddress == GPIOG){ GPIOG_CLK_DIS; }
+		else if(pBaseAddress == GPIOH){ GPIOH_CLK_DIS; }
+		else if(pBaseAddress == GPIOI){ GPIOI_CLK_DIS; }
+		else if(pBaseAddress == GPIOJ){ GPIOJ_CLK_DIS; }
+		else if(pBaseAddress == GPIOK){ GPIOK_CLK_DIS; }
+		break;
+
+	default:
+		break;
+
+	}
+
+}
+
+void SPI_init(SPI_handle_s *SPI_handle){
+
+
+
+}
+
+void SPI_deInit(SPI_TypeDef *pBaseAddress){
+
+
+
+}
