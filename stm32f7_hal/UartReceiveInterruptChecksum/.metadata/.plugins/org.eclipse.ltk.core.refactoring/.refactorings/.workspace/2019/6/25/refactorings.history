@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/UartReceiveIT_CheckSum/Src/main.c" element2="/UartReceiveIT_CheckSum/Src/stm32f7xx_hal_msp.c" element3="/UartReceiveIT_CheckSum/Src/stm32f7xx_it.c" element4="/UartReceiveIT_CheckSum/Src/system_stm32f7xx.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1561219945626"/>
+</session>
