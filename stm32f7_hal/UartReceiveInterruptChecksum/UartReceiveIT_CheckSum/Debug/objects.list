@@ -24,6 +24,4 @@
 "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o"
 "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o"
 "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.o"
-"Src/syscalls.o"
-"Src/sysmem.o"
 "Startup/startup_stm32f767zitx.o"

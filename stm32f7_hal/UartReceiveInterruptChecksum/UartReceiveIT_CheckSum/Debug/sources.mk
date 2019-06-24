@@ -18,6 +18,5 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Drivers/STM32F7xx_HAL_Driver/Src \
-Src \
 Startup \
 

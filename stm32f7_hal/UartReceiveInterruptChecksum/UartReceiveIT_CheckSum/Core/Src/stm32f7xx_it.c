@@ -197,19 +197,19 @@ void SysTick_Handler(void)
 /* please refer to the startup file (startup_stm32f7xx.s).                    */
 /******************************************************************************/
 
-/**
-  * @brief This function handles USART1 global interrupt.
-  */
-void USART1_IRQHandler(void)
-{
-  /* USER CODE BEGIN USART1_IRQn 0 */
-
-  /* USER CODE END USART1_IRQn 0 */
-  HAL_UART_IRQHandler(&huart1);
-  /* USER CODE BEGIN USART1_IRQn 1 */
-
-  /* USER CODE END USART1_IRQn 1 */
-}
+///**
+//  * @brief This function handles USART1 global interrupt.
+//  */
+//void USART1_IRQHandler(void)
+//{
+//  /* USER CODE BEGIN USART1_IRQn 0 */
+//
+//  /* USER CODE END USART1_IRQn 0 */
+//  HAL_UART_IRQHandler(&huart1);
+//  /* USER CODE BEGIN USART1_IRQn 1 */
+//  getDataFromUart();
+//  /* USER CODE END USART1_IRQn 1 */
+//}
 
 /* USER CODE BEGIN 1 */
 

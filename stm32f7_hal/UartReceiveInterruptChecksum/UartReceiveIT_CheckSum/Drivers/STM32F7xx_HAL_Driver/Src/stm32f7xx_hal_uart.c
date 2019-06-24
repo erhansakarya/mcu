@@ -160,6 +160,8 @@
   * @{
   */
 
+#define HAL_UART_MODULE_ENABLED
+
 /** @defgroup UART UART
   * @brief HAL UART module driver
   * @{

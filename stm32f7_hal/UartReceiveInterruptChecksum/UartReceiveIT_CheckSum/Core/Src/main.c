@@ -19,6 +19,8 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
+#include <string.h>
+
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -51,7 +53,8 @@ UART_HandleTypeDef huart3;
 PCD_HandleTypeDef hpcd_USB_OTG_FS;
 
 /* USER CODE BEGIN PV */
-
+uint8_t dataArray[8] = { 0 };
+uint8_t v_isChecksumCorrect = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -62,7 +65,8 @@ static void MX_USART1_UART_Init(void);
 static void MX_USART3_UART_Init(void);
 static void MX_USB_OTG_FS_PCD_Init(void);
 /* USER CODE BEGIN PFP */
-
+static uint8_t calculateChecksum(uint8_t *dataBlock, uint8_t dataCount);
+static uint8_t isChecksumCorrect(uint8_t *dataBlock, uint8_t dataCount, uint8_t checksum);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -101,10 +105,10 @@ int main(void)
   MX_GPIO_Init();
   MX_ETH_Init();
   MX_USART1_UART_Init();
+  __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE); /* NOTE: !!! flag receive !!! */
   MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -112,8 +116,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+	/* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
@@ -380,9 +383,94 @@ static void MX_GPIO_Init(void)
 
 }
 
-/* USER CODE BEGIN 4 */
+/**
+  * @brief This function handles USART1 global interrupt.
+  */
+void USART1_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART1_IRQn 0 */
 
-/* USER CODE END 4 */
+  /* USER CODE END USART1_IRQn 0 */
+  HAL_UART_IRQHandler(&huart1);
+  /* USER CODE BEGIN USART1_IRQn 1 */
+  getDataFromUart();
+  /* USER CODE END USART1_IRQn 1 */
+}
+
+void getDataFromUart(void){
+
+	static uint8_t dataCounter = 0;
+	uint8_t checksumValue = 0;
+
+	if(dataCounter == 0){
+
+		v_isChecksumCorrect = 0;
+
+	}
+
+	if(dataCounter == 8){
+
+		HAL_UART_Receive(&huart1, &checksumValue, 1, HAL_MAX_DELAY);
+
+		if(!isChecksumCorrect(dataArray, 8, checksumValue)){
+
+			memset(dataArray, 0, 8);
+			v_isChecksumCorrect = 0;
+
+		}else{
+
+			v_isChecksumCorrect = 1;
+
+		}
+
+		dataCounter = 0;
+
+		return;
+
+	}
+
+	HAL_UART_Receive(&huart1, &dataArray[dataCounter], 1, HAL_MAX_DELAY);
+	dataCounter++;
+
+}
+
+static uint8_t calculateChecksum(uint8_t *dataBlock, uint8_t dataCount){
+
+	uint8_t checksumValue = 0;
+
+	for(int i = 0; i < dataCount; i++){
+
+		checksumValue += dataBlock[i];
+
+	}
+
+	checksumValue = ~checksumValue;
+	checksumValue += 0x01;
+
+	return checksumValue;
+
+}
+
+static uint8_t isChecksumCorrect(uint8_t *dataBlock, uint8_t dataCount, uint8_t checksum){
+
+	uint8_t isChecksumCorrect = 0;
+	uint8_t sum = 0;
+
+	for(int i = 0; i < dataCount; i++){
+
+		sum += dataBlock[i];
+
+	}
+
+	if(!(uint8_t)(sum + checksum)){
+
+		isChecksumCorrect = 1;
+
+	}
+
+	return isChecksumCorrect;
+
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.
