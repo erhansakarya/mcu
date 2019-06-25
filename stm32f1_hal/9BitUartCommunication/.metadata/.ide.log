@@ -1,0 +1,421 @@
+2019-06-25 11:51:55,792 [INFO] Activator:176 - 
+
+
+2019-06-25 11:51:55,798 [INFO] Activator:177 - !SESSION log4j initialized
+2019-06-25 11:52:07,067 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926
+2019-06-25 11:52:07,088 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/mcu/
+2019-06-25 11:52:07,096 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/boardmanager/
+2019-06-25 11:52:07,097 [INFO] DbMcus:262 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-06-25 11:52:07,097 [INFO] DbBoards:225 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-06-25 11:52:07,100 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/mcu/
+2019-06-25 11:52:07,110 [INFO] DbMcusAds:72 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:07,115 [INFO] DbMcusDocs:90 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:07,119 [INFO] DbMcusJson:59 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:07,120 [INFO] DbBoardsDocs:82 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:07,126 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:07,134 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-06-25 11:52:07,354 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2019-06-25 11:52:08,226 [INFO] MicroXplorer:521 - Detected Java Version = 1.8.0_202
+2019-06-25 11:52:08,227 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/mcu/
+2019-06-25 11:52:08,228 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/boardmanager/
+2019-06-25 11:52:08,229 [INFO] DbMcus:262 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-06-25 11:52:08,231 [INFO] DbBoards:225 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-06-25 11:52:08,231 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/mcu/
+2019-06-25 11:52:08,232 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,232 [INFO] DbMcusAds:72 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,233 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,233 [INFO] DbMcusDocs:90 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,233 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,234 [INFO] DbMcusJson:59 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,234 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,236 [INFO] DbBoardsDocs:82 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,238 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,238 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,238 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,238 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,239 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-06-25 11:52:08,504 [INFO] MainPanel:211 - HeapMemory: 268435456
+2019-06-25 11:52:08,660 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/mcu/
+2019-06-25 11:52:08,660 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/boardmanager/
+2019-06-25 11:52:08,661 [INFO] DbMcus:262 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-06-25 11:52:08,661 [INFO] DbBoards:225 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-06-25 11:52:08,662 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/mcu/
+2019-06-25 11:52:08,663 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,663 [INFO] DbMcusAds:72 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,663 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,664 [INFO] DbMcusDocs:90 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,664 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,664 [INFO] DbMcusJson:59 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,664 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,665 [INFO] DbBoardsDocs:82 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,665 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,665 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/
+2019-06-25 11:52:08,665 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,666 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\erhan\.stmcufinder\plugins\mcufinder/ => C:\Users\erhan\.stmcufinder\plugins\mcufinder
+2019-06-25 11:52:08,667 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\erhan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-06-25 11:52:08,704 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926
+2019-06-25 11:52:08,707 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2019-06-25 11:52:08,709 [INFO] PluginManage:292 - Check plugin analytics
+2019-06-25 11:52:08,719 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2019-06-25 11:52:08,719 [INFO] PluginManage:292 - Check plugin clock
+2019-06-25 11:52:08,733 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2019-06-25 11:52:08,733 [INFO] PluginManage:292 - Check plugin ddr
+2019-06-25 11:52:08,741 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2019-06-25 11:52:08,741 [INFO] PluginManage:292 - Check plugin filemanager
+2019-06-25 11:52:09,040 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2019-06-25 11:52:09,041 [INFO] PluginManage:292 - Check plugin ipmanager
+2019-06-25 11:52:09,074 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2019-06-25 11:52:09,074 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2019-06-25 11:52:09,089 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2019-06-25 11:52:09,089 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2019-06-25 11:52:09,128 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2019-06-25 11:52:09,129 [INFO] PluginManage:292 - Check plugin power
+2019-06-25 11:52:09,139 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2019-06-25 11:52:09,139 [INFO] PluginManage:292 - Check plugin projectmanager
+2019-06-25 11:52:09,166 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2019-06-25 11:52:09,166 [INFO] PluginManage:292 - Check plugin thirdparty
+2019-06-25 11:52:09,394 [INFO] ThirdPartyDb:293 - Open Third Party DataBase File (C:/Users/erhan/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 159 ms. number of Sw pack : 14
+2019-06-25 11:52:09,409 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2019-06-25 11:52:09,409 [INFO] PluginManage:292 - Check plugin tools
+2019-06-25 11:52:09,540 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2019-06-25 11:52:09,541 [INFO] PluginManage:292 - Check plugin updater
+2019-06-25 11:52:09,808 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2019-06-25 11:52:09,809 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2019-06-25 11:52:11,554 [INFO] PinOutPanel:1361 - setPackage(No Configuration,No Configuration)
+2019-06-25 11:52:11,705 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2019-06-25 11:52:11,709 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2019-06-25 11:52:11,713 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2019-06-25 11:52:11,716 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2019-06-25 11:52:11,720 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2019-06-25 11:52:11,726 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2019-06-25 11:52:11,735 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2019-06-25 11:52:11,737 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2019-06-25 11:52:11,744 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2019-06-25 11:52:11,752 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2019-06-25 11:52:11,755 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2019-06-25 11:52:11,758 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2019-06-25 11:52:11,761 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2019-06-25 11:52:11,770 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2019-06-25 11:52:11,777 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2019-06-25 11:52:11,781 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2019-06-25 11:52:11,784 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2019-06-25 11:52:11,788 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2019-06-25 11:52:11,793 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2019-06-25 11:52:11,797 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2019-06-25 11:52:11,803 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2019-06-25 11:52:11,810 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2019-06-25 11:52:11,814 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2019-06-25 11:52:11,818 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2019-06-25 11:52:11,832 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2019-06-25 11:52:11,835 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2019-06-25 11:52:11,840 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2019-06-25 11:52:11,845 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2019-06-25 11:52:11,853 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2019-06-25 11:52:11,858 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2019-06-25 11:52:11,886 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2019-06-25 11:52:11,978 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2019-06-25 11:52:11,983 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2019-06-25 11:52:11,987 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2019-06-25 11:52:11,991 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2019-06-25 11:52:11,994 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2019-06-25 11:52:12,000 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2019-06-25 11:52:13,732 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-06-25 11:52:14,394 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-06-25 11:52:14,402 [INFO] PinOutPanel:1361 - setPackage(No Configuration,No Configuration)
+2019-06-25 11:52:14,406 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-06-25 11:52:14,477 [INFO] Updater:860 - Updater Version found : 5.2.1
+2019-06-25 11:52:14,494 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926
+2019-06-25 11:52:14,672 [INFO] MainUpdater:2032 - connection check result : 10
+2019-06-25 11:52:14,674 [INFO] MainUpdater:223 - Updater Check For Update Now.
+2019-06-25 11:52:14,674 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.21
+2019-06-25 11:52:14,801 [INFO] CheckServerUpdateThread:121 - End of CheckServer Thread
+2019-06-25 11:52:14,939 [INFO] MainUpdater:2032 - connection check result : 10
+2019-06-25 11:52:14,940 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-06-25 11:52:15,209 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2019-06-25 11:52:15,224 [INFO] FinderPluginLoader:85 - Searching for filters in installed packs
+2019-06-25 11:52:15,225 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/mcu/families.xml
+2019-06-25 11:52:16,247 [INFO] ThirdPartyDb:263 - Close Third Party DataBase File (C:/Users/erhan/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-06-25 11:52:16,645 [INFO] ThirdPartyDb:293 - Open Third Party DataBase File (C:/Users/erhan/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 8 ms. number of Sw pack : 14
+2019-06-25 11:52:16,645 [INFO] ThirdPartyDb:263 - Close Third Party DataBase File (C:/Users/erhan/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-06-25 11:52:16,988 [INFO] IntegrityCheckThread:94 - End integrity checks thread
+2019-06-25 11:52:18,828 [INFO] DbMcusJson:87 - JSON generation date=Tue May 21 21:47:07 EET 2019 (1558464427)
+2019-06-25 11:52:22,003 [INFO] DbMcus:192 - Found 1486 MCUs (1445 are supported by CubeMX, 1445 are visible in CubeMX)
+2019-06-25 11:52:22,004 [INFO] ApiDb:158 - Load user favorites file C:\Users\erhan/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2019-06-25 11:52:22,004 [INFO] ApiDb:163 - User favorites MCUs=[]
+2019-06-25 11:52:22,004 [INFO] DbMcus:203 - Set 0 / 0 favorites MCUs
+2019-06-25 11:52:25,556 [INFO] DbMcusAds:130 - JSON generation date=Wed Feb 20 19:46:15 EET 2019 (1550681175)
+2019-06-25 11:52:25,573 [INFO] LoadUrlFilesThread:147 - End of LoadServerUrlFiles without Thread
+2019-06-25 11:52:25,834 [INFO] McuDetailPanel:180 - Set advertising image to C:/Users/erhan/STM32Cube/Repository/\PRSTM32MP10219-01-med.jpg
+2019-06-25 11:52:28,569 [INFO] McuFilterPanel:282 - Update 0 favorites MCUs
+2019-06-25 11:52:30,068 [INFO] DbBoardsPdsc:92 - Found 18 items
+2019-06-25 11:52:30,268 [INFO] DbBoardsPdsc:92 - Found 9 items
+2019-06-25 11:52:30,353 [INFO] DbBoardsPdsc:92 - Found 27 items
+2019-06-25 11:52:30,378 [INFO] DbBoardsPdsc:92 - Found 1 items
+2019-06-25 11:52:30,470 [INFO] DbBoardsPdsc:92 - Found 35 items
+2019-06-25 11:52:30,584 [INFO] DbBoardsPdsc:92 - Found 37 items
+2019-06-25 11:52:30,874 [INFO] DbBoardsJson:79 - JSON generation date=Wed Feb 20 16:21:00 EET 2019 (1550668860)
+2019-06-25 11:52:30,886 [INFO] DbBoards:120 - Found 127 boards (126 are supported by CubeMX)
+2019-06-25 11:52:30,929 [INFO] DbBoardsDocs:119 - JSON generation date=Tue May 21 21:47:07 EET 2019 (1558464427)
+2019-06-25 11:52:30,948 [INFO] DbBoardsDocs:55 - Found 141 boards documents
+2019-06-25 11:52:30,950 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2019-06-25 11:52:30,950 [WARN] DbBoards:130 - board NUCLEO-H753ZI has no document id list !
+2019-06-25 11:52:30,950 [WARN] DbBoards:130 - board NUCLEO-H745ZI-Q has no document id list !
+2019-06-25 11:52:30,950 [WARN] DbBoards:130 - board NUCLEO-H755ZI-Q has no document id list !
+2019-06-25 11:52:30,951 [WARN] DbBoards:130 - board NUCLEO-G431KB has no document id list !
+2019-06-25 11:52:30,951 [WARN] DbBoards:130 - board NUCLEO-G031K8 has no document id list !
+2019-06-25 11:52:30,952 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2019-06-25 11:52:30,952 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2019-06-25 11:52:30,952 [WARN] DbBoards:130 - board NUCLEO-G431RB has no document id list !
+2019-06-25 11:52:30,952 [WARN] DbBoards:130 - board NUCLEO-G474RE has no document id list !
+2019-06-25 11:52:30,952 [WARN] DbBoards:130 - board P-NUCLEO-WB55 has no document id list !
+2019-06-25 11:52:30,953 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2019-06-25 11:52:30,953 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2019-06-25 11:52:30,953 [WARN] DbBoards:130 - board STM32F7308-DISCO has no document id list !
+2019-06-25 11:52:30,954 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2019-06-25 11:52:30,954 [WARN] DbBoards:130 - board STM32G071B-DISCO has no document id list !
+2019-06-25 11:52:30,954 [WARN] DbBoards:130 - board STM32G0316-DISCO has no document id list !
+2019-06-25 11:52:30,954 [WARN] DbBoards:130 - board STM32H747I-DISCO has no document id list !
+2019-06-25 11:52:30,954 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2019-06-25 11:52:30,955 [WARN] DbBoards:130 - board STM32H745I-DISCO has no document id list !
+2019-06-25 11:52:30,955 [WARN] DbBoards:130 - board STM32H750B-DK has no document id list !
+2019-06-25 11:52:30,955 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2019-06-25 11:52:30,957 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2019-06-25 11:52:30,957 [WARN] DbBoards:130 - board STM32H747I-EVAL has no document id list !
+2019-06-25 11:52:30,957 [WARN] DbBoards:130 - board STM32H757I-EVAL has no document id list !
+2019-06-25 11:52:30,961 [WARN] DbBoards:130 - board STM32G474E-EVAL has no document id list !
+2019-06-25 11:52:30,962 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2019-06-25 11:52:30,962 [WARN] DbBoards:130 - board STM32G484E-EVAL has no document id list !
+2019-06-25 11:52:33,879 [INFO] ApiDb:158 - Load user favorites file C:\Users\erhan/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2019-06-25 11:52:33,879 [INFO] ApiDb:163 - User favorites Boards=[]
+2019-06-25 11:52:33,879 [INFO] DbBoards:202 - Set 0 / 0 favorites Boards
+2019-06-25 11:52:34,052 [INFO] LoadUrlFilesThread:147 - End of LoadServerUrlFiles without Thread
+2019-06-25 11:52:34,052 [INFO] BoardDetailPanel:179 - Set advertising image to C:/Users/erhan/STM32Cube/Repository/\PRSTM32MP10219-01-med.jpg
+2019-06-25 11:52:34,237 [INFO] BoardFilterPanel:212 - Update 0 favorites Boards
+2019-06-25 11:52:35,185 [INFO] CrossSelectorPresenter:1239 - Cross Selector saved comparison directory: C:\Users\erhan\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2019-06-25 11:53:02,299 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] withoutVersionV1.7.0
+2019-06-25 11:53:06,759 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] File copied successfully!!
+2019-06-25 11:53:07,805 [INFO] MainUpdater:2032 - connection check result : 10
+2019-06-25 11:53:07,806 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-06-25 11:53:07,862 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-06-25 11:53:07,862 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.21
+2019-06-25 11:53:07,867 [INFO] PinOutPanel:1361 - setPackage(No Configuration,No Configuration)
+2019-06-25 11:53:07,867 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 248043424 Bytes (313524224)
+2019-06-25 11:53:07,868 [INFO] OpenFileManager:269 - Change cursor
+2019-06-25 11:53:13,028 [INFO] Rule:205 - rule SPDIFRX instance for mcu is applicable
+2019-06-25 11:53:13,029 [INFO] Rule:205 - rule Rename Tracer Mode is applicable
+2019-06-25 11:53:13,029 [INFO] Rule:205 - rule SPDIFRX instance value for IP SPDIFRX is applicable
+2019-06-25 11:53:13,029 [INFO] Rule:205 - rule SPDIFRX instance for signal is applicable
+2019-06-25 11:53:13,029 [INFO] Rule:205 - rule SPDIFRX instance for project manager is applicable
+2019-06-25 11:53:13,029 [INFO] Rule:205 - rule SPDIFRX instance for project manager is applicable
+2019-06-25 11:53:13,030 [INFO] Rule:205 - rule UART/USART WORD LENGTH 7 is applicable
+2019-06-25 11:53:13,030 [INFO] Rule:205 - rule UART/USART WORD LENGTH 8 is applicable
+2019-06-25 11:53:13,030 [INFO] Rule:205 - rule UART/USART WORD LENGTH 9 is applicable
+2019-06-25 11:53:13,030 [INFO] Rule:205 - rule ADC SamplingTime fix with FW L0  is applicable
+2019-06-25 11:53:13,032 [INFO] Rule:205 - rule ADC SamplingTime fix with FW L0  is applicable
+2019-06-25 11:53:13,032 [INFO] Rule:205 - rule ADC SamplingTime fix with FW L0 is applicable
+2019-06-25 11:53:13,032 [INFO] Rule:205 - rule ADC SamplingTime fix with FW L0 is applicable
+2019-06-25 11:53:13,032 [INFO] Rule:205 - rule ADC SamplingTime fix with FW L0  is applicable
+2019-06-25 11:53:13,032 [INFO] Rule:205 - rule ADC SamplingTime fix with FW L0 is applicable
+2019-06-25 11:53:13,033 [INFO] Rule:205 - rule Rename USB_OE Signal is applicable
+2019-06-25 11:53:13,033 [INFO] Rule:205 - rule Rename Activate_OE Mode is applicable
+2019-06-25 11:53:13,033 [INFO] Rule:205 - rule Rename DIE462/DIE415 pin PC14/OSC32_IN -> PC14-OSC32_IN (PC14) is applicable
+2019-06-25 11:53:13,033 [INFO] Rule:205 - rule Rename DIE462/DIE415 pin PC15/OSC32_OUT -> PC15-OSC32_OUT (PC15) is applicable
+2019-06-25 11:53:13,033 [INFO] Rule:205 - rule Rename DIE462/DIE415 pin PH0/OSC_IN -> PH0-OSC_IN (PH0) is applicable
+2019-06-25 11:53:13,033 [INFO] Rule:205 - rule Rename DIE462/DIE415 pin PH1/OSC_OUT -> PH1-OSC_OUT (PH1) is applicable
+2019-06-25 11:53:13,034 [INFO] Rule:205 - rule Rename DIE462 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2019-06-25 11:53:13,034 [INFO] Rule:205 - rule Rename DIE415 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2019-06-25 11:53:13,034 [INFO] Rule:205 - rule Rename DIE462 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2019-06-25 11:53:13,035 [INFO] Rule:205 - rule Rename DIE415 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2019-06-25 11:53:13,035 [INFO] Rule:205 - rule Rename DIE462/DIE415 pin PA15 -> PA15 (JTDI) is applicable
+2019-06-25 11:53:13,035 [INFO] Rule:205 - rule Rename DIE462 pin PB3 -> PB3 (JTD0/TRACESWO) is applicable
+2019-06-25 11:53:13,035 [INFO] Rule:205 - rule Rename DIE415 pin PB3 -> PB3 (JTD0-TRACESWO) is applicable
+2019-06-25 11:53:13,035 [INFO] Rule:205 - rule Rename DIE462/DIE415 pin PB4 -> PB4 (NJTRST) is applicable
+2019-06-25 11:53:13,035 [INFO] Rule:205 - rule Rename DIE462 pin PH3/BOOT0 -> PH3-BOOT0 (BOOT0) is applicable
+2019-06-25 11:53:13,036 [INFO] Rule:205 - rule Rename CRYP DataEncryptionTypesList to Algorithm is applicable
+2019-06-25 11:53:13,036 [INFO] Rule:205 - rule Rename AES DataEncryptionTypesList to Algorithm is applicable
+2019-06-25 11:53:13,036 [INFO] Rule:205 - rule Rename TDESECB to CRYP_TDES_ECB is applicable
+2019-06-25 11:53:13,037 [INFO] Rule:205 - rule Rename TDESCBC to CRYP_TDES_CBC is applicable
+2019-06-25 11:53:13,037 [INFO] Rule:205 - rule Rename DESECB to CRYP_DES_ECB is applicable
+2019-06-25 11:53:13,037 [INFO] Rule:205 - rule Rename DESCBC to CRYP_DES_CBC is applicable
+2019-06-25 11:53:13,038 [INFO] Rule:205 - rule Rename AESECB to CRYP_AES_ECB is applicable
+2019-06-25 11:53:13,038 [INFO] Rule:205 - rule Rename AESCBC to CRYP_AES_CBC is applicable
+2019-06-25 11:53:13,038 [INFO] Rule:205 - rule Rename AESCTR to CRYP_AES_CTR is applicable
+2019-06-25 11:53:13,038 [INFO] Rule:205 - rule Rename AESGCM to CRYP_AES_GCM is applicable
+2019-06-25 11:53:13,056 [INFO] Rule:205 - rule Rename AESCCM to CRYP_AES_CCM is applicable
+2019-06-25 11:53:13,056 [INFO] Rule:205 - rule Rename CAN TimeSeg1 to BS1 is applicable
+2019-06-25 11:53:13,056 [INFO] Rule:205 - rule Rename CAN TimeSeg2 to BS2 is applicable
+2019-06-25 11:53:13,056 [INFO] Rule:205 - rule Rename CAN SyncJumpWidth to SJW is applicable
+2019-06-25 11:53:13,056 [INFO] Rule:205 - rule TimeTriggeredMode to TTCM is applicable
+2019-06-25 11:53:13,058 [INFO] Rule:205 - rule Rename CAN AutoBusOff to ABOM is applicable
+2019-06-25 11:53:13,059 [INFO] Rule:205 - rule Rename CAN AutoWakeUp to AWUM is applicable
+2019-06-25 11:53:13,060 [INFO] Rule:205 - rule Rename CAN AutoRetransmission to NART is applicable
+2019-06-25 11:53:13,060 [INFO] Rule:205 - rule Rename CAN ReceiveFifoLocked to RFLM is applicable
+2019-06-25 11:53:13,060 [INFO] Rule:205 - rule Rename CAN TransmitFifoPriority to TXFP is applicable
+2019-06-25 11:53:13,060 [INFO] Rule:205 - rule Rename HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGH in HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGHZ is applicable
+2019-06-25 11:53:13,060 [INFO] Rule:205 - rule Rename TIMER TIM_CLEARINPUTSOURCE_OCREFCLR in  TIMER TIM_CLEARINPUTSOURCE_NONE for F7 family is applicable
+2019-06-25 11:53:13,060 [INFO] Rule:205 - rule FDCAN_R1 - Rename FDCAN mode Master into Classic is applicable
+2019-06-25 11:53:13,061 [INFO] Rule:205 - rule FDCAN_R2 - Rename FDCAN mode Slave into Classic is applicable
+2019-06-25 11:53:13,061 [INFO] Rule:205 - rule FDCAN1_R3 - if PA10.Mode=FullDuplex, add Pin PA12 is applicable
+2019-06-25 11:53:13,062 [INFO] Rule:205 - rule FDCAN1_R3 - if PA9.Mode=FullDuplex, add Pin PA11 is applicable
+2019-06-25 11:53:13,062 [INFO] Rule:205 - rule FDCAN1_R3 - Alternatepin_1 - if PE1.Mode=FullDuplex, add Pin PB9 is applicable
+2019-06-25 11:53:13,063 [INFO] Rule:205 - rule FDCAN1_R3 - Alternatepin_1 - if PE0.Mode=FullDuplex, add Pin PB8 is applicable
+2019-06-25 11:53:13,063 [INFO] Rule:205 - rule FDCAN1_R3 - Alternatepin_2 - if PD5.Mode=FullDuplex, add Pin PD1 is applicable
+2019-06-25 11:53:13,064 [INFO] Rule:205 - rule FDCAN1_R3 - Alternatepin_2 - if PD4.Mode=FullDuplex, add Pin PD0 is applicable
+2019-06-25 11:53:13,064 [INFO] Rule:205 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA10 is applicable
+2019-06-25 11:53:13,068 [INFO] Rule:205 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA9 is applicable
+2019-06-25 11:53:13,068 [INFO] Rule:205 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE1 is applicable
+2019-06-25 11:53:13,068 [INFO] Rule:205 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE0 is applicable
+2019-06-25 11:53:13,068 [INFO] Rule:205 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD5 is applicable
+2019-06-25 11:53:13,069 [INFO] Rule:205 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD4 is applicable
+2019-06-25 11:53:13,069 [INFO] Rule:205 - rule FDCAN2_R3 - if PD10.Mode=FullDuplex, add Pin PB13 is applicable
+2019-06-25 11:53:13,069 [INFO] Rule:205 - rule FDCAN2_R3 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2019-06-25 11:53:13,070 [INFO] Rule:205 - rule FDCAN2_R3 - Alternatepin_1 - if PB7.Mode=FullDuplex, add Pin PB6 is applicable
+2019-06-25 11:53:13,070 [INFO] Rule:205 - rule FDCAN2_R3 - Alternatepin_1 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2019-06-25 11:53:13,070 [INFO] Rule:205 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD10 is applicable
+2019-06-25 11:53:13,070 [INFO] Rule:205 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD9 is applicable
+2019-06-25 11:53:13,070 [INFO] Rule:205 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PB7 is applicable
+2019-06-25 11:53:13,070 [INFO] Rule:205 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD6 is applicable
+2019-06-25 11:53:13,070 [INFO] Rule:205 - rule USART TxPinLevelInvertParam Mode is applicable
+2019-06-25 11:53:13,071 [INFO] Rule:205 - rule USART RxPinLevelInvertParam Mode is applicable
+2019-06-25 11:53:13,071 [INFO] Rule:205 - rule USART DataInvertParam Mode is applicable
+2019-06-25 11:53:13,073 [INFO] Rule:205 - rule USART SwapParam Mode is applicable
+2019-06-25 11:53:13,073 [INFO] Rule:205 - rule USART OverrunDisableParam Mode is applicable
+2019-06-25 11:53:13,073 [INFO] Rule:205 - rule USART DMADisableonRxErrorParam Mode is applicable
+2019-06-25 11:53:13,073 [INFO] Rule:205 - rule USART MSBFirstParam Mode is applicable
+2019-06-25 11:53:13,073 [INFO] Rule:205 - rule Update MwName for USB_DEVICE is applicable
+2019-06-25 11:53:13,074 [INFO] Rule:205 - rule Change PWR_Regulator_Voltage_Scale Default Value for RCC  H7 family is applicable
+2019-06-25 11:53:13,074 [INFO] Rule:205 - rule UART/USART IPParameter rename Prescaler parameter to ClockPrescaler is applicable
+2019-06-25 11:53:13,074 [INFO] Rule:205 - rule UART/USART Prescaler rename Prescaler parameter to ClockPrescaler is applicable
+2019-06-25 11:53:13,074 [INFO] Rule:205 - rule TIM1CLockSelection is applicable
+2019-06-25 11:53:13,075 [INFO] Rule:205 - rule TIM15CLockSelection is applicable
+2019-06-25 11:53:13,089 [INFO] DbConfProperties:222 - Apply Compatibility (21/87 Rules)
+2019-06-25 11:53:13,114 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2019-06-25 11:53:13,416 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (ADCFreqValue) has invalid value (32000000)
+2019-06-25 11:53:13,417 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-06-25 11:53:13,417 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (64000000)
+2019-06-25 11:53:13,418 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (64000000)
+2019-06-25 11:53:14,435 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 213857264 Bytes (313524224)
+2019-06-25 11:53:15,034 [INFO] ThirdPartyDb:293 - Open Third Party DataBase File (C:/Users/erhan/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 13 ms. number of Sw pack : 14
+2019-06-25 11:53:16,209 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 1.1.0
+2019-06-25 11:53:16,209 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 5.2.1
+2019-06-25 11:53:16,209 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.2.0
+2019-06-25 11:53:16,209 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.3.0
+2019-06-25 11:53:16,211 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.0.1
+2019-06-25 11:53:16,212 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.3.0
+2019-06-25 11:53:16,213 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-06-25 11:53:16,213 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.1.0
+2019-06-25 11:53:16,213 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.0
+2019-06-25 11:53:16,213 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-06-25 11:53:16,213 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-06-25 11:53:16,807 [INFO] PinOutPanel:1361 - setPackage(No Configuration,No Configuration)
+2019-06-25 11:53:16,810 [INFO] PinOutPanel:1361 - setPackage(STM32F103RBTx,LQFP64)
+2019-06-25 11:53:17,806 [INFO] UtilMem:74 - Before build in PCC Used Memory: 203536000 Bytes (313524224)
+2019-06-25 11:53:18,686 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/erhan/.stm32cubemx/plugins/power
+2019-06-25 11:53:18,687 [INFO] UtilMem:74 - After build in PCC Used Memory: 215070336 Bytes (313524224)
+2019-06-25 11:53:18,895 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2019-06-25 11:53:19,076 [INFO] OpenFileManager:289 - Restore cursor
+2019-06-25 11:53:20,058 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 241811064 Bytes (313524224)
+2019-06-25 11:53:20,305 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 243908216 Bytes (313524224)
+2019-06-25 11:53:22,574 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-06-25 11:53:22,574 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: USART
+2019-06-25 11:53:22,574 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-06-25 11:53:22,574 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-06-25 11:53:22,592 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-06-25 11:53:23,553 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\license.tmp_save
+2019-06-25 11:53:24,793 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\license.tmp
+2019-06-25 11:53:25,092 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\gpio.tmp_save
+2019-06-25 11:53:25,920 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\gpio.tmp
+2019-06-25 11:53:26,030 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-06-25 11:53:26,032 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-06-25 11:53:26,034 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-06-25 11:53:26,056 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-06-25 11:53:26,065 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-06-25 11:53:26,068 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-06-25 11:53:26,071 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-06-25 11:53:26,072 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-06-25 11:53:26,112 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\stm32f1xx_it.c_save
+2019-06-25 11:53:27,192 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\stm32f1xx_it.c
+2019-06-25 11:53:27,218 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\stm32f1xx_it.h_save
+2019-06-25 11:53:28,611 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\stm32f1xx_it.h
+2019-06-25 11:53:28,694 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\stm32f1xx_hal_msp.c_save
+2019-06-25 11:53:29,660 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\stm32f1xx_hal_msp.c
+2019-06-25 11:53:29,700 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\system.tmp_save
+2019-06-25 11:53:29,937 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\system.tmp
+2019-06-25 11:53:29,973 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\stm32f1xx_hal_conf.h_save
+2019-06-25 11:53:30,213 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\stm32f1xx_hal_conf.h
+2019-06-25 11:53:30,279 [WARN] IPConfigManager:2556 - IP not found : gpio
+2019-06-25 11:53:30,280 [WARN] CodeGenerator:2532 - IP not found : gpio
+2019-06-25 11:53:30,403 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\main.h_save
+2019-06-25 11:53:31,121 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\main.h
+2019-06-25 11:53:31,208 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\main.c_save
+2019-06-25 11:53:31,537 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\main.c
+2019-06-25 11:53:33,399 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 335mS.
+2019-06-25 11:53:33,447 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-06-25 11:53:34,269 [INFO] ConfigFileManager:883 - The Die is : DIE410
+2019-06-25 11:53:34,300 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M3
+2019-06-25 11:53:34,754 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="20"
+2019-06-25 11:53:34,756 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="128"
+2019-06-25 11:53:35,174 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-06-25 11:53:35,176 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============generate
+2019-06-25 11:53:56,529 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 23082mS.
+2019-06-25 11:53:56,530 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-06-25 11:53:56,533 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-06-25 11:54:17,681 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 764337288 Bytes (921698304)
+2019-06-25 11:54:20,095 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 770424976 Bytes (921698304)
+2019-06-25 11:54:20,698 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-06-25 11:54:20,699 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: USART
+2019-06-25 11:54:20,699 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: USART
+2019-06-25 11:54:20,699 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-06-25 11:54:20,699 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-06-25 11:54:20,700 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-06-25 11:54:21,145 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\license.tmp_save
+2019-06-25 11:54:21,418 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\license.tmp
+2019-06-25 11:54:21,496 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\gpio.tmp_save
+2019-06-25 11:54:21,814 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\gpio.tmp
+2019-06-25 11:54:22,004 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-06-25 11:54:22,006 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-06-25 11:54:22,007 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-06-25 11:54:22,009 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-06-25 11:54:22,010 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-06-25 11:54:22,012 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-06-25 11:54:22,014 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-06-25 11:54:22,015 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-06-25 11:54:22,070 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\stm32f1xx_it.c_save
+2019-06-25 11:54:22,703 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\stm32f1xx_it.c
+2019-06-25 11:54:22,762 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\stm32f1xx_it.h_save
+2019-06-25 11:54:23,024 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\stm32f1xx_it.h
+2019-06-25 11:54:23,081 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\stm32f1xx_hal_msp.c_save
+2019-06-25 11:54:23,291 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\stm32f1xx_hal_msp.c
+2019-06-25 11:54:23,317 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\system.tmp_save
+2019-06-25 11:54:23,411 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\MXTmpFiles\system.tmp
+2019-06-25 11:54:23,451 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\stm32f1xx_hal_conf.h_save
+2019-06-25 11:54:24,040 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\stm32f1xx_hal_conf.h
+2019-06-25 11:54:24,053 [WARN] IPConfigManager:2556 - IP not found : gpio
+2019-06-25 11:54:24,054 [WARN] CodeGenerator:2532 - IP not found : gpio
+2019-06-25 11:54:24,095 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\main.h_save
+2019-06-25 11:54:24,212 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Inc\main.h
+2019-06-25 11:54:24,253 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\main.c_save
+2019-06-25 11:54:24,426 [INFO] CodeEngine:208 - Generated code: C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\9BitUartCommunication_\Src\main.c
+2019-06-25 11:54:25,458 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 155mS.
+2019-06-25 11:54:25,461 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-06-25 11:54:26,685 [INFO] ConfigFileManager:883 - The Die is : DIE410
+2019-06-25 11:54:26,693 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M3
+2019-06-25 11:54:27,552 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="20"
+2019-06-25 11:54:27,556 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="128"
+2019-06-25 11:54:27,987 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-06-25 11:54:27,990 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-06-25 11:54:28,820 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 3360mS.
+2019-06-25 11:54:28,821 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-06-25 11:54:28,823 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-06-25 12:26:27,311 [INFO] Activator:176 - 
+
+
+2019-06-25 12:26:27,464 [INFO] Activator:177 - !SESSION log4j initialized
+2019-06-25 12:47:02,503 [INFO] Activator:176 - 
+
+
+2019-06-25 12:47:02,778 [INFO] Activator:177 - !SESSION log4j initialized
+2019-06-25 13:11:10,814 [INFO] Activator:176 - 
+
+
+2019-06-25 13:11:10,825 [INFO] Activator:177 - !SESSION log4j initialized

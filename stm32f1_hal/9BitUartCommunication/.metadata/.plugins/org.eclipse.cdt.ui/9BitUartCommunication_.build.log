@@ -1,0 +1,10 @@
+13:15:07 **** Incremental Build of configuration Debug for project 9BitUartCommunication_ ****
+make -j4 all 
+arm-none-eabi-size   9BitUartCommunication_.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6668	     20	   1700	   8388	   20c4	9BitUartCommunication_.elf
+Finished building: default.size.stdout
+ 
+
+13:15:08 Build Finished. 0 errors, 0 warnings. (took 1s.561ms)
+

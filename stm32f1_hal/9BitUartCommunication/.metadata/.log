@@ -1,0 +1,150 @@
+!SESSION 2019-06-25 11:51:14.796 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2019-06-25 11:51:55.782
+!MESSAGE Log4j initialized with config file C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-06-25 11:52:02.019
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-06-25 11:53:36.595
+!MESSAGE Indexed '9BitUartCommunication_' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 11:53:37.029
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 11:53:37.037
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 11:53:37.047
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 11:53:37.053
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 11:53:37.060
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 11:53:37.067
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 11:53:37.074
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 11:53:37.080
+!MESSAGE Falling back to default toolchain
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-06-25 11:53:40.946
+!MESSAGE Indexed '9BitUartCommunication_' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2019-06-25 12:25:39.821 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2019-06-25 12:26:27.270
+!MESSAGE Log4j initialized with config file C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 12:26:36.498
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 12:26:36.511
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 12:26:36.694
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 12:26:36.701
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 12:26:36.708
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 12:26:36.715
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 12:26:36.722
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 12:26:36.729
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-06-25 12:26:47.835
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2019-06-25 12:46:28.562 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2019-06-25 12:47:02.472
+!MESSAGE Log4j initialized with config file C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 12:47:09.892
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 12:47:09.899
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 12:47:10.092
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 12:47:10.109
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 12:47:10.116
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 12:47:10.124
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 12:47:10.130
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 12:47:10.137
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-06-25 12:47:26.357
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2019-06-25 13:10:56.009 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2019-06-25 13:11:10.764
+!MESSAGE Log4j initialized with config file C:\Users\erhan\github\mcu\stm32f1_hal\9BitUartCommunication\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 13:11:14.577
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 13:11:14.585
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 13:11:14.605
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 13:11:14.612
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 13:11:14.619
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 13:11:14.626
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2019-06-25 13:11:14.633
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2019-06-25 13:11:14.640
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2019-06-25 13:11:23.263
+!MESSAGE Started RMI Server, listening on port 41337
