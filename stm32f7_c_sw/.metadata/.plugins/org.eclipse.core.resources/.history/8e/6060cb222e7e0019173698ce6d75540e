@@ -1,6 +1,0 @@
-#include "stm32f767xx.h"
-
-#include "util.h"
-#include "RCC_driver.h"
-
-RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;

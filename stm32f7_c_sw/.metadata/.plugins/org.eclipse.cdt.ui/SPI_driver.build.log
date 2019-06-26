@@ -1,23 +1,10 @@
-17:47:49 **** Incremental Build of configuration Debug for project SPI_driver ****
+13:36:20 **** Incremental Build of configuration Debug for project SPI_driver ****
 make -j4 all 
-arm-none-eabi-gcc "../Drivers/src/GPIO_driver.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32 -DNUCLEO_F767ZI -DSTM32F7 -DDEBUG -DSTM32F767ZITx -c -I../Inc -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/SPI_driver/Drivers/inc" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/Drivers/inc" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS/Include" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/src/GPIO_driver.d" -MT"Drivers/src/GPIO_driver.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/src/GPIO_driver.o"
-arm-none-eabi-gcc "../Drivers/src/RCC_driver.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32 -DNUCLEO_F767ZI -DSTM32F7 -DDEBUG -DSTM32F767ZITx -c -I../Inc -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/SPI_driver/Drivers/inc" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/Drivers/inc" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS/Include" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/src/RCC_driver.d" -MT"Drivers/src/RCC_driver.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/src/RCC_driver.o"
-arm-none-eabi-gcc "../Drivers/src/SPI_driver.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DSTM32 -DNUCLEO_F767ZI -DSTM32F7 -DDEBUG -DSTM32F767ZITx -c -I../Inc -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/SPI_driver/Drivers/inc" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/Drivers/inc" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/CMSIS/Include" -I"C:/Users/erhan/github/mcu/stm32f7_c_sw/GPIO_driver/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/src/SPI_driver.d" -MT"Drivers/src/SPI_driver.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/src/SPI_driver.o"
-../Drivers/src/GPIO_driver.c: In function 'GPIO_lockPort':
-../Drivers/src/GPIO_driver.c:88:11: warning: variable 'tempLCKR' set but not used [-Wunused-but-set-variable]
-  uint16_t tempLCKR;
-           ^~~~~~~~
-arm-none-eabi-gcc -o "SPI_driver.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\erhan\github\mcu\stm32f7_c_sw\SPI_driver\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: SPI_driver.elf
- 
-arm-none-eabi-objdump -h -S  SPI_driver.elf  > "SPI_driver.list"
 arm-none-eabi-size   SPI_driver.elf 
    text	   data	    bss	    dec	    hex	filename
    3072	      8	   1568	   4648	   1228	SPI_driver.elf
 Finished building: default.size.stdout
  
-Finished building: SPI_driver.list
- 
 
-17:47:52 Build Finished. 0 errors, 1 warnings. (took 3s.756ms)
+13:36:23 Build Finished. 0 errors, 0 warnings. (took 2s.588ms)
 

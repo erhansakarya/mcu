@@ -15,7 +15,7 @@ typedef enum{
 typedef enum{
 	SET = 1,
 	RESET = 0
-}UTIL_setReset_e;
+}UTIL_SETRESET_e;
 
 #define GET_MSB_OF_16BITS(X) (uint8_t)((X & 0xFF00) >> 8)
 #define GET_MSB_OF_8BITS(X)	 (uint8_t)(X & 0xF0)
