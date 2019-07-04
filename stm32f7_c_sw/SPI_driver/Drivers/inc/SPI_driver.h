@@ -33,19 +33,19 @@ typedef enum{
 }SPI_CLKSPEED_e;
 
 typedef enum{
-	SPI_DATAFORMAT_4BIT 	= 0x03,
-	SPI_DATAFORMAT_5BIT 	= 0x04,
-	SPI_DATAFORMAT_6BIT 	= 0x05,
-	SPI_DATAFORMAT_7BIT 	= 0x06,
-	SPI_DATAFORMAT_8BIT 	= 0x07,
-	SPI_DATAFORMAT_9BIT 	= 0x08,
-	SPI_DATAFORMAT_10BIT 	= 0x09,
-	SPI_DATAFORMAT_11BIT 	= 0x0A,
-	SPI_DATAFORMAT_12BIT 	= 0x0B,
-	SPI_DATAFORMAT_13BIT 	= 0x0C,
-	SPI_DATAFORMAT_14BIT 	= 0x0D,
-	SPI_DATAFORMAT_15BIT 	= 0x0E,
-	SPI_DATAFORMAT_16BIT 	= 0x0F
+	SPI_DATAFORMAT_4BIT 	= 0x03 << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_5BIT 	= 0x04 << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_6BIT 	= 0x05 << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_7BIT 	= 0x06 << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_8BIT 	= 0x07 << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_9BIT 	= 0x08 << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_10BIT 	= 0x09 << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_11BIT 	= 0x0A << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_12BIT 	= 0x0B << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_13BIT 	= 0x0C << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_14BIT 	= 0x0D << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_15BIT 	= 0x0E << SPI_CR2_DS_Pos,
+	SPI_DATAFORMAT_16BIT 	= 0x0F << SPI_CR2_DS_Pos
 }SPI_DATAFORMAT_e;
 
 typedef enum{
@@ -88,5 +88,9 @@ extern void SPI_clkCntrl(SPI_TypeDef *pBaseAddress, UTIL_enableDisable_e enableD
 
 extern void SPI_init(SPI_handle_s *SPI_handle);
 extern void SPI_deInit(SPI_TypeDef *pBaseAddress);
+
+extern void SPI_periphCntrl(SPI_handle_s *SPI_handle, UTIL_enableDisable_e UTIL_enableDisable);
+
+extern void SPI_sendData(SPI_handle_s *SPI_handle, uint8_t *txBuffer, uint8_t len);
 
 #endif

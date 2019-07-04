@@ -83,9 +83,9 @@ extern void GPIO_deInit(GPIO_TypeDef *pBaseAddress);
 
 extern UTIL_lockUnlock_e GPIO_lockPort(GPIO_TypeDef *pBaseAddress, uint16_t lockValue);
 
-extern UTIL_setReset_e GPIO_readPin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber);
+extern UTIL_SETRESET_e GPIO_readPin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber);
 extern uint16_t GPIO_readPort(GPIO_TypeDef *pBaseAddress);
-extern void GPIO_writePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber, UTIL_setReset_e UTIL_setReset);
+extern void GPIO_writePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber, UTIL_SETRESET_e UTIL_setReset);
 extern void GPIO_writePort(GPIO_TypeDef *pBaseAddress, uint16_t portValue);
 extern void GPIO_togglePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber);
 

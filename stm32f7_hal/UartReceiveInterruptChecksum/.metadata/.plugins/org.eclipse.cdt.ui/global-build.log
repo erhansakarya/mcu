@@ -49,3 +49,22 @@ Info: Parallel threads used: 0
 20:04:50 **** Incremental Build of configuration Debug for project UartReceiveIT_CheckSum ****
 Info: Internal Builder is used for build
 Info: Parallel threads used: 0
+20:20:02 **** Incremental Build of configuration Debug for project UartReceiveIT_CheckSum ****
+Info: Internal Builder is used for build
+arm-none-eabi-gcc ..\Core\Src\main.c -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F767xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o Core\Src\main.o 
+..\Core\Src\main.c: In function 'USART1_IRQHandler':
+..\Core\Src\main.c:396:3: warning: implicit declaration of function 'getDataFromUart' [-Wimplicit-function-declaration]
+   getDataFromUart();
+   ^~~~~~~~~~~~~~~
+..\Core\Src\main.c: At top level:
+..\Core\Src\main.c:400:6: warning: conflicting types for 'getDataFromUart'
+ void getDataFromUart(void){
+      ^~~~~~~~~~~~~~~
+..\Core\Src\main.c:396:3: note: previous implicit declaration of 'getDataFromUart' was here
+   getDataFromUart();
+   ^~~~~~~~~~~~~~~
+..\Core\Src\main.c:437:16: warning: 'calculateChecksum' defined but not used [-Wunused-function]
+ static uint8_t calculateChecksum(uint8_t *dataBlock, uint8_t dataCount){
+                ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o UartReceiveIT_CheckSum.elf Core\Src\main.o Core\Src\stm32f7xx_hal_msp.o Core\Src\stm32f7xx_it.o Core\Src\system_stm32f7xx.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cortex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_eth.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_exti.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_gpio.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pcd.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pcd_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_uart.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_uart_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_usb.o Startup\startup_stm32f767zitx.o -mcpu=cortex-m7 -TC:\Users\erhan\github\mcu\stm32f7_hal\UartReceiveInterruptChecksum\UartReceiveIT_CheckSum\STM32F767ZITX_FLASH.ld --specs=nosys.specs -Wl,-Map=UartReceiveIT_CheckSum.map -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group 
+Info: Parallel threads used: 1

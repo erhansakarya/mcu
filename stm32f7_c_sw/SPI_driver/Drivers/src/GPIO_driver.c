@@ -68,13 +68,13 @@ void GPIO_init(GPIO_handle_s *GPIO_handle){
 
 			/* NOTE: GPIO Alternate Function Low Register */
 			GPIO_handle->pBaseAddress->AFR[0] &= ~(GPIO_AFRL_AFRL0_Msk << (4 * GPIO_handle->config.pinNumber));
-			GPIO_handle->pBaseAddress->AFR[0] |= GET_LSB_OF_8BITS(GPIO_handle->config.pinAltFuncMode) << (4 * GPIO_handle->config.pinNumber);
+			GPIO_handle->pBaseAddress->AFR[0] |= GPIO_handle->config.pinAltFuncMode << (4 * GPIO_handle->config.pinNumber);
 
 		}else if(GPIO_handle->config.pinNumber >= 8){
 
 			/* NOTE: GPIO Alternate Function High Register */
 			GPIO_handle->pBaseAddress->AFR[1] &= ~(GPIO_AFRH_AFRH0_Msk << (4 * (GPIO_handle->config.pinNumber - 8)));
-			GPIO_handle->pBaseAddress->AFR[1] |= GET_LSB_OF_8BITS(GPIO_handle->config.pinAltFuncMode) << (4 * (GPIO_handle->config.pinNumber - 8));
+			GPIO_handle->pBaseAddress->AFR[1] |= GPIO_handle->config.pinAltFuncMode << (4 * (GPIO_handle->config.pinNumber - 8));
 
 		}
 
@@ -134,7 +134,7 @@ void GPIO_deInit(GPIO_TypeDef *pBaseAddress){
 
 }
 
-UTIL_setReset_e GPIO_readPin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber){
+UTIL_SETRESET_e GPIO_readPin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber){
 
 	return (pBaseAddress->IDR & (GPIO_IDR_IDR_0 << pinNumber)) ? (SET) : (RESET);
 
@@ -146,7 +146,7 @@ uint16_t GPIO_readPort(GPIO_TypeDef *pBaseAddress){
 
 }
 
-void GPIO_writePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber, UTIL_setReset_e UTIL_setReset){
+void GPIO_writePin(GPIO_TypeDef *pBaseAddress, uint8_t pinNumber, UTIL_SETRESET_e UTIL_setReset){
 
 	switch(UTIL_setReset){
 

@@ -6,6 +6,8 @@
   * @brief   Default main function.
   ******************************************************************************
 */
+#include <string.h>
+
 #include "stm32f767xx.h"
 
 #include "util.h"
@@ -33,13 +35,103 @@ static void initLED(led_pin_number_e ledNumber);
 static void initButton(void);
 static void initTouchSensor(void);
 static void initTouchSensorITMode(void);
-static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset);
-static UTIL_setReset_e getButtonState(void);
-static UTIL_setReset_e getTouchedState(void);
+static void controlLED(led_pin_number_e ledNumber, UTIL_SETRESET_e setReset);
+static UTIL_SETRESET_e getButtonState(void);
+static UTIL_SETRESET_e getTouchedState(void);
+
+/*
+ * SPI1 Configuration
+ * SPI1_SCK -> PA5
+ * SPI1_MOSI -> PA7
+ * SPI1_MISO -> PA6
+ * SPI1_NSS -> PA4
+ * GPIO Pin Alternate Function Mode -> AF5
+ * */
 
 int main(void)
 {
 
+	GPIO_handle_s	GPIO_handle;
+	SPI_handle_s	SPI_handle;
+
+	char *data = "Hello World";
+
+	/* NOTE: SPI1_SCK Configuration */
+	GPIO_handle.pBaseAddress 			= GPIOA;
+	GPIO_handle.config.pinNumber 		= 5;
+	GPIO_handle.config.pinMode 			= GPIO_ALTERFUNC;
+	GPIO_handle.config.pinSpeed 		= GPIO_HIGH;
+	GPIO_handle.config.pinPuPd 			= GPIO_NOPUPD;
+	GPIO_handle.config.pinOutType 		= GPIO_PP;
+	GPIO_handle.config.pinAltFuncMode 	= 0x05U;
+
+	GPIO_clkCntrl(GPIO_handle.pBaseAddress, ENABLE);
+
+	GPIO_init(&GPIO_handle);
+
+	/* NOTE: SPI1_MOSI Configuration */
+	GPIO_handle.pBaseAddress 			= GPIOD;
+	GPIO_handle.config.pinNumber 		= 7;
+	GPIO_handle.config.pinMode 			= GPIO_ALTERFUNC;
+	GPIO_handle.config.pinSpeed 		= GPIO_HIGH;
+	GPIO_handle.config.pinPuPd 			= GPIO_NOPUPD;
+	GPIO_handle.config.pinOutType 		= GPIO_PP;
+	GPIO_handle.config.pinAltFuncMode 	= 0x05U;
+
+	GPIO_clkCntrl(GPIO_handle.pBaseAddress, ENABLE);
+
+	GPIO_init(&GPIO_handle);
+
+	/* NOTE: SPI1_NSS Configuration */
+	/*
+	GPIO_handle.pBaseAddress 			= GPIOA;
+	GPIO_handle.config.pinNumber 		= 15;
+	GPIO_handle.config.pinMode 			= GPIO_ALTERFUNC;
+	GPIO_handle.config.pinSpeed 		= GPIO_HIGH;
+	GPIO_handle.config.pinPuPd 			= GPIO_NOPUPD;
+	GPIO_handle.config.pinOutType 		= GPIO_PP;
+	GPIO_handle.config.pinAltFuncMode 	= 0x05U;
+
+	GPIO_clkCntrl(GPIO_handle.pBaseAddress, ENABLE);
+
+	GPIO_init(&GPIO_handle);
+
+	GPIO_writePin(GPIOA, GPIO_PIN_15, SET);
+	*/
+
+//	/* NOTE: SPI1 Configuration */
+	SPI_handle.pBaseAddress				= SPI1;
+//	SPI_handle.config.SPI_devMode 		= SPI_DEVMODE_MASTER;
+//	SPI_handle.config.SPI_busConfig 	= SPI_BUSCONFIG_FULLDUPLEX;
+//	SPI_handle.config.SPI_clkSpeed		= SPI_CLKSPEED_DIV256;
+//	SPI_handle.config.SPI_dataFormat	= SPI_DATAFORMAT_8BIT;
+//	SPI_handle.config.SPI_cpol			= SPI_CPOL_LOW;
+//	SPI_handle.config.SPI_cpha			= SPI_CPHA_LOW;
+//	SPI_handle.config.SPI_ssm			= SPI_SSM_EN;
+//
+	SPI_clkCntrl(SPI_handle.pBaseAddress, ENABLE);
+//
+//	SPI_init(&SPI_handle);
+//
+//	// NOTE: Enable SSOE bit
+//	//SPI_handle.pBaseAddress->CR2 |= (1 << 2);
+//
+//	SPI_handle.pBaseAddress->CR1 |= (1 << 8);
+//
+//	SPI_handle.pBaseAddress->CR2 |= (1 << 3);
+//
+//
+
+	//GPIO_writePin(GPIOA, GPIO_PIN_15, RESET);
+
+	//GPIO_writePin(GPIOA, GPIO_PIN_15, SET);
+
+	SPI_handle.pBaseAddress->CR1 = 0x33C;
+	SPI_handle.pBaseAddress->CR2 = 0x1708;
+
+	SPI_periphCntrl(&SPI_handle, ENABLE);
+
+	/*
 	UTIL_lockUnlock_e lockState = UNLOCK;
 
 	initLED(LED_1_PIN);
@@ -60,10 +152,15 @@ int main(void)
 	controlLED(LED_1_PIN, RESET);
 	controlLED(LED_2_PIN, RESET);
 	controlLED(LED_3_PIN, RESET);
-
+	*/
 	for(;;){
+
+		SPI_sendData(&SPI_handle, data, strlen(data));
+
+		/*
 		controlLED(LED_3_PIN, getButtonState());
 		//controlLED(LED_2_PIN, getTouchedState());
+		*/
 	}
 
 }
@@ -159,19 +256,19 @@ static void initTouchSensorITMode(void){
 
 }
 
-static void controlLED(led_pin_number_e ledNumber, UTIL_setReset_e setReset){
+static void controlLED(led_pin_number_e ledNumber, UTIL_SETRESET_e setReset){
 
 	GPIO_writePin(LED_PORT, ledNumber, setReset);
 
 }
 
-static UTIL_setReset_e getButtonState(void){
+static UTIL_SETRESET_e getButtonState(void){
 
 	return GPIO_readPin(BUTTON_PORT, BUTTON_PIN);
 
 }
 
-static UTIL_setReset_e getTouchedState(void){
+static UTIL_SETRESET_e getTouchedState(void){
 
 	return GPIO_readPin(TOUCH_SENSOR_PORT, TOUCH_SENSOR_PIN);
 

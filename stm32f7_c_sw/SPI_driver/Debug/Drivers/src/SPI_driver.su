@@ -1,3 +1,6 @@
-SPI_driver.c:9:6:SPI_clkCntrl	16	static
-SPI_driver.c:34:6:SPI_init	16	static
-SPI_driver.c:40:6:SPI_deInit	16	static
+SPI_driver.c:13:6:SPI_clkCntrl	16	static
+SPI_driver.c:38:6:SPI_deInit	16	static
+SPI_driver.c:47:6:SPI_init	24	static
+SPI_driver.c:122:6:SPI_periphCntrl	16	static
+SPI_driver.c:150:6:SPI_sendData	24	static
+SPI_driver.c:193:24:SPI_getFlagStatus	24	static

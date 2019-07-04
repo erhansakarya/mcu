@@ -1,0 +1,145 @@
+#include "stm32f767xx.h"
+
+#include "util.h"
+#include "GPIO_driver.h"
+#include "EXTI_driver.h"
+#include "RCC_driver.h"
+#include "SPI_driver.h"
+
+void SPI_clkCntrl(SPI_TypeDef *pBaseAddress, UTIL_enableDisable_e enableDisable){
+
+	switch(enableDisable){
+
+	case ENABLE:
+		if(pBaseAddress == SPI1){ SPI1_CLK_EN; }
+		else if(pBaseAddress == SPI2){ SPI2_CLK_EN; }
+		else if(pBaseAddress == SPI3){ SPI3_CLK_EN; }
+		else if(pBaseAddress == SPI4){ SPI4_CLK_EN; }
+		break;
+
+	case DISABLE:
+		if(pBaseAddress == SPI1){ SPI1_CLK_DIS; }
+		else if(pBaseAddress == SPI2){ SPI2_CLK_DIS; }
+		else if(pBaseAddress == SPI3){ SPI3_CLK_DIS; }
+		else if(pBaseAddress == SPI4){ SPI4_CLK_DIS; }
+		break;
+
+	default:
+		break;
+
+	}
+
+}
+
+void SPI_deInit(SPI_TypeDef *pBaseAddress){
+
+	if(pBaseAddress == SPI1){ SPI1_RESET; }
+	else if(pBaseAddress == SPI2){ SPI2_RESET; }
+	else if(pBaseAddress == SPI3){ SPI3_RESET; }
+	else if(pBaseAddress == SPI4){ SPI4_RESET; }
+
+}
+
+void SPI_init(SPI_handle_s *SPI_handle){
+
+	uint32_t tempRegVal = 0x00000000U;
+
+	/* NOTE: Configuration of CR1 register */
+
+	/* NOTE: Configure the SPI_DEVMODE_e */
+	tempRegVal |= SPI_handle->config.SPI_devMode << SPI_CR1_MSTR_Pos;
+
+	/* NOTE: Configure the SPI_BUSCONFIG_e */
+	switch(SPI_handle->config.SPI_busConfig){
+
+		case SPI_BUSCONFIG_FULLDUPLEX:
+
+			tempRegVal |= 0 << SPI_CR1_BIDIMODE_Pos; /* NOTE: 2-line unidirectional data mode selected */
+
+			break;
+
+		case SPI_BUSCONFIG_HALFDUPLEX:
+
+			tempRegVal |= 1 << SPI_CR1_BIDIMODE_Pos; /* NOTE: 1-line bidirectional data mode selected */
+
+			break;
+
+		case SPI_BUSCONFIG_SIMPLEXTXONLY:
+
+			/* TODO: Implement */
+
+			break;
+
+		case SPI_BUSCONFIG_SIMPLEXRXONLY:
+
+			/* TODO: Implement */
+
+			break;
+
+		default:
+
+			/* TODO: Error Handler */
+
+	}
+
+
+	/* NOTE: Configure the SPI_CLKSPEED_e */
+	tempRegVal |= SPI_handle->config.SPI_clkSpeed << SPI_CR1_BR_Pos;
+
+	/* NOTE: Configure the SPI_CPOL_e */
+	tempRegVal |= SPI_handle->config.SPI_cpol << SPI_CR1_CPOL_Pos;
+
+	/* NOTE: Configure the SPI_CPHA_e */
+	tempRegVal |= SPI_handle->config.SPI_cpha << SPI_CR1_CPHA_Pos;
+
+	/* NOTE: Configure the SPI_SSM_e */
+	tempRegVal |= SPI_handle->config.SPI_ssm << SPI_CR1_SSM_Pos;
+
+	/* NOTE: Load configuration data to CR1 register */
+	SPI_handle->pBaseAddress->CR1 = tempRegVal;
+	tempRegVal = 0x00000000U;
+
+	/* NOTE: End of the configuration of CR1 register */
+
+	/* NOTE: Configuration of CR2 register */
+
+	/* NOTE: Configure the SPI_DATAFORMAT_e */
+	tempRegVal = SPI_handle->config.SPI_dataFormat << SPI_CR2_DS_Pos;
+
+	/* NOTE: Load configuration data to CR2 register */
+	SPI_handle->pBaseAddress->CR2 = tempRegVal;
+
+	/* NOTE: End of the configuration of CR2 register */
+
+}
+
+void SPI_sendData(SPI_handle_s *SPI_handle, uint8_t *txBuffer, uint8_t len){
+
+	if(SPI_handle == NULL || txBuffer == NULL || !len)
+		return;
+
+	/* NOTE: Wait the TXE Flag */
+	while(!SPI_getFlagStatus(SPI_handle, SPI_FLAG_TXE));
+
+	/* NOTE: Check SPI data size */
+	if((SPI_handle->pBaseAddress->CR2 && (SPI_DATAFORMAT_8BIT << SPI_CR2_DS_Pos)) == (SPI_DATAFORMAT_8BIT << SPI_CR2_DS_Pos)){
+
+
+
+	}
+
+}
+
+static UTIL_SETRESET_e SPI_getFlagStatus(SPI_handle_s *SPI_handle, SPI_FLAG_e SPI_flag){
+
+	if(SPI_handle == NULL)
+		return;
+
+	UTIL_SETRESET_e flagStatus = RESET;
+
+	if(SPI_handle->pBaseAddress->SR & SPI_flag)
+		flagStatus = SET;
+
+	return flagStatus;
+
+}

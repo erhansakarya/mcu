@@ -1,0 +1,10 @@
+20:13:40 **** Incremental Build of configuration Debug for project SPIWriteData_ ****
+make -j4 all 
+arm-none-eabi-size   SPIWriteData_.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17984	     20	   2900	  20904	   51a8	SPIWriteData_.elf
+Finished building: default.size.stdout
+ 
+
+20:13:42 Build Finished. 0 errors, 0 warnings. (took 1s.781ms)
+
